@@ -18,22 +18,16 @@ namespace University_Management_System
         {
             InitializeComponent();
         }
-
+        // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        // Minimize Button
         private void Minimize_btn_Click(object sender, EventArgs e)
         {
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
         }
-
-        private void Exit_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
 
         // FST Panel Button Control
         bool FST_Flag= false;
@@ -86,7 +80,6 @@ namespace University_Management_System
         {
             Fe_Panel.BorderStyle = BorderStyle.FixedSingle;
         }
-
         private void Fe_Panel_MouseLeave(object sender, EventArgs e)
         {
             Fe_Panel.BorderStyle = BorderStyle.None;
@@ -95,12 +88,10 @@ namespace University_Management_System
                 FE_Panel_up.Show();
             }
         }
-
         private void FE_btn_Dept_MouseEnter(object sender, EventArgs e)
         {
             FE_Flag = true;
         }
-
         private void FE_btn_Dept_MouseLeave(object sender, EventArgs e)
         {
             Fe_Panel.BorderStyle = BorderStyle.FixedSingle;
@@ -130,7 +121,6 @@ namespace University_Management_System
         {
             FBA_panel.BorderStyle = BorderStyle.FixedSingle;
         }
-
         private void FBA_panel_MouseLeave(object sender, EventArgs e)
         {
             FBA_panel.BorderStyle = BorderStyle.None;
@@ -139,12 +129,10 @@ namespace University_Management_System
                 FBA_Panel_up.Show();
             }
         }
-
         private void FBA_btn_dept_MouseEnter(object sender, EventArgs e)
         {
             FBA_Flag = true;
         }
-
         private void FBA_btn_dept_MouseLeave(object sender, EventArgs e)
         {
             FBA_panel.BorderStyle= BorderStyle.FixedSingle;
@@ -174,7 +162,6 @@ namespace University_Management_System
         {
             FASS_panel.BorderStyle = BorderStyle.FixedSingle;
         }
-
         private void FASS_panel_MouseLeave(object sender, EventArgs e)
         {
             FASS_panel.BorderStyle = BorderStyle.None;
@@ -183,12 +170,10 @@ namespace University_Management_System
                 FASS_Panel_up.Show();
             }
         }
-
         private void FASS_btn_dept_MouseEnter(object sender, EventArgs e)
         {
             FASS_Flag = true;
         }
-
         private void FASS_btn_dept_MouseLeave(object sender, EventArgs e)
         {
             FASS_panel.BorderStyle = BorderStyle.FixedSingle;
@@ -206,6 +191,18 @@ namespace University_Management_System
             login lg = new login();
             lg.Show();
             this.Hide();
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        // Sidebar
+        bool Nav_btn_Flag=false;
+        private void sideber_btn_Click(object sender, EventArgs e)
+        {
+            Nav_btn_Flag = true;
         }
     }
 }

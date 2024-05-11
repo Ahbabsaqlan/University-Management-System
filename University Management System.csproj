@@ -110,5 +110,23 @@
   <ItemGroup>
     <None Include="Contents\fe_bnr.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-logout-rounded-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-search-more-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-test-account-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-add-user-male-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-notification-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-multiply-35.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
