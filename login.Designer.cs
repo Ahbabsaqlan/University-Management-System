@@ -44,17 +44,18 @@
             // 
             this.login_Div.BackColor = System.Drawing.Color.MintCream;
             this.login_Div.Controls.Add(this.Login_btn);
-            this.login_Div.Location = new System.Drawing.Point(636, 221);
-            this.login_Div.Margin = new System.Windows.Forms.Padding(2);
+            this.login_Div.Location = new System.Drawing.Point(848, 272);
+            this.login_Div.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_Div.Name = "login_Div";
-            this.login_Div.Size = new System.Drawing.Size(292, 368);
+            this.login_Div.Size = new System.Drawing.Size(389, 453);
             this.login_Div.TabIndex = 0;
             // 
             // Login_btn
             // 
-            this.Login_btn.Location = new System.Drawing.Point(24, 284);
+            this.Login_btn.Location = new System.Drawing.Point(32, 350);
+            this.Login_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Login_btn.Name = "Login_btn";
-            this.Login_btn.Size = new System.Drawing.Size(244, 33);
+            this.Login_btn.Size = new System.Drawing.Size(325, 41);
             this.Login_btn.TabIndex = 1;
             this.Login_btn.Text = "login";
             this.Login_btn.UseVisualStyleBackColor = true;
@@ -66,10 +67,10 @@
             this.Minimize_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_btn.ForeColor = System.Drawing.Color.White;
             this.Minimize_btn.Image = global::University_Management_System.Properties.Resources.icons8_minus_20;
-            this.Minimize_btn.Location = new System.Drawing.Point(1447, 0);
+            this.Minimize_btn.Location = new System.Drawing.Point(1923, 0);
             this.Minimize_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Minimize_btn.Name = "Minimize_btn";
-            this.Minimize_btn.Size = new System.Drawing.Size(43, 36);
+            this.Minimize_btn.Size = new System.Drawing.Size(57, 44);
             this.Minimize_btn.TabIndex = 6;
             this.Minimize_btn.UseVisualStyleBackColor = false;
             this.Minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
@@ -82,7 +83,7 @@
             this.button4.Location = new System.Drawing.Point(0, 0);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(32, 26);
+            this.button4.Size = new System.Drawing.Size(43, 32);
             this.button4.TabIndex = 5;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -91,10 +92,10 @@
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(0, 838);
+            this.button3.Location = new System.Drawing.Point(0, 1031);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(32, 26);
+            this.button3.Size = new System.Drawing.Size(43, 32);
             this.button3.TabIndex = 4;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -103,10 +104,10 @@
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1504, 838);
+            this.button2.Location = new System.Drawing.Point(2005, 1031);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(32, 26);
+            this.button2.Size = new System.Drawing.Size(43, 32);
             this.button2.TabIndex = 3;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -115,20 +116,20 @@
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.ForeColor = System.Drawing.Color.White;
             this.Exit.Image = global::University_Management_System.Properties.Resources.icons8_cancel_20;
-            this.Exit.Location = new System.Drawing.Point(1490, 0);
+            this.Exit.Location = new System.Drawing.Point(1987, 0);
             this.Exit.Margin = new System.Windows.Forms.Padding(0);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(47, 36);
+            this.Exit.Size = new System.Drawing.Size(63, 44);
             this.Exit.TabIndex = 2;
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(1537, 865);
+            this.ClientSize = new System.Drawing.Size(1942, 1065);
             this.Controls.Add(this.Minimize_btn);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -137,7 +138,7 @@
             this.Controls.Add(this.login_Div);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
