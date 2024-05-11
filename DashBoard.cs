@@ -62,12 +62,20 @@ namespace University_Management_System
             FST_Panel.BorderStyle = BorderStyle.FixedSingle;
             FST_Flag = false;
         }
-        private void fst_bnr_Dpt_btn_Click(object sender, EventArgs e)
+        // FST Button Click
+        private void FST_btn_dept_Click(object sender, EventArgs e)
         {
             login lg = new login();
             lg.Show();
             this.Hide();
         }
+        private void FST_btn_pgrm_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
+        
         //FE Panel Button Control
         bool FE_Flag = false;
         private void FE_Panel_up_MouseEnter(object sender, EventArgs e)
@@ -98,6 +106,20 @@ namespace University_Management_System
             Fe_Panel.BorderStyle = BorderStyle.FixedSingle;
             FE_Flag = false;
         }
+        //FE Button Click
+        private void FE_btn_dept_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
+        private void FE_btn_pgrm_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
+
         //FBA Panel Button Control
         bool FBA_Flag = false;
         private void FBA_Panel_up_MouseEnter(object sender, EventArgs e)
@@ -128,6 +150,20 @@ namespace University_Management_System
             FBA_panel.BorderStyle= BorderStyle.FixedSingle;
             FBA_Flag=false;
         }
+        // FBA Button Click
+        private void FBA_btn_dept_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
+        private void FBA_btn_pgrm_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
+
         // FASS Panel Button Control
         bool FASS_Flag = false;
         private void FASS_Panel_up_MouseEnter(object sender, EventArgs e)
@@ -158,7 +194,18 @@ namespace University_Management_System
             FASS_panel.BorderStyle = BorderStyle.FixedSingle;
             FASS_Flag = false;
         }
-
-        
+        //FASS Button Click
+        private void FASS_btn_dept_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
+        private void FASS_btn_pgrm_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
     }
 }
