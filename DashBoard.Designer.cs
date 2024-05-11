@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.Navbar = new System.Windows.Forms.FlowLayoutPanel();
             this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.FASS_panel = new System.Windows.Forms.Panel();
+            this.FASS_btn_prgm = new System.Windows.Forms.Button();
+            this.FASS_btn_dept = new System.Windows.Forms.Button();
+            this.FBA_panel = new System.Windows.Forms.Panel();
+            this.FBA_btn_pgrm = new System.Windows.Forms.Button();
+            this.FBA_btn_dept = new System.Windows.Forms.Button();
             this.Fe_Panel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.FE_btn_prgm = new System.Windows.Forms.Button();
+            this.FE_btn_Dept = new System.Windows.Forms.Button();
             this.Dashboard_FST_Banner = new System.Windows.Forms.Panel();
             this.fst_bnr_Btn_Prgm = new System.Windows.Forms.Button();
             this.fst_bnr_Dpt_btn = new System.Windows.Forms.Button();
             this.sideber_btn = new System.Windows.Forms.Button();
             this.Minimize_btn = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.FASS_panel.SuspendLayout();
+            this.FBA_panel.SuspendLayout();
             this.Fe_Panel.SuspendLayout();
             this.Dashboard_FST_Banner.SuspendLayout();
             this.SuspendLayout();
@@ -68,141 +68,159 @@
             this.Sidebar.Size = new System.Drawing.Size(60, 805);
             this.Sidebar.TabIndex = 10;
             // 
-            // panel3
+            // FASS_panel
             // 
-            this.panel3.BackgroundImage = global::University_Management_System.Properties.Resources.Fass_baneer;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Location = new System.Drawing.Point(829, 487);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(560, 260);
-            this.panel3.TabIndex = 2;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.FASS_panel.BackgroundImage = global::University_Management_System.Properties.Resources.Fass_baneer;
+            this.FASS_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FASS_panel.Controls.Add(this.FASS_btn_prgm);
+            this.FASS_panel.Controls.Add(this.FASS_btn_dept);
+            this.FASS_panel.Location = new System.Drawing.Point(829, 487);
+            this.FASS_panel.Name = "FASS_panel";
+            this.FASS_panel.Size = new System.Drawing.Size(560, 260);
+            this.FASS_panel.TabIndex = 2;
+            this.FASS_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.FASS_panel.MouseEnter += new System.EventHandler(this.banner_Hover);
+            this.FASS_panel.MouseLeave += new System.EventHandler(this.Dashboard_FST_Banner_MouseLeave);
             // 
-            // button5
+            // FASS_btn_prgm
             // 
-            this.button5.BackColor = System.Drawing.Color.Orange;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(433, 194);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(95, 31);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Programs";
-            this.button5.UseVisualStyleBackColor = false;
+            this.FASS_btn_prgm.BackColor = System.Drawing.Color.Orange;
+            this.FASS_btn_prgm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FASS_btn_prgm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FASS_btn_prgm.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.FASS_btn_prgm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FASS_btn_prgm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FASS_btn_prgm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FASS_btn_prgm.ForeColor = System.Drawing.Color.White;
+            this.FASS_btn_prgm.Location = new System.Drawing.Point(433, 194);
+            this.FASS_btn_prgm.Name = "FASS_btn_prgm";
+            this.FASS_btn_prgm.Size = new System.Drawing.Size(95, 31);
+            this.FASS_btn_prgm.TabIndex = 1;
+            this.FASS_btn_prgm.Text = "Programs";
+            this.FASS_btn_prgm.UseVisualStyleBackColor = false;
+            this.FASS_btn_prgm.MouseEnter += new System.EventHandler(this.bnr_btn_MHover);
+            this.FASS_btn_prgm.MouseLeave += new System.EventHandler(this.bnr_btn_Mleave);
             // 
-            // button6
+            // FASS_btn_dept
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkCyan;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button6.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(313, 194);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(95, 31);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Departments";
-            this.button6.UseVisualStyleBackColor = false;
+            this.FASS_btn_dept.BackColor = System.Drawing.Color.DarkCyan;
+            this.FASS_btn_dept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FASS_btn_dept.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FASS_btn_dept.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.FASS_btn_dept.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FASS_btn_dept.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FASS_btn_dept.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FASS_btn_dept.ForeColor = System.Drawing.Color.White;
+            this.FASS_btn_dept.Location = new System.Drawing.Point(313, 194);
+            this.FASS_btn_dept.Name = "FASS_btn_dept";
+            this.FASS_btn_dept.Size = new System.Drawing.Size(95, 31);
+            this.FASS_btn_dept.TabIndex = 0;
+            this.FASS_btn_dept.Text = "Departments";
+            this.FASS_btn_dept.UseVisualStyleBackColor = false;
+            this.FASS_btn_dept.MouseEnter += new System.EventHandler(this.bnr_btn_MHover);
+            this.FASS_btn_dept.MouseLeave += new System.EventHandler(this.bnr_btn_Mleave);
             // 
-            // panel2
+            // FBA_panel
             // 
-            this.panel2.BackgroundImage = global::University_Management_System.Properties.Resources.Fba_Banner;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Location = new System.Drawing.Point(161, 487);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 260);
-            this.panel2.TabIndex = 2;
+            this.FBA_panel.BackgroundImage = global::University_Management_System.Properties.Resources.Fba_Banner;
+            this.FBA_panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.FBA_panel.Controls.Add(this.FBA_btn_pgrm);
+            this.FBA_panel.Controls.Add(this.FBA_btn_dept);
+            this.FBA_panel.Location = new System.Drawing.Point(161, 487);
+            this.FBA_panel.Name = "FBA_panel";
+            this.FBA_panel.Size = new System.Drawing.Size(560, 260);
+            this.FBA_panel.TabIndex = 2;
+            this.FBA_panel.MouseEnter += new System.EventHandler(this.banner_Hover);
+            this.FBA_panel.MouseLeave += new System.EventHandler(this.Dashboard_FST_Banner_MouseLeave);
             // 
-            // button3
+            // FBA_btn_pgrm
             // 
-            this.button3.BackColor = System.Drawing.Color.Orange;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(433, 194);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 31);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Programs";
-            this.button3.UseVisualStyleBackColor = false;
+            this.FBA_btn_pgrm.BackColor = System.Drawing.Color.Orange;
+            this.FBA_btn_pgrm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FBA_btn_pgrm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FBA_btn_pgrm.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.FBA_btn_pgrm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FBA_btn_pgrm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FBA_btn_pgrm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBA_btn_pgrm.ForeColor = System.Drawing.Color.White;
+            this.FBA_btn_pgrm.Location = new System.Drawing.Point(433, 194);
+            this.FBA_btn_pgrm.Name = "FBA_btn_pgrm";
+            this.FBA_btn_pgrm.Size = new System.Drawing.Size(95, 31);
+            this.FBA_btn_pgrm.TabIndex = 1;
+            this.FBA_btn_pgrm.Text = "Programs";
+            this.FBA_btn_pgrm.UseVisualStyleBackColor = false;
+            this.FBA_btn_pgrm.MouseEnter += new System.EventHandler(this.bnr_btn_MHover);
+            this.FBA_btn_pgrm.MouseLeave += new System.EventHandler(this.bnr_btn_Mleave);
             // 
-            // button4
+            // FBA_btn_dept
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkCyan;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button4.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(313, 194);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(95, 31);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Departments";
-            this.button4.UseVisualStyleBackColor = false;
+            this.FBA_btn_dept.BackColor = System.Drawing.Color.DarkCyan;
+            this.FBA_btn_dept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FBA_btn_dept.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FBA_btn_dept.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.FBA_btn_dept.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FBA_btn_dept.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FBA_btn_dept.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FBA_btn_dept.ForeColor = System.Drawing.Color.White;
+            this.FBA_btn_dept.Location = new System.Drawing.Point(313, 194);
+            this.FBA_btn_dept.Name = "FBA_btn_dept";
+            this.FBA_btn_dept.Size = new System.Drawing.Size(95, 31);
+            this.FBA_btn_dept.TabIndex = 0;
+            this.FBA_btn_dept.Text = "Departments";
+            this.FBA_btn_dept.UseVisualStyleBackColor = false;
+            this.FBA_btn_dept.MouseEnter += new System.EventHandler(this.bnr_btn_MHover);
+            this.FBA_btn_dept.MouseLeave += new System.EventHandler(this.bnr_btn_Mleave);
             // 
             // Fe_Panel
             // 
             this.Fe_Panel.BackgroundImage = global::University_Management_System.Properties.Resources.fe_bnr;
             this.Fe_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Fe_Panel.Controls.Add(this.button1);
-            this.Fe_Panel.Controls.Add(this.button2);
+            this.Fe_Panel.Controls.Add(this.FE_btn_prgm);
+            this.Fe_Panel.Controls.Add(this.FE_btn_Dept);
             this.Fe_Panel.Location = new System.Drawing.Point(829, 143);
             this.Fe_Panel.Name = "Fe_Panel";
             this.Fe_Panel.Size = new System.Drawing.Size(560, 260);
             this.Fe_Panel.TabIndex = 2;
+            this.Fe_Panel.MouseEnter += new System.EventHandler(this.banner_Hover);
+            this.Fe_Panel.MouseLeave += new System.EventHandler(this.Dashboard_FST_Banner_MouseLeave);
             // 
-            // button1
+            // FE_btn_prgm
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(433, 194);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 31);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Programs";
-            this.button1.UseVisualStyleBackColor = false;
+            this.FE_btn_prgm.BackColor = System.Drawing.Color.Orange;
+            this.FE_btn_prgm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FE_btn_prgm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FE_btn_prgm.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.FE_btn_prgm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FE_btn_prgm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FE_btn_prgm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FE_btn_prgm.ForeColor = System.Drawing.Color.White;
+            this.FE_btn_prgm.Location = new System.Drawing.Point(433, 194);
+            this.FE_btn_prgm.Name = "FE_btn_prgm";
+            this.FE_btn_prgm.Size = new System.Drawing.Size(95, 31);
+            this.FE_btn_prgm.TabIndex = 1;
+            this.FE_btn_prgm.Text = "Programs";
+            this.FE_btn_prgm.UseVisualStyleBackColor = false;
+            this.FE_btn_prgm.MouseEnter += new System.EventHandler(this.bnr_btn_MHover);
+            this.FE_btn_prgm.MouseLeave += new System.EventHandler(this.bnr_btn_Mleave);
             // 
-            // button2
+            // FE_btn_Dept
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkCyan;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(313, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 31);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Departments";
-            this.button2.UseVisualStyleBackColor = false;
+            this.FE_btn_Dept.BackColor = System.Drawing.Color.DarkCyan;
+            this.FE_btn_Dept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.FE_btn_Dept.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FE_btn_Dept.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.FE_btn_Dept.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FE_btn_Dept.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FE_btn_Dept.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FE_btn_Dept.ForeColor = System.Drawing.Color.White;
+            this.FE_btn_Dept.Location = new System.Drawing.Point(313, 194);
+            this.FE_btn_Dept.Name = "FE_btn_Dept";
+            this.FE_btn_Dept.Size = new System.Drawing.Size(95, 31);
+            this.FE_btn_Dept.TabIndex = 0;
+            this.FE_btn_Dept.Text = "Departments";
+            this.FE_btn_Dept.UseVisualStyleBackColor = false;
+            this.FE_btn_Dept.MouseEnter += new System.EventHandler(this.bnr_btn_MHover);
+            this.FE_btn_Dept.MouseLeave += new System.EventHandler(this.bnr_btn_Mleave);
             // 
             // Dashboard_FST_Banner
             // 
@@ -313,8 +331,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1537, 865);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.FASS_panel);
+            this.Controls.Add(this.FBA_panel);
             this.Controls.Add(this.Fe_Panel);
             this.Controls.Add(this.Dashboard_FST_Banner);
             this.Controls.Add(this.sideber_btn);
@@ -326,8 +344,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashBoard";
             this.Text = "DashBoard";
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.DashBoard_Load);
+            this.FASS_panel.ResumeLayout(false);
+            this.FBA_panel.ResumeLayout(false);
             this.Fe_Panel.ResumeLayout(false);
             this.Dashboard_FST_Banner.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -345,13 +364,13 @@
         private System.Windows.Forms.Panel Dashboard_FST_Banner;
         private System.Windows.Forms.Button fst_bnr_Btn_Prgm;
         private System.Windows.Forms.Panel Fe_Panel;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button FE_btn_prgm;
+        private System.Windows.Forms.Button FE_btn_Dept;
+        private System.Windows.Forms.Panel FBA_panel;
+        private System.Windows.Forms.Button FBA_btn_pgrm;
+        private System.Windows.Forms.Button FBA_btn_dept;
+        private System.Windows.Forms.Panel FASS_panel;
+        private System.Windows.Forms.Button FASS_btn_prgm;
+        private System.Windows.Forms.Button FASS_btn_dept;
     }
 }
