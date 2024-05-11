@@ -17,14 +17,6 @@ namespace University_Management_System
         public DashBoard()
         {
             InitializeComponent();
-            fst_bnr_Dpt_btn.Hide();
-            fst_bnr_Btn_Prgm.Hide();
-            FE_btn_Dept.Hide();
-            FE_btn_prgm.Hide();
-            FBA_btn_dept.Hide();
-            FBA_btn_pgrm.Hide();
-            FASS_btn_dept.Hide();
-            FASS_btn_prgm.Hide();
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -42,69 +34,131 @@ namespace University_Management_System
             Application.Exit();
         }
 
-        bool btnflag= false;
-        private void banner_Hover(object sender, EventArgs e)
-        {
-            Dashboard_FST_Banner.BorderStyle = BorderStyle.FixedSingle;
-            fst_bnr_Dpt_btn.Show();
-            fst_bnr_Btn_Prgm.Show();
-            FE_btn_Dept.Show();
-            FE_btn_prgm.Show();
-            FBA_btn_dept.Show();
-            FBA_btn_pgrm.Show();
-            FASS_btn_dept.Show();
-            FASS_btn_prgm.Show();
-        }
-        private void bnr_btn_MHover(object sender, EventArgs e)
-        {      
-            btnflag = true;
-            fst_bnr_Dpt_btn.Show();
-            fst_bnr_Btn_Prgm.Show();
-            FE_btn_Dept.Show();
-            FE_btn_prgm.Show();
-            FBA_btn_dept.Show();
-            FBA_btn_pgrm.Show();
-            FASS_btn_dept.Show();
-            FASS_btn_prgm.Show();
-        }
 
-        private void Dashboard_FST_Banner_MouseLeave(object sender, EventArgs e)
+        // FST Panel Button Control
+        bool FST_Flag= false;
+        private void FST_Panel_up_MouseEnter(object sender, EventArgs e)
         {
-            Dashboard_FST_Banner.BorderStyle = BorderStyle.None;
-            if (btnflag == false)
+            FST_Panel_up.Hide();
+        }
+        private void FST_Panel_MouseEnter(object sender, EventArgs e)
+        {
+            FST_Panel.BorderStyle = BorderStyle.FixedSingle;
+        }
+        private void FST_Panel_MouseLeave(object sender, EventArgs e)
+        {
+            FST_Panel.BorderStyle = BorderStyle.None;
+            if (FST_Flag == false)
             {
-                fst_bnr_Dpt_btn.Hide();
-                fst_bnr_Btn_Prgm.Hide();
-                FE_btn_Dept.Hide();
-                FE_btn_prgm.Hide();
-                FBA_btn_dept.Hide();
-                FBA_btn_pgrm.Hide();
-                FASS_btn_dept.Hide();
-                FASS_btn_prgm.Hide();
+                FST_Panel_up.Show();
             }
         }
-
-        private void bnr_btn_Mleave(object sender, EventArgs e)
+        private void FST_btn_dept_MouseEnter(object sender, EventArgs e)
         {
-            Dashboard_FST_Banner.BorderStyle = BorderStyle.FixedSingle;
-            btnflag= false;
+            FST_Flag = true;
         }
-
+        private void FST_btn_dept_MouseLeave(object sender, EventArgs e)
+        {
+            FST_Panel.BorderStyle = BorderStyle.FixedSingle;
+            FST_Flag = false;
+        }
         private void fst_bnr_Dpt_btn_Click(object sender, EventArgs e)
         {
             login lg = new login();
             lg.Show();
             this.Hide();
         }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        //FE Panel Button Control
+        bool FE_Flag = false;
+        private void FE_Panel_up_MouseEnter(object sender, EventArgs e)
         {
-
+            FE_Panel_up.Hide();
+        }
+        private void Fe_Panel_MouseEnter(object sender, EventArgs e)
+        {
+            Fe_Panel.BorderStyle = BorderStyle.FixedSingle;
         }
 
-        private void DashBoard_Load(object sender, EventArgs e)
+        private void Fe_Panel_MouseLeave(object sender, EventArgs e)
         {
-
+            Fe_Panel.BorderStyle = BorderStyle.None;
+            if (FE_Flag == false)
+            {
+                FE_Panel_up.Show();
+            }
         }
+
+        private void FE_btn_Dept_MouseEnter(object sender, EventArgs e)
+        {
+            FE_Flag = true;
+        }
+
+        private void FE_btn_Dept_MouseLeave(object sender, EventArgs e)
+        {
+            Fe_Panel.BorderStyle = BorderStyle.FixedSingle;
+            FE_Flag = false;
+        }
+        //FBA Panel Button Control
+        bool FBA_Flag = false;
+        private void FBA_Panel_up_MouseEnter(object sender, EventArgs e)
+        {
+            FBA_Panel_up.Hide();
+        }
+        private void FBA_panel_MouseEnter(object sender, EventArgs e)
+        {
+            FBA_panel.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void FBA_panel_MouseLeave(object sender, EventArgs e)
+        {
+            FBA_panel.BorderStyle = BorderStyle.None;
+            if (FBA_Flag == false)
+            {
+                FBA_Panel_up.Show();
+            }
+        }
+
+        private void FBA_btn_dept_MouseEnter(object sender, EventArgs e)
+        {
+            FBA_Flag = true;
+        }
+
+        private void FBA_btn_dept_MouseLeave(object sender, EventArgs e)
+        {
+            FBA_panel.BorderStyle= BorderStyle.FixedSingle;
+            FBA_Flag=false;
+        }
+        // FASS Panel Button Control
+        bool FASS_Flag = false;
+        private void FASS_Panel_up_MouseEnter(object sender, EventArgs e)
+        {
+            FASS_Panel_up.Hide();
+        }
+        private void FASS_panel_MouseEnter(object sender, EventArgs e)
+        {
+            FASS_panel.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void FASS_panel_MouseLeave(object sender, EventArgs e)
+        {
+            FASS_panel.BorderStyle = BorderStyle.None;
+            if (FASS_Flag == false)
+            {
+                FASS_Panel_up.Show();
+            }
+        }
+
+        private void FASS_btn_dept_MouseEnter(object sender, EventArgs e)
+        {
+            FASS_Flag = true;
+        }
+
+        private void FASS_btn_dept_MouseLeave(object sender, EventArgs e)
+        {
+            FASS_panel.BorderStyle = BorderStyle.FixedSingle;
+            FASS_Flag = false;
+        }
+
+        
     }
 }
