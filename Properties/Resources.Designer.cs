@@ -63,6 +63,16 @@ namespace University_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap asub {
+            get {
+                object obj = ResourceManager.GetObject("asub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Fass_baneer {
             get {
                 object obj = ResourceManager.GetObject("Fass-baneer", resourceCulture);
@@ -123,6 +133,26 @@ namespace University_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_form_50_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-form-50 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_logout_100_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-logout-100 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_menu_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-menu-100", resourceCulture);
@@ -146,6 +176,46 @@ namespace University_Management_System.Properties {
         internal static System.Drawing.Bitmap icons8_minus_20 {
             get {
                 object obj = ResourceManager.GetObject("icons8-minus-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pass_fail_50_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-pass-fail-50 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_thumbnails_50_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-thumbnails-50 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_menu_male_64_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-menu-male-64 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user {
+            get {
+                object obj = ResourceManager.GetObject("user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
