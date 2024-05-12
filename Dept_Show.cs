@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Program_Show : UserControl
+    public partial class Dept_Show : UserControl
     {
-        public Program_Show()
+        public Dept_Show()
         {
             InitializeComponent();
         }
 
-        //public string ProgramName 
-        //{
-        //    get { return ProgramName; }  set { Pgrm_Label.Text = value; } 
-        //}
+        private void Dept_ShowCourse_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

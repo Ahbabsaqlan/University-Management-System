@@ -40,8 +40,13 @@
             this.Logout_btn = new System.Windows.Forms.Button();
             this.Minimize_btn = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
+            this.panelborder = new System.Windows.Forms.Panel();
+            this.Pgrm_Title_Panel = new System.Windows.Forms.Panel();
+            this.Pgrm_Title_Label = new System.Windows.Forms.Label();
+            this.Dept_Panel = new System.Windows.Forms.FlowLayoutPanel();
             this.Navber.SuspendLayout();
             this.Sidebar.SuspendLayout();
+            this.Pgrm_Title_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Navber
@@ -49,7 +54,7 @@
             this.Navber.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Navber.Controls.Add(this.sideber_btn);
             this.Navber.Location = new System.Drawing.Point(1, 0);
-            this.Navber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Navber.Margin = new System.Windows.Forms.Padding(4);
             this.Navber.Name = "Navber";
             this.Navber.Size = new System.Drawing.Size(1885, 74);
             this.Navber.TabIndex = 17;
@@ -81,7 +86,7 @@
             this.Sidebar.Controls.Add(this.Search_btn);
             this.Sidebar.Controls.Add(this.Logout_btn);
             this.Sidebar.Location = new System.Drawing.Point(1, 74);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Size = new System.Drawing.Size(80, 991);
             this.Sidebar.TabIndex = 16;
@@ -262,22 +267,69 @@
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // panelborder
+            // 
+            this.panelborder.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panelborder.Location = new System.Drawing.Point(356, 201);
+            this.panelborder.Name = "panelborder";
+            this.panelborder.Size = new System.Drawing.Size(1336, 2);
+            this.panelborder.TabIndex = 28;
+            // 
+            // Pgrm_Title_Panel
+            // 
+            this.Pgrm_Title_Panel.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Pgrm_Title_Panel.Controls.Add(this.Pgrm_Title_Label);
+            this.Pgrm_Title_Panel.Location = new System.Drawing.Point(356, 112);
+            this.Pgrm_Title_Panel.Name = "Pgrm_Title_Panel";
+            this.Pgrm_Title_Panel.Size = new System.Drawing.Size(1336, 88);
+            this.Pgrm_Title_Panel.TabIndex = 27;
+            // 
+            // Pgrm_Title_Label
+            // 
+            this.Pgrm_Title_Label.AutoSize = true;
+            this.Pgrm_Title_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Pgrm_Title_Label.Location = new System.Drawing.Point(72, 23);
+            this.Pgrm_Title_Label.Name = "Pgrm_Title_Label";
+            this.Pgrm_Title_Label.Size = new System.Drawing.Size(211, 39);
+            this.Pgrm_Title_Label.TabIndex = 25;
+            this.Pgrm_Title_Label.Text = "Departments";
+            // 
+            // Dept_Panel
+            // 
+            this.Dept_Panel.AutoScroll = true;
+            this.Dept_Panel.AutoSize = true;
+            this.Dept_Panel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Dept_Panel.Location = new System.Drawing.Point(356, 204);
+            this.Dept_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.Dept_Panel.MaximumSize = new System.Drawing.Size(1336, 860);
+            this.Dept_Panel.MinimumSize = new System.Drawing.Size(1336, 210);
+            this.Dept_Panel.Name = "Dept_Panel";
+            this.Dept_Panel.Size = new System.Drawing.Size(1336, 210);
+            this.Dept_Panel.TabIndex = 26;
+            // 
             // Department
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2049, 1065);
+            this.Controls.Add(this.panelborder);
+            this.Controls.Add(this.Pgrm_Title_Panel);
+            this.Controls.Add(this.Dept_Panel);
             this.Controls.Add(this.Navber);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.Minimize_btn);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Department";
             this.Text = "Department";
+            this.Load += new System.EventHandler(this.Department_Load);
             this.Navber.ResumeLayout(false);
             this.Sidebar.ResumeLayout(false);
+            this.Pgrm_Title_Panel.ResumeLayout(false);
+            this.Pgrm_Title_Panel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -295,5 +347,9 @@
         private System.Windows.Forms.Button Logout_btn;
         private System.Windows.Forms.Button Minimize_btn;
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Panel panelborder;
+        private System.Windows.Forms.Panel Pgrm_Title_Panel;
+        private System.Windows.Forms.Label Pgrm_Title_Label;
+        private System.Windows.Forms.FlowLayoutPanel Dept_Panel;
     }
 }

@@ -40,9 +40,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(455, 314);
+            this.label1.Location = new System.Drawing.Point(607, 386);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -51,18 +52,20 @@
             this.Nav_label.AutoSize = true;
             this.Nav_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F, System.Drawing.FontStyle.Bold);
             this.Nav_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Nav_label.Location = new System.Drawing.Point(72, 19);
+            this.Nav_label.Location = new System.Drawing.Point(96, 23);
+            this.Nav_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Nav_label.Name = "Nav_label";
-            this.Nav_label.Size = new System.Drawing.Size(262, 29);
+            this.Nav_label.Size = new System.Drawing.Size(315, 35);
             this.Nav_label.TabIndex = 1;
             this.Nav_label.Text = "Student Registration";
             this.Nav_label.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(322, 168);
+            this.textBox1.Location = new System.Drawing.Point(114, 148);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 2;
             // 
             // Minimize_btn
@@ -73,10 +76,10 @@
             this.Minimize_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_btn.ForeColor = System.Drawing.Color.White;
             this.Minimize_btn.Image = global::University_Management_System.Properties.Resources.icons8_minus_20;
-            this.Minimize_btn.Location = new System.Drawing.Point(710, 0);
+            this.Minimize_btn.Location = new System.Drawing.Point(947, 0);
             this.Minimize_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Minimize_btn.Name = "Minimize_btn";
-            this.Minimize_btn.Size = new System.Drawing.Size(45, 35);
+            this.Minimize_btn.Size = new System.Drawing.Size(60, 43);
             this.Minimize_btn.TabIndex = 8;
             this.Minimize_btn.UseVisualStyleBackColor = false;
             this.Minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
@@ -88,10 +91,10 @@
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.ForeColor = System.Drawing.Color.White;
             this.Exit.Image = global::University_Management_System.Properties.Resources.icons8_cancel_20;
-            this.Exit.Location = new System.Drawing.Point(755, 0);
+            this.Exit.Location = new System.Drawing.Point(1007, 0);
             this.Exit.Margin = new System.Windows.Forms.Padding(0);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(45, 35);
+            this.Exit.Size = new System.Drawing.Size(60, 43);
             this.Exit.TabIndex = 7;
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
@@ -101,21 +104,23 @@
             this.Navber.BackColor = System.Drawing.Color.DarkSlateGray;
             this.Navber.Controls.Add(this.Nav_label);
             this.Navber.Location = new System.Drawing.Point(0, 0);
+            this.Navber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Navber.Name = "Navber";
-            this.Navber.Size = new System.Drawing.Size(800, 65);
+            this.Navber.Size = new System.Drawing.Size(1067, 80);
             this.Navber.TabIndex = 9;
             // 
             // Add_Student
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 766);
             this.Controls.Add(this.Minimize_btn);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Navber);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Add_Student";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Student";

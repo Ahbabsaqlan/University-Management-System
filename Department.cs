@@ -141,5 +141,20 @@ namespace University_Management_System
             lg.Show();
             this.Hide();
         }
+        //Data Showing
+        private void showDepartment()
+        {
+            Dept_Show[] pg = new Dept_Show[10];
+            for (int i = 0; i < pg.Length; i++)
+            {
+                pg[i] = new Dept_Show();
+                Dept_Panel.Controls.Add(pg[i]);
+            }
+        }
+
+        private void Department_Load(object sender, EventArgs e)
+        {
+            showDepartment();
+        }
     }
 }

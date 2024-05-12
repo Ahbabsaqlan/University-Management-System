@@ -110,14 +110,14 @@ namespace University_Management_System
         //FE Button Click
         private void FE_btn_dept_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Department dept = new Department();
+            dept.Show();
             this.Hide();
         }
         private void FE_btn_pgrm_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Programs pgrm = new Programs();
+            pgrm.Show();
             this.Hide();
         }
 
@@ -153,14 +153,14 @@ namespace University_Management_System
         // FBA Button Click
         private void FBA_btn_dept_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Department dept = new Department();
+            dept.Show();
             this.Hide();
         }
         private void FBA_btn_pgrm_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Programs pgrm = new Programs();
+            pgrm.Show();
             this.Hide();
         }
 
@@ -196,14 +196,14 @@ namespace University_Management_System
         //FASS Button Click
         private void FASS_btn_dept_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Department dept = new Department();
+            dept.Show();
             this.Hide();
         }
         private void FASS_btn_pgrm_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Programs pgrm = new Programs();
+            pgrm.Show();
             this.Hide();
         }
 

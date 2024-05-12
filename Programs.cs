@@ -8,17 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace University_Management_System
 {
     public partial class Programs : Form
     {
         public Programs()
         {
-            InitializeComponent(); 
+            InitializeComponent();
             AddTeacher_btn.Hide();
             AddStudent_btn.Hide();
-           
         }
+
+        private void Programs_Load(object sender, EventArgs e)
+        {
+            showProgram();
+        }
+
+        private void showProgram()
+        {
+            Program_Show[] pg = new Program_Show[10];
+            for (int i=0;i<pg.Length;i++)
+            {
+                pg[i]= new Program_Show();
+                Pgrm_Panel.Controls.Add(pg[i]);
+            }
+        }
+
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -29,9 +45,6 @@ namespace University_Management_System
         {
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
         }
-
-        
-
         // Sidebar
         int Nav_btn_Flag = 2;
         private void sideber_btn_ctrl()
@@ -132,23 +145,6 @@ namespace University_Management_System
             ads.Show();
         }
 
-        private void Logout_btn_Click(object sender, EventArgs e)
-        {
-            login lg = new login();
-            lg.Show();
-            this.Hide();
-        }
-
-        private void Search_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Profile_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Home_btn_Click(object sender, EventArgs e)
         {
             DashBoard dashBoard = new DashBoard();
@@ -156,18 +152,16 @@ namespace University_Management_System
             this.Hide();
         }
 
+        private void Logout_btn_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
+
         private void program_Show1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void Programs_Load(object sender, EventArgs e)
-        {
-
-        }
-        // Data Table
-
     }
 }
-    
-
