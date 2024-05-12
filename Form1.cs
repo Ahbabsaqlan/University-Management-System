@@ -47,9 +47,9 @@ namespace University_Management_System
             {
                 foreach (DataRow r in dt.Rows)
                 {
-                    foreach(var roles in r.ItemArray)
+                    foreach(var role in r.ItemArray)
                     {
-                        string userrole=(string)roles;
+                        string userrole=(string)role;
                         if (userrole == "Lecturer")
                         {
                             Student_dashboard st_dash = new Student_dashboard();
@@ -59,8 +59,10 @@ namespace University_Management_System
                        
                     }
                 }
-
-                
+            }
+            else
+            {
+                MessageBox.Show("Wrong Credentials!!\n Please Try Again");
             }
             connection.Close();
 
@@ -72,6 +74,11 @@ namespace University_Management_System
         }
 
         private void Password_TextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login1_Load(object sender, EventArgs e)
         {
 
         }
