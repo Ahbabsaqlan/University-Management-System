@@ -46,11 +46,10 @@ namespace University_Management_System
             this.panel1.Controls.Add(this.Password_TextBox);
             this.panel1.Controls.Add(this.User_Text_Box);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(411, 245);
+            this.panel1.Location = new System.Drawing.Point(581, 245);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(347, 373);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // LoginButton
             // 
@@ -63,6 +62,7 @@ namespace University_Management_System
             this.LoginButton.TabIndex = 3;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // Password_TextBox
             // 
@@ -77,6 +77,7 @@ namespace University_Management_System
             this.Password_TextBox.Text = "Password";
             this.Password_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Password_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Password_TextBox_MouseClick);
+            this.Password_TextBox.TextChanged += new System.EventHandler(this.Password_TextBox_TextChanged);
             // 
             // User_Text_Box
             // 
@@ -105,14 +106,13 @@ namespace University_Management_System
             this.label1.Size = new System.Drawing.Size(286, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "UNIVERSITY MANAGEMENT SYSTEM";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Login1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1116, 993);
+            this.ClientSize = new System.Drawing.Size(1457, 993);
             this.Controls.Add(this.panel1);
             this.Name = "Login1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

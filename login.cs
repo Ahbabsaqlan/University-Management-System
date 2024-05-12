@@ -35,5 +35,10 @@ namespace University_Management_System
             dashBoard.Show();
             this.Hide();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

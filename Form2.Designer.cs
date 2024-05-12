@@ -112,7 +112,7 @@ namespace University_Management_System
             this.panel1.Controls.Add(this.Registration_link);
             this.panel1.Controls.Add(this.Course_and_result_link);
             this.panel1.Controls.Add(this.Back_Button);
-            this.panel1.Location = new System.Drawing.Point(85, 36);
+            this.panel1.Location = new System.Drawing.Point(257, 36);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(979, 61);
@@ -218,7 +218,7 @@ namespace University_Management_System
             this.panel2.Controls.Add(this.Monday_panel);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.Sunday_panel);
-            this.panel2.Location = new System.Drawing.Point(85, 101);
+            this.panel2.Location = new System.Drawing.Point(257, 101);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(979, 902);
@@ -710,7 +710,7 @@ namespace University_Management_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMargin = new System.Drawing.Size(20, 10);
-            this.ClientSize = new System.Drawing.Size(1116, 1055);
+            this.ClientSize = new System.Drawing.Size(1460, 1055);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

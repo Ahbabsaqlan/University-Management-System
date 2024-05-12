@@ -16,7 +16,7 @@ namespace University_Management_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new  Course_result_form());
+            Application.Run(new Login1());
         }
     }
 }

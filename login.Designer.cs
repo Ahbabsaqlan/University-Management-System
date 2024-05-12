@@ -53,7 +53,7 @@
             // Login_btn
             // 
             this.Login_btn.Location = new System.Drawing.Point(32, 350);
-            this.Login_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Login_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Login_btn.Name = "Login_btn";
             this.Login_btn.Size = new System.Drawing.Size(325, 41);
             this.Login_btn.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.Minimize_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_btn.ForeColor = System.Drawing.Color.White;
             this.Minimize_btn.Image = global::University_Management_System.Properties.Resources.icons8_minus_20;
-            this.Minimize_btn.Location = new System.Drawing.Point(1923, 0);
+            this.Minimize_btn.Location = new System.Drawing.Point(1823, 0);
             this.Minimize_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Minimize_btn.Name = "Minimize_btn";
             this.Minimize_btn.Size = new System.Drawing.Size(57, 44);
@@ -116,7 +116,7 @@
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.ForeColor = System.Drawing.Color.White;
             this.Exit.Image = global::University_Management_System.Properties.Resources.icons8_cancel_20;
-            this.Exit.Location = new System.Drawing.Point(1987, 0);
+            this.Exit.Location = new System.Drawing.Point(1880, 0);
             this.Exit.Margin = new System.Windows.Forms.Padding(0);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(63, 44);
@@ -143,6 +143,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.login_Load);
             this.login_Div.ResumeLayout(false);
             this.ResumeLayout(false);
 

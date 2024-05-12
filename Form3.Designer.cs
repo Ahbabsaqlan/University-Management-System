@@ -105,7 +105,7 @@ namespace University_Management_System
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Course_result_comboBox);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Location = new System.Drawing.Point(81, 92);
+            this.panel1.Location = new System.Drawing.Point(251, 92);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(979, 492);
             this.panel1.TabIndex = 4;
@@ -216,7 +216,7 @@ namespace University_Management_System
             this.panel6.Controls.Add(this.Registration_link);
             this.panel6.Controls.Add(this.Course_and_result_link);
             this.panel6.Controls.Add(this.Back_Button);
-            this.panel6.Location = new System.Drawing.Point(81, 12);
+            this.panel6.Location = new System.Drawing.Point(251, 12);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(979, 61);
             this.panel6.TabIndex = 5;
@@ -311,7 +311,7 @@ namespace University_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1116, 993);
+            this.ClientSize = new System.Drawing.Size(1457, 993);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "Course_result_form";
