@@ -193,16 +193,62 @@ namespace University_Management_System
             this.Hide();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
         // Sidebar
-        bool Nav_btn_Flag=false;
+        int Nav_btn_Flag=2;
+        private void sideber_btn_ctrl()
+        {
+            if(Nav_btn_Flag %2!=0)
+            {
+                sideber_btn.BackgroundImage = Properties.Resources.icons8_multiply_35;
+                Sidebar.BringToFront();
+                Sidebar.Size = new System.Drawing.Size(210, 805);
+                Notification_btn.Size = new System.Drawing.Size(210, 60);
+                Notification_btn.Text = "   NOTIFICATION";
+                Notification_btn.ImageAlign= System.Drawing.ContentAlignment.MiddleLeft;
+                Notification_btn.Padding = new Padding(10,0,0,0) ;
+                AddUser_btn.Size = new System.Drawing.Size(210, 60);
+                AddUser_btn.Text = "   ADD USER";
+                Search_btn.Size = new System.Drawing.Size(210, 60);
+                Search_btn.Text = "   SEARCH";
+                Search_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                Search_btn.Padding = new Padding(9, 0, 0, 0);
+                Profile_btn.Size = new System.Drawing.Size(210, 60);
+                Profile_btn.Text = "   PROFILE";
+                Profile_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                Profile_btn.Padding = new Padding(9, 0, 0, 0);
+                Logout_btn.Size = new System.Drawing.Size(210, 60);
+                Logout_btn.Text = "   LOGOUT";
+                Logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                Logout_btn.Padding = new Padding(9, 0, 0, 0);
+            }
+            else
+            {
+                sideber_btn.BackgroundImage = Properties.Resources.icons8_menu_35;
+                Sidebar.Size = new System.Drawing.Size(60, 805);
+                Notification_btn.Size = new System.Drawing.Size(60, 60);
+                Notification_btn.Text = null;
+                Notification_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                Notification_btn.Padding = new Padding(0, 0, 0, 0);
+                AddUser_btn.Size = new System.Drawing.Size(60, 60);
+                AddUser_btn.Text = null;
+                Search_btn.Size = new System.Drawing.Size(60, 60);
+                Search_btn.Text = null;
+                Search_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                Search_btn.Padding = new Padding(0, 0, 0, 0);
+                Profile_btn.Size = new System.Drawing.Size(60, 60);
+                Profile_btn.Text = null;
+                Profile_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                Profile_btn.Padding = new Padding(0, 0, 0, 0);
+                Logout_btn.Size = new System.Drawing.Size(60, 60);
+                Logout_btn.Text = null;
+                Logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                Logout_btn.Padding = new Padding(0, 0, 0, 0);
+            }
+        }
         private void sideber_btn_Click(object sender, EventArgs e)
         {
-            Nav_btn_Flag = true;
+            Nav_btn_Flag ++;
+            sideber_btn_ctrl();
         }
     }
 }
