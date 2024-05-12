@@ -17,6 +17,10 @@ namespace University_Management_System
         public DashBoard()
         {
             InitializeComponent();
+            FST_Panel_up.BringToFront();
+            FE_Panel_up.BringToFront();
+            FBA_Panel_up.BringToFront();
+            FASS_Panel_up.BringToFront();
         }
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
@@ -34,6 +38,7 @@ namespace University_Management_System
         private void FST_Panel_up_MouseEnter(object sender, EventArgs e)
         {
             FST_Panel_up.Hide();
+            FST_Panel.Show();
         }
         private void FST_Panel_MouseEnter(object sender, EventArgs e)
         {
@@ -45,6 +50,7 @@ namespace University_Management_System
             if (FST_Flag == false)
             {
                 FST_Panel_up.Show();
+                FST_Panel.Hide();
             }
         }
         private void FST_btn_dept_MouseEnter(object sender, EventArgs e)
@@ -75,6 +81,7 @@ namespace University_Management_System
         private void FE_Panel_up_MouseEnter(object sender, EventArgs e)
         {
             FE_Panel_up.Hide();
+            Fe_Panel.Show();
         }
         private void Fe_Panel_MouseEnter(object sender, EventArgs e)
         {
@@ -86,6 +93,7 @@ namespace University_Management_System
             if (FE_Flag == false)
             {
                 FE_Panel_up.Show();
+                Fe_Panel.Hide();
             }
         }
         private void FE_btn_Dept_MouseEnter(object sender, EventArgs e)
@@ -116,6 +124,7 @@ namespace University_Management_System
         private void FBA_Panel_up_MouseEnter(object sender, EventArgs e)
         {
             FBA_Panel_up.Hide();
+            FBA_panel.Show();
         }
         private void FBA_panel_MouseEnter(object sender, EventArgs e)
         {
@@ -127,6 +136,7 @@ namespace University_Management_System
             if (FBA_Flag == false)
             {
                 FBA_Panel_up.Show();
+                FBA_panel.Hide();
             }
         }
         private void FBA_btn_dept_MouseEnter(object sender, EventArgs e)
@@ -157,6 +167,7 @@ namespace University_Management_System
         private void FASS_Panel_up_MouseEnter(object sender, EventArgs e)
         {
             FASS_Panel_up.Hide();
+            FASS_panel.Show();
         }
         private void FASS_panel_MouseEnter(object sender, EventArgs e)
         {
@@ -168,6 +179,7 @@ namespace University_Management_System
             if (FASS_Flag == false)
             {
                 FASS_Panel_up.Show();
+                FASS_panel.Hide();
             }
         }
         private void FASS_btn_dept_MouseEnter(object sender, EventArgs e)
@@ -250,5 +262,6 @@ namespace University_Management_System
             Nav_btn_Flag ++;
             sideber_btn_ctrl();
         }
+
     }
 }
