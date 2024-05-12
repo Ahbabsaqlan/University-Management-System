@@ -76,7 +76,7 @@
             this.Sidebar.Controls.Add(this.Search_btn);
             this.Sidebar.Controls.Add(this.Logout_btn);
             this.Sidebar.Location = new System.Drawing.Point(0, 74);
-            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4);
             this.Sidebar.Name = "Sidebar";
             this.Sidebar.Size = new System.Drawing.Size(80, 991);
             this.Sidebar.TabIndex = 10;
@@ -227,7 +227,7 @@
             this.Navber.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Navber.Controls.Add(this.sideber_btn);
             this.Navber.Location = new System.Drawing.Point(0, 0);
-            this.Navber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Navber.Margin = new System.Windows.Forms.Padding(4);
             this.Navber.Name = "Navber";
             this.Navber.Size = new System.Drawing.Size(1885, 74);
             this.Navber.TabIndex = 13;
@@ -253,7 +253,7 @@
             this.FASS_Panel_up.BackgroundImage = global::University_Management_System.Properties.Resources.Fass_baneer;
             this.FASS_Panel_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FASS_Panel_up.Location = new System.Drawing.Point(1105, 599);
-            this.FASS_Panel_up.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FASS_Panel_up.Margin = new System.Windows.Forms.Padding(4);
             this.FASS_Panel_up.Name = "FASS_Panel_up";
             this.FASS_Panel_up.Size = new System.Drawing.Size(747, 320);
             this.FASS_Panel_up.TabIndex = 3;
@@ -264,7 +264,7 @@
             this.FST_Panel_up.BackgroundImage = global::University_Management_System.Properties.Resources.FST_banner;
             this.FST_Panel_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FST_Panel_up.Location = new System.Drawing.Point(215, 176);
-            this.FST_Panel_up.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FST_Panel_up.Margin = new System.Windows.Forms.Padding(4);
             this.FST_Panel_up.Name = "FST_Panel_up";
             this.FST_Panel_up.Size = new System.Drawing.Size(747, 320);
             this.FST_Panel_up.TabIndex = 2;
@@ -275,7 +275,7 @@
             this.FBA_Panel_up.BackgroundImage = global::University_Management_System.Properties.Resources.Fba_Banner;
             this.FBA_Panel_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FBA_Panel_up.Location = new System.Drawing.Point(215, 599);
-            this.FBA_Panel_up.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FBA_Panel_up.Margin = new System.Windows.Forms.Padding(4);
             this.FBA_Panel_up.Name = "FBA_Panel_up";
             this.FBA_Panel_up.Size = new System.Drawing.Size(747, 320);
             this.FBA_Panel_up.TabIndex = 3;
@@ -286,7 +286,7 @@
             this.FE_Panel_up.BackgroundImage = global::University_Management_System.Properties.Resources.fe_bnr;
             this.FE_Panel_up.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FE_Panel_up.Location = new System.Drawing.Point(1105, 176);
-            this.FE_Panel_up.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FE_Panel_up.Margin = new System.Windows.Forms.Padding(4);
             this.FE_Panel_up.Name = "FE_Panel_up";
             this.FE_Panel_up.Size = new System.Drawing.Size(747, 320);
             this.FE_Panel_up.TabIndex = 3;
@@ -299,7 +299,7 @@
             this.FASS_panel.Controls.Add(this.FASS_btn_pgrm);
             this.FASS_panel.Controls.Add(this.FASS_btn_dept);
             this.FASS_panel.Location = new System.Drawing.Point(1105, 599);
-            this.FASS_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FASS_panel.Margin = new System.Windows.Forms.Padding(4);
             this.FASS_panel.Name = "FASS_panel";
             this.FASS_panel.Size = new System.Drawing.Size(747, 320);
             this.FASS_panel.TabIndex = 2;
@@ -317,7 +317,7 @@
             this.FASS_btn_pgrm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FASS_btn_pgrm.ForeColor = System.Drawing.Color.White;
             this.FASS_btn_pgrm.Location = new System.Drawing.Point(577, 226);
-            this.FASS_btn_pgrm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FASS_btn_pgrm.Margin = new System.Windows.Forms.Padding(4);
             this.FASS_btn_pgrm.Name = "FASS_btn_pgrm";
             this.FASS_btn_pgrm.Size = new System.Drawing.Size(127, 55);
             this.FASS_btn_pgrm.TabIndex = 1;
@@ -338,7 +338,7 @@
             this.FASS_btn_dept.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FASS_btn_dept.ForeColor = System.Drawing.Color.White;
             this.FASS_btn_dept.Location = new System.Drawing.Point(417, 226);
-            this.FASS_btn_dept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FASS_btn_dept.Margin = new System.Windows.Forms.Padding(4);
             this.FASS_btn_dept.Name = "FASS_btn_dept";
             this.FASS_btn_dept.Size = new System.Drawing.Size(127, 55);
             this.FASS_btn_dept.TabIndex = 0;
@@ -355,7 +355,7 @@
             this.FBA_panel.Controls.Add(this.FBA_btn_pgrm);
             this.FBA_panel.Controls.Add(this.FBA_btn_dept);
             this.FBA_panel.Location = new System.Drawing.Point(215, 599);
-            this.FBA_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FBA_panel.Margin = new System.Windows.Forms.Padding(4);
             this.FBA_panel.Name = "FBA_panel";
             this.FBA_panel.Size = new System.Drawing.Size(747, 320);
             this.FBA_panel.TabIndex = 2;
@@ -373,7 +373,7 @@
             this.FBA_btn_pgrm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FBA_btn_pgrm.ForeColor = System.Drawing.Color.White;
             this.FBA_btn_pgrm.Location = new System.Drawing.Point(577, 226);
-            this.FBA_btn_pgrm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FBA_btn_pgrm.Margin = new System.Windows.Forms.Padding(4);
             this.FBA_btn_pgrm.Name = "FBA_btn_pgrm";
             this.FBA_btn_pgrm.Size = new System.Drawing.Size(127, 55);
             this.FBA_btn_pgrm.TabIndex = 1;
@@ -394,7 +394,7 @@
             this.FBA_btn_dept.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FBA_btn_dept.ForeColor = System.Drawing.Color.White;
             this.FBA_btn_dept.Location = new System.Drawing.Point(417, 226);
-            this.FBA_btn_dept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FBA_btn_dept.Margin = new System.Windows.Forms.Padding(4);
             this.FBA_btn_dept.Name = "FBA_btn_dept";
             this.FBA_btn_dept.Size = new System.Drawing.Size(127, 55);
             this.FBA_btn_dept.TabIndex = 0;
@@ -411,7 +411,7 @@
             this.Fe_Panel.Controls.Add(this.FE_btn_pgrm);
             this.Fe_Panel.Controls.Add(this.FE_btn_dept);
             this.Fe_Panel.Location = new System.Drawing.Point(1105, 176);
-            this.Fe_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Fe_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.Fe_Panel.Name = "Fe_Panel";
             this.Fe_Panel.Size = new System.Drawing.Size(747, 320);
             this.Fe_Panel.TabIndex = 2;
@@ -429,7 +429,7 @@
             this.FE_btn_pgrm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FE_btn_pgrm.ForeColor = System.Drawing.Color.White;
             this.FE_btn_pgrm.Location = new System.Drawing.Point(577, 226);
-            this.FE_btn_pgrm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FE_btn_pgrm.Margin = new System.Windows.Forms.Padding(4);
             this.FE_btn_pgrm.Name = "FE_btn_pgrm";
             this.FE_btn_pgrm.Size = new System.Drawing.Size(127, 55);
             this.FE_btn_pgrm.TabIndex = 1;
@@ -450,7 +450,7 @@
             this.FE_btn_dept.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FE_btn_dept.ForeColor = System.Drawing.Color.White;
             this.FE_btn_dept.Location = new System.Drawing.Point(417, 226);
-            this.FE_btn_dept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FE_btn_dept.Margin = new System.Windows.Forms.Padding(4);
             this.FE_btn_dept.Name = "FE_btn_dept";
             this.FE_btn_dept.Size = new System.Drawing.Size(127, 55);
             this.FE_btn_dept.TabIndex = 0;
@@ -467,7 +467,7 @@
             this.FST_Panel.Controls.Add(this.FST_btn_pgrm);
             this.FST_Panel.Controls.Add(this.FST_btn_dept);
             this.FST_Panel.Location = new System.Drawing.Point(215, 176);
-            this.FST_Panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FST_Panel.Margin = new System.Windows.Forms.Padding(4);
             this.FST_Panel.Name = "FST_Panel";
             this.FST_Panel.Size = new System.Drawing.Size(747, 320);
             this.FST_Panel.TabIndex = 0;
@@ -485,7 +485,7 @@
             this.FST_btn_pgrm.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FST_btn_pgrm.ForeColor = System.Drawing.Color.White;
             this.FST_btn_pgrm.Location = new System.Drawing.Point(577, 224);
-            this.FST_btn_pgrm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FST_btn_pgrm.Margin = new System.Windows.Forms.Padding(4);
             this.FST_btn_pgrm.Name = "FST_btn_pgrm";
             this.FST_btn_pgrm.Size = new System.Drawing.Size(127, 55);
             this.FST_btn_pgrm.TabIndex = 1;
@@ -506,7 +506,7 @@
             this.FST_btn_dept.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FST_btn_dept.ForeColor = System.Drawing.Color.White;
             this.FST_btn_dept.Location = new System.Drawing.Point(417, 224);
-            this.FST_btn_dept.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FST_btn_dept.Margin = new System.Windows.Forms.Padding(4);
             this.FST_btn_dept.Name = "FST_btn_dept";
             this.FST_btn_dept.Size = new System.Drawing.Size(127, 55);
             this.FST_btn_dept.TabIndex = 0;
@@ -573,7 +573,7 @@
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DashBoard";
             this.Text = "DashBoard";
             this.Sidebar.ResumeLayout(false);

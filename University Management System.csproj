@@ -77,11 +77,11 @@
     <Compile Include="Programs.Designer.cs">
       <DependentUpon>Programs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program_Panel_View.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Program_Show.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Program_Panel_View.Designer.cs">
-      <DependentUpon>Program_Panel_View.cs</DependentUpon>
+    <Compile Include="Program_Show.Designer.cs">
+      <DependentUpon>Program_Show.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Add Student.resx">
@@ -99,8 +99,8 @@
     <EmbeddedResource Include="Programs.resx">
       <DependentUpon>Programs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Program_Panel_View.resx">
-      <DependentUpon>Program_Panel_View.cs</DependentUpon>
+    <EmbeddedResource Include="Program_Show.resx">
+      <DependentUpon>Program_Show.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

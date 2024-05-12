@@ -155,8 +155,18 @@ namespace University_Management_System
             dashBoard.Show();
             this.Hide();
         }
+
+        private void program_Show1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Programs_Load(object sender, EventArgs e)
+        {
+
+        }
         // Data Table
-       
+
     }
 }
     
