@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.Navber = new System.Windows.Forms.FlowLayoutPanel();
-            this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.sideber_btn = new System.Windows.Forms.Button();
-            this.Notification_btn = new System.Windows.Forms.Button();
+            this.Sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.Home_btn = new System.Windows.Forms.Button();
             this.AddUser_btn = new System.Windows.Forms.Button();
             this.AddTeacher_btn = new System.Windows.Forms.Button();
             this.AddStudent_btn = new System.Windows.Forms.Button();
@@ -49,24 +49,10 @@
             this.Navber.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Navber.Controls.Add(this.sideber_btn);
             this.Navber.Location = new System.Drawing.Point(1, 0);
+            this.Navber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Navber.Name = "Navber";
-            this.Navber.Size = new System.Drawing.Size(1414, 60);
+            this.Navber.Size = new System.Drawing.Size(1885, 74);
             this.Navber.TabIndex = 17;
-            // 
-            // Sidebar
-            // 
-            this.Sidebar.BackColor = System.Drawing.Color.DarkCyan;
-            this.Sidebar.Controls.Add(this.Notification_btn);
-            this.Sidebar.Controls.Add(this.AddUser_btn);
-            this.Sidebar.Controls.Add(this.AddTeacher_btn);
-            this.Sidebar.Controls.Add(this.AddStudent_btn);
-            this.Sidebar.Controls.Add(this.Profile_btn);
-            this.Sidebar.Controls.Add(this.Search_btn);
-            this.Sidebar.Controls.Add(this.Logout_btn);
-            this.Sidebar.Location = new System.Drawing.Point(1, 60);
-            this.Sidebar.Name = "Sidebar";
-            this.Sidebar.Size = new System.Drawing.Size(60, 805);
-            this.Sidebar.TabIndex = 16;
             // 
             // sideber_btn
             // 
@@ -76,32 +62,49 @@
             this.sideber_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sideber_btn.FlatAppearance.BorderSize = 0;
             this.sideber_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sideber_btn.Location = new System.Drawing.Point(15, 15);
-            this.sideber_btn.Margin = new System.Windows.Forms.Padding(15, 15, 3, 3);
+            this.sideber_btn.Location = new System.Drawing.Point(20, 18);
+            this.sideber_btn.Margin = new System.Windows.Forms.Padding(20, 18, 4, 4);
             this.sideber_btn.Name = "sideber_btn";
-            this.sideber_btn.Size = new System.Drawing.Size(35, 35);
+            this.sideber_btn.Size = new System.Drawing.Size(47, 43);
             this.sideber_btn.TabIndex = 11;
             this.sideber_btn.UseVisualStyleBackColor = false;
             this.sideber_btn.Click += new System.EventHandler(this.sideber_btn_Click);
             // 
-            // Notification_btn
+            // Sidebar
             // 
-            this.Notification_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Notification_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Notification_btn.FlatAppearance.BorderSize = 0;
-            this.Notification_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Notification_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.Notification_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Notification_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.Notification_btn.ForeColor = System.Drawing.Color.White;
-            this.Notification_btn.Image = global::University_Management_System.Properties.Resources.icons8_notification_30;
-            this.Notification_btn.Location = new System.Drawing.Point(0, 20);
-            this.Notification_btn.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
-            this.Notification_btn.Name = "Notification_btn";
-            this.Notification_btn.Size = new System.Drawing.Size(60, 60);
-            this.Notification_btn.TabIndex = 12;
-            this.Notification_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Notification_btn.UseVisualStyleBackColor = true;
+            this.Sidebar.BackColor = System.Drawing.Color.DarkCyan;
+            this.Sidebar.Controls.Add(this.Home_btn);
+            this.Sidebar.Controls.Add(this.AddUser_btn);
+            this.Sidebar.Controls.Add(this.AddTeacher_btn);
+            this.Sidebar.Controls.Add(this.AddStudent_btn);
+            this.Sidebar.Controls.Add(this.Profile_btn);
+            this.Sidebar.Controls.Add(this.Search_btn);
+            this.Sidebar.Controls.Add(this.Logout_btn);
+            this.Sidebar.Location = new System.Drawing.Point(1, 74);
+            this.Sidebar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sidebar.Name = "Sidebar";
+            this.Sidebar.Size = new System.Drawing.Size(80, 991);
+            this.Sidebar.TabIndex = 16;
+            // 
+            // Home_btn
+            // 
+            this.Home_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Home_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Home_btn.FlatAppearance.BorderSize = 0;
+            this.Home_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Home_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.Home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Home_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.Home_btn.ForeColor = System.Drawing.Color.White;
+            this.Home_btn.Image = global::University_Management_System.Properties.Resources.icons8_notification_30;
+            this.Home_btn.Location = new System.Drawing.Point(0, 25);
+            this.Home_btn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.Home_btn.Name = "Home_btn";
+            this.Home_btn.Size = new System.Drawing.Size(80, 74);
+            this.Home_btn.TabIndex = 12;
+            this.Home_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Home_btn.UseVisualStyleBackColor = true;
+            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click);
             // 
             // AddUser_btn
             // 
@@ -114,10 +117,10 @@
             this.AddUser_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.AddUser_btn.ForeColor = System.Drawing.Color.White;
             this.AddUser_btn.Image = global::University_Management_System.Properties.Resources.icons8_add_user_male_30;
-            this.AddUser_btn.Location = new System.Drawing.Point(0, 80);
+            this.AddUser_btn.Location = new System.Drawing.Point(0, 99);
             this.AddUser_btn.Margin = new System.Windows.Forms.Padding(0);
             this.AddUser_btn.Name = "AddUser_btn";
-            this.AddUser_btn.Size = new System.Drawing.Size(60, 60);
+            this.AddUser_btn.Size = new System.Drawing.Size(80, 74);
             this.AddUser_btn.TabIndex = 13;
             this.AddUser_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AddUser_btn.UseVisualStyleBackColor = true;
@@ -135,10 +138,10 @@
             this.AddTeacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.AddTeacher_btn.ForeColor = System.Drawing.Color.White;
             this.AddTeacher_btn.Image = global::University_Management_System.Properties.Resources.icons8_add_user_male_30;
-            this.AddTeacher_btn.Location = new System.Drawing.Point(0, 140);
+            this.AddTeacher_btn.Location = new System.Drawing.Point(0, 173);
             this.AddTeacher_btn.Margin = new System.Windows.Forms.Padding(0);
             this.AddTeacher_btn.Name = "AddTeacher_btn";
-            this.AddTeacher_btn.Size = new System.Drawing.Size(60, 60);
+            this.AddTeacher_btn.Size = new System.Drawing.Size(80, 74);
             this.AddTeacher_btn.TabIndex = 18;
             this.AddTeacher_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AddTeacher_btn.UseVisualStyleBackColor = false;
@@ -155,10 +158,10 @@
             this.AddStudent_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.AddStudent_btn.ForeColor = System.Drawing.Color.White;
             this.AddStudent_btn.Image = global::University_Management_System.Properties.Resources.icons8_add_user_male_30;
-            this.AddStudent_btn.Location = new System.Drawing.Point(0, 200);
+            this.AddStudent_btn.Location = new System.Drawing.Point(0, 247);
             this.AddStudent_btn.Margin = new System.Windows.Forms.Padding(0);
             this.AddStudent_btn.Name = "AddStudent_btn";
-            this.AddStudent_btn.Size = new System.Drawing.Size(60, 60);
+            this.AddStudent_btn.Size = new System.Drawing.Size(80, 74);
             this.AddStudent_btn.TabIndex = 19;
             this.AddStudent_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AddStudent_btn.UseVisualStyleBackColor = false;
@@ -175,10 +178,10 @@
             this.Profile_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.Profile_btn.ForeColor = System.Drawing.Color.White;
             this.Profile_btn.Image = global::University_Management_System.Properties.Resources.icons8_test_account_30;
-            this.Profile_btn.Location = new System.Drawing.Point(0, 260);
+            this.Profile_btn.Location = new System.Drawing.Point(0, 321);
             this.Profile_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Profile_btn.Name = "Profile_btn";
-            this.Profile_btn.Size = new System.Drawing.Size(60, 60);
+            this.Profile_btn.Size = new System.Drawing.Size(80, 74);
             this.Profile_btn.TabIndex = 16;
             this.Profile_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Profile_btn.UseVisualStyleBackColor = true;
@@ -194,10 +197,10 @@
             this.Search_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.Search_btn.ForeColor = System.Drawing.Color.White;
             this.Search_btn.Image = global::University_Management_System.Properties.Resources.icons8_search_more_30;
-            this.Search_btn.Location = new System.Drawing.Point(0, 320);
+            this.Search_btn.Location = new System.Drawing.Point(0, 395);
             this.Search_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Search_btn.Name = "Search_btn";
-            this.Search_btn.Size = new System.Drawing.Size(60, 60);
+            this.Search_btn.Size = new System.Drawing.Size(80, 74);
             this.Search_btn.TabIndex = 15;
             this.Search_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Search_btn.UseVisualStyleBackColor = true;
@@ -213,10 +216,10 @@
             this.Logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.Logout_btn.ForeColor = System.Drawing.Color.White;
             this.Logout_btn.Image = global::University_Management_System.Properties.Resources.icons8_logout_rounded_30;
-            this.Logout_btn.Location = new System.Drawing.Point(0, 380);
+            this.Logout_btn.Location = new System.Drawing.Point(0, 469);
             this.Logout_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Logout_btn.Name = "Logout_btn";
-            this.Logout_btn.Size = new System.Drawing.Size(60, 60);
+            this.Logout_btn.Size = new System.Drawing.Size(80, 74);
             this.Logout_btn.TabIndex = 17;
             this.Logout_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Logout_btn.UseVisualStyleBackColor = true;
@@ -231,10 +234,10 @@
             this.Minimize_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minimize_btn.ForeColor = System.Drawing.Color.White;
             this.Minimize_btn.Image = global::University_Management_System.Properties.Resources.icons8_minus_20;
-            this.Minimize_btn.Location = new System.Drawing.Point(1416, 0);
+            this.Minimize_btn.Location = new System.Drawing.Point(1888, 0);
             this.Minimize_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Minimize_btn.Name = "Minimize_btn";
-            this.Minimize_btn.Size = new System.Drawing.Size(60, 60);
+            this.Minimize_btn.Size = new System.Drawing.Size(80, 74);
             this.Minimize_btn.TabIndex = 15;
             this.Minimize_btn.UseVisualStyleBackColor = false;
             this.Minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
@@ -250,24 +253,26 @@
             this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Exit.ForeColor = System.Drawing.Color.White;
             this.Exit.Image = global::University_Management_System.Properties.Resources.icons8_cancel_20;
-            this.Exit.Location = new System.Drawing.Point(1476, 0);
+            this.Exit.Location = new System.Drawing.Point(1968, 0);
             this.Exit.Margin = new System.Windows.Forms.Padding(0);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(60, 60);
+            this.Exit.Size = new System.Drawing.Size(80, 74);
             this.Exit.TabIndex = 14;
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Programs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1537, 865);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(2049, 1065);
             this.Controls.Add(this.Navber);
             this.Controls.Add(this.Sidebar);
             this.Controls.Add(this.Minimize_btn);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Programs";
             this.Text = "Programs";
             this.Navber.ResumeLayout(false);
@@ -281,7 +286,7 @@
         private System.Windows.Forms.FlowLayoutPanel Navber;
         private System.Windows.Forms.Button sideber_btn;
         private System.Windows.Forms.FlowLayoutPanel Sidebar;
-        private System.Windows.Forms.Button Notification_btn;
+        private System.Windows.Forms.Button Home_btn;
         private System.Windows.Forms.Button AddUser_btn;
         private System.Windows.Forms.Button AddTeacher_btn;
         private System.Windows.Forms.Button AddStudent_btn;

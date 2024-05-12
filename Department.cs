@@ -37,10 +37,10 @@ namespace University_Management_System
                 sideber_btn.BackgroundImage = Properties.Resources.icons8_multiply_35;
                 Sidebar.BringToFront();
                 Sidebar.Size = new System.Drawing.Size(210, 805);
-                Notification_btn.Size = new System.Drawing.Size(210, 60);
-                Notification_btn.Text = "   NOTIFICATION";
-                Notification_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-                Notification_btn.Padding = new Padding(10, 0, 0, 0);
+                Home_btn.Size = new System.Drawing.Size(210, 60);
+                Home_btn.Text = "   NOTIFICATION";
+                Home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                Home_btn.Padding = new Padding(10, 0, 0, 0);
                 AddUser_btn.Size = new System.Drawing.Size(210, 60);
                 AddUser_btn.Text = "   ADD USER";
                 AddTeacher_btn.Size = new System.Drawing.Size(210, 60);
@@ -68,10 +68,10 @@ namespace University_Management_System
             {
                 sideber_btn.BackgroundImage = Properties.Resources.icons8_menu_35;
                 Sidebar.Size = new System.Drawing.Size(60, 805);
-                Notification_btn.Size = new System.Drawing.Size(60, 60);
-                Notification_btn.Text = null;
-                Notification_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-                Notification_btn.Padding = new Padding(0, 0, 0, 0);
+                Home_btn.Size = new System.Drawing.Size(60, 60);
+                Home_btn.Text = null;
+                Home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                Home_btn.Padding = new Padding(0, 0, 0, 0);
                 AddUser_btn.Size = new System.Drawing.Size(60, 60);
                 AddUser_btn.Text = null;
                 AddTeacher_btn.Size = new System.Drawing.Size(60, 60);
@@ -128,8 +128,18 @@ namespace University_Management_System
             ads.Show();
         }
 
-        
+        private void Home_btn_Click(object sender, EventArgs e)
+        {
+            DashBoard dashBoard = new DashBoard();
+            dashBoard.Show();
+            this.Hide();
+        }
 
-        
+        private void Logout_btn_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Hide();
+        }
     }
 }
