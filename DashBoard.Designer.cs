@@ -55,6 +55,8 @@
             this.FST_btn_dept = new System.Windows.Forms.Button();
             this.Minimize_btn = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
+            this.AddTeacher_btn = new System.Windows.Forms.Button();
+            this.AddStudent_btn = new System.Windows.Forms.Button();
             this.Sidebar.SuspendLayout();
             this.Navber.SuspendLayout();
             this.FASS_panel.SuspendLayout();
@@ -68,8 +70,10 @@
             this.Sidebar.BackColor = System.Drawing.Color.DarkCyan;
             this.Sidebar.Controls.Add(this.Notification_btn);
             this.Sidebar.Controls.Add(this.AddUser_btn);
-            this.Sidebar.Controls.Add(this.Search_btn);
+            this.Sidebar.Controls.Add(this.AddTeacher_btn);
+            this.Sidebar.Controls.Add(this.AddStudent_btn);
             this.Sidebar.Controls.Add(this.Profile_btn);
+            this.Sidebar.Controls.Add(this.Search_btn);
             this.Sidebar.Controls.Add(this.Logout_btn);
             this.Sidebar.Location = new System.Drawing.Point(0, 60);
             this.Sidebar.Name = "Sidebar";
@@ -112,6 +116,7 @@
             this.AddUser_btn.TabIndex = 13;
             this.AddUser_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.AddUser_btn.UseVisualStyleBackColor = true;
+            this.AddUser_btn.Click += new System.EventHandler(this.AddUser_btn_Click);
             // 
             // Search_btn
             // 
@@ -123,7 +128,7 @@
             this.Search_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.Search_btn.ForeColor = System.Drawing.Color.White;
             this.Search_btn.Image = global::University_Management_System.Properties.Resources.icons8_search_more_30;
-            this.Search_btn.Location = new System.Drawing.Point(0, 140);
+            this.Search_btn.Location = new System.Drawing.Point(0, 320);
             this.Search_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Search_btn.Name = "Search_btn";
             this.Search_btn.Size = new System.Drawing.Size(60, 60);
@@ -141,7 +146,7 @@
             this.Profile_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.Profile_btn.ForeColor = System.Drawing.Color.White;
             this.Profile_btn.Image = global::University_Management_System.Properties.Resources.icons8_test_account_30;
-            this.Profile_btn.Location = new System.Drawing.Point(0, 200);
+            this.Profile_btn.Location = new System.Drawing.Point(0, 260);
             this.Profile_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Profile_btn.Name = "Profile_btn";
             this.Profile_btn.Size = new System.Drawing.Size(60, 60);
@@ -160,7 +165,7 @@
             this.Logout_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.Logout_btn.ForeColor = System.Drawing.Color.White;
             this.Logout_btn.Image = global::University_Management_System.Properties.Resources.icons8_logout_rounded_30;
-            this.Logout_btn.Location = new System.Drawing.Point(0, 260);
+            this.Logout_btn.Location = new System.Drawing.Point(0, 380);
             this.Logout_btn.Margin = new System.Windows.Forms.Padding(0);
             this.Logout_btn.Name = "Logout_btn";
             this.Logout_btn.Size = new System.Drawing.Size(60, 60);
@@ -481,6 +486,44 @@
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // AddTeacher_btn
+            // 
+            this.AddTeacher_btn.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.AddTeacher_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.AddTeacher_btn.FlatAppearance.BorderSize = 0;
+            this.AddTeacher_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.AddTeacher_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
+            this.AddTeacher_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddTeacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.AddTeacher_btn.ForeColor = System.Drawing.Color.White;
+            this.AddTeacher_btn.Image = global::University_Management_System.Properties.Resources.icons8_add_user_male_30;
+            this.AddTeacher_btn.Location = new System.Drawing.Point(0, 140);
+            this.AddTeacher_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.AddTeacher_btn.Name = "AddTeacher_btn";
+            this.AddTeacher_btn.Size = new System.Drawing.Size(60, 60);
+            this.AddTeacher_btn.TabIndex = 18;
+            this.AddTeacher_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AddTeacher_btn.UseVisualStyleBackColor = false;
+            // 
+            // AddStudent_btn
+            // 
+            this.AddStudent_btn.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.AddStudent_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.AddStudent_btn.FlatAppearance.BorderSize = 0;
+            this.AddStudent_btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.AddStudent_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
+            this.AddStudent_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddStudent_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.AddStudent_btn.ForeColor = System.Drawing.Color.White;
+            this.AddStudent_btn.Image = global::University_Management_System.Properties.Resources.icons8_add_user_male_30;
+            this.AddStudent_btn.Location = new System.Drawing.Point(0, 200);
+            this.AddStudent_btn.Margin = new System.Windows.Forms.Padding(0);
+            this.AddStudent_btn.Name = "AddStudent_btn";
+            this.AddStudent_btn.Size = new System.Drawing.Size(60, 60);
+            this.AddStudent_btn.TabIndex = 19;
+            this.AddStudent_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.AddStudent_btn.UseVisualStyleBackColor = false;
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,5 +584,7 @@
         private System.Windows.Forms.Button Profile_btn;
         private System.Windows.Forms.Button Logout_btn;
         private System.Windows.Forms.FlowLayoutPanel Navber;
+        private System.Windows.Forms.Button AddTeacher_btn;
+        private System.Windows.Forms.Button AddStudent_btn;
     }
 }

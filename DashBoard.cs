@@ -21,6 +21,8 @@ namespace University_Management_System
             FE_Panel_up.BringToFront();
             FBA_Panel_up.BringToFront();
             FASS_Panel_up.BringToFront();
+            AddTeacher_btn.Hide();
+            AddStudent_btn.Hide();
         }
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
@@ -220,6 +222,14 @@ namespace University_Management_System
                 Notification_btn.Padding = new Padding(10,0,0,0) ;
                 AddUser_btn.Size = new System.Drawing.Size(210, 60);
                 AddUser_btn.Text = "   ADD USER";
+                AddTeacher_btn.Size = new System.Drawing.Size(210, 60);
+                AddTeacher_btn.Text = "   ADD TEACHER";
+                AddTeacher_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                AddTeacher_btn.Padding = new Padding(10, 0, 0, 0);
+                AddStudent_btn.Size = new System.Drawing.Size(210, 60);
+                AddStudent_btn.Text = "   ADD STUDENT";
+                AddStudent_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+                AddStudent_btn.Padding = new Padding(10, 0, 0, 0);
                 Search_btn.Size = new System.Drawing.Size(210, 60);
                 Search_btn.Text = "   SEARCH";
                 Search_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,6 +253,14 @@ namespace University_Management_System
                 Notification_btn.Padding = new Padding(0, 0, 0, 0);
                 AddUser_btn.Size = new System.Drawing.Size(60, 60);
                 AddUser_btn.Text = null;
+                AddTeacher_btn.Size = new System.Drawing.Size(60, 60);
+                AddTeacher_btn.Text = null;
+                AddTeacher_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                AddTeacher_btn.Padding = new Padding(0, 0, 0, 0);
+                AddStudent_btn.Size = new System.Drawing.Size(60, 60);
+                AddStudent_btn.Text = null;
+                AddStudent_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+                AddStudent_btn.Padding = new Padding(0, 0, 0, 0);
                 Search_btn.Size = new System.Drawing.Size(60, 60);
                 Search_btn.Text = null;
                 Search_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -262,6 +280,25 @@ namespace University_Management_System
             Nav_btn_Flag ++;
             sideber_btn_ctrl();
         }
-
+        // Add User Button Click
+        int AddUser_btn_Flag = 2;
+        private void addUser_btn_ctrl()
+        {
+            if(AddUser_btn_Flag%2 != 0)
+            {
+                AddTeacher_btn.Show();
+                AddStudent_btn.Show();
+            }
+            else
+            {
+                AddStudent_btn.Hide();
+                AddTeacher_btn.Hide();
+            }
+        }
+        private void AddUser_btn_Click(object sender, EventArgs e)
+        {
+            AddUser_btn_Flag++;
+            addUser_btn_ctrl ();
+        }
     }
 }
