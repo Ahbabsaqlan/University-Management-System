@@ -67,14 +67,14 @@ namespace University_Management_System
         // FST Button Click
         private void FST_btn_dept_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Department dept = new Department();
+            dept.Show();
             this.Hide();
         }
         private void FST_btn_pgrm_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            Programs pgrm = new Programs();
+            pgrm.Show();
             this.Hide();
         }
         
@@ -299,6 +299,27 @@ namespace University_Management_System
         {
             AddUser_btn_Flag++;
             addUser_btn_ctrl ();
+        }
+
+        private void AddStudent_btn_Click(object sender, EventArgs e)
+        {
+            Add_Student ads= new Add_Student();
+            ads.Show();
+        }
+
+        private void Logout_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Search_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Profile_btn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
