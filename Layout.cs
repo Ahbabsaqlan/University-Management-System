@@ -23,12 +23,7 @@ namespace University_Management_System
         {
             Application.Exit();
         }
-        // Minimize Button
-        //private void Minimize_btn_Click(object sender, EventArgs e)
-        //{
-            
-        //    this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-        //}
+        
         // Sidebar
         int Nav_btn_Flag = 2;
         private void sideber_btn_ctrl()

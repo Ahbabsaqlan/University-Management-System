@@ -17,7 +17,28 @@ namespace University_Management_System
             InitializeComponent();
         }
 
-        private void layout1_Load(object sender, EventArgs e)
+        // Minimize Button
+        private void Minimize_btn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void First_Name_Tbx_TextChanged(object sender, EventArgs e)
         {
 
         }
