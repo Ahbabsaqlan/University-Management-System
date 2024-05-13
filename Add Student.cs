@@ -16,20 +16,11 @@ namespace University_Management_System
         {
             InitializeComponent();
         }
-        // Exit Button
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
         // Minimize Button
         private void Minimize_btn_Click(object sender, EventArgs e)
         {
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         //
