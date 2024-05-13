@@ -77,7 +77,6 @@ namespace University_Management_System
             this.Password_TextBox.Text = "Password";
             this.Password_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Password_TextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Password_TextBox_MouseClick);
-            this.Password_TextBox.TextChanged += new System.EventHandler(this.Password_TextBox_TextChanged);
             // 
             // User_Text_Box
             // 

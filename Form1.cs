@@ -18,6 +18,7 @@ namespace University_Management_System
 
         private void User_Text_Box_MouseClick(object sender, MouseEventArgs e)
         {
+            User_Text_Box.Enabled = true;
             if (User_Text_Box.Text == "User ID")
             {
                 User_Text_Box.Text = " ";
@@ -36,9 +37,9 @@ namespace University_Management_System
         private void LoginButton_Click(object sender, EventArgs e)
         {
 
-            string query = "select role from LOGIN where user_id='" + User_Text_Box.Text + "'and password ='" + Password_TextBox.Text + "'";
+            string query = "select * from LOGIN where user_id='" + User_Text_Box.Text + "'and password ='" + Password_TextBox.Text + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, connection); //query executed
-            connection.Open();
+           // connection.Open();
             DataTable dt = new DataTable(); //dynamic table 
             sda.Fill(dt);
             //string ss="select role from dt where user_id='"+ User_Text_Box.Text+"'";
@@ -47,18 +48,42 @@ namespace University_Management_System
             {
                 foreach (DataRow r in dt.Rows)
                 {
-                    foreach(var role in r.ItemArray)
-                    {
-                        string userrole=(string)role;
-                        if (userrole == "Lecturer")
+                    // foreach(var rol in r.ItemArray)
+                    //{
+                    string userrole = r.Field<string>(2);
+                    //string userrole=(string)rol;
+                    if (userrole == "student")
                         {
-                            Student_dashboard st_dash = new Student_dashboard();
+                            Student_dashboard st_dash = new Student_dashboard(User_Text_Box.Text);
                             this.Hide();
                             st_dash.Show();
                         }
-                       
-                    }
+                        else if (userrole == "Admin")
+                        {
+                            Student_dashboard st_dash = new Student_dashboard(User_Text_Box.Text);
+                            this.Hide();
+                            st_dash.Show();
+                        }
+                        else if (userrole == "Lecturer")
+                        {
+                            Student_dashboard st_dash = new Student_dashboard(User_Text_Box.Text);
+                            this.Hide();
+                            st_dash.Show();
+                        }
+                        else if (userrole == "CS_Head")
+                        {
+                            Student_dashboard st_dash = new Student_dashboard(User_Text_Box.Text);
+                            this.Hide();
+                            st_dash.Show();
+                        }
+
+
+                   // }
                 }
+            }
+            else if(User_Text_Box.Text ==" " || Password_TextBox.Text==" ")
+            {
+                MessageBox.Show("Please write your ID and Password");
             }
             else
             {
@@ -73,14 +98,12 @@ namespace University_Management_System
 
         }
 
-        private void Password_TextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Login1_Load(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }

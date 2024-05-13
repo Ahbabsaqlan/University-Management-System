@@ -30,6 +30,8 @@ namespace University_Management_System
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Profile_link = new System.Windows.Forms.LinkLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Grade_link = new System.Windows.Forms.LinkLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -82,6 +84,7 @@ namespace University_Management_System
             this.Sunday_panel = new System.Windows.Forms.Panel();
             this.Sunday = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -105,6 +108,8 @@ namespace University_Management_System
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.Profile_link);
+            this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.Grade_link);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -118,6 +123,32 @@ namespace University_Management_System
             this.panel1.Size = new System.Drawing.Size(979, 61);
             this.panel1.TabIndex = 0;
             // 
+            // Profile_link
+            // 
+            this.Profile_link.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
+            this.Profile_link.AutoSize = true;
+            this.Profile_link.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Profile_link.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.Profile_link.LinkColor = System.Drawing.Color.DeepSkyBlue;
+            this.Profile_link.Location = new System.Drawing.Point(741, 15);
+            this.Profile_link.Name = "Profile_link";
+            this.Profile_link.Size = new System.Drawing.Size(66, 25);
+            this.Profile_link.TabIndex = 9;
+            this.Profile_link.TabStop = true;
+            this.Profile_link.Text = "Profile";
+            this.Profile_link.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Profile_link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Profile_link_LinkClicked);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::University_Management_System.Properties.Resources.profile1;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(678, 11);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(57, 38);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
             // Grade_link
             // 
             this.Grade_link.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
@@ -125,7 +156,7 @@ namespace University_Management_System
             this.Grade_link.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grade_link.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.Grade_link.LinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.Grade_link.Location = new System.Drawing.Point(708, 14);
+            this.Grade_link.Location = new System.Drawing.Point(590, 15);
             this.Grade_link.Name = "Grade_link";
             this.Grade_link.Size = new System.Drawing.Size(66, 25);
             this.Grade_link.TabIndex = 7;
@@ -137,7 +168,7 @@ namespace University_Management_System
             // 
             this.pictureBox3.BackgroundImage = global::University_Management_System.Properties.Resources.grade1;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(651, 10);
+            this.pictureBox3.Location = new System.Drawing.Point(533, 11);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(51, 42);
@@ -148,7 +179,7 @@ namespace University_Management_System
             // 
             this.pictureBox2.BackgroundImage = global::University_Management_System.Properties.Resources.Registration_pic1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(469, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(351, 11);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(51, 42);
@@ -159,7 +190,7 @@ namespace University_Management_System
             // 
             this.pictureBox1.BackgroundImage = global::University_Management_System.Properties.Resources.Course_and_result;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(213, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(95, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 42);
@@ -173,7 +204,7 @@ namespace University_Management_System
             this.Registration_link.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Registration_link.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.Registration_link.LinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.Registration_link.Location = new System.Drawing.Point(525, 14);
+            this.Registration_link.Location = new System.Drawing.Point(407, 15);
             this.Registration_link.Name = "Registration_link";
             this.Registration_link.Size = new System.Drawing.Size(114, 25);
             this.Registration_link.TabIndex = 2;
@@ -188,7 +219,7 @@ namespace University_Management_System
             this.Course_and_result_link.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Course_and_result_link.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.Course_and_result_link.LinkColor = System.Drawing.Color.DeepSkyBlue;
-            this.Course_and_result_link.Location = new System.Drawing.Point(268, 14);
+            this.Course_and_result_link.Location = new System.Drawing.Point(150, 15);
             this.Course_and_result_link.Name = "Course_and_result_link";
             this.Course_and_result_link.Size = new System.Drawing.Size(176, 25);
             this.Course_and_result_link.TabIndex = 1;
@@ -206,6 +237,7 @@ namespace University_Management_System
             this.Back_Button.Size = new System.Drawing.Size(59, 62);
             this.Back_Button.TabIndex = 0;
             this.Back_Button.UseVisualStyleBackColor = true;
+            this.Back_Button.Click += new System.EventHandler(this.Back_Button_Click);
             // 
             // panel2
             // 
@@ -562,7 +594,6 @@ namespace University_Management_System
             this.label4.Size = new System.Drawing.Size(68, 24);
             this.label4.TabIndex = 2;
             this.label4.Text = " Time:-";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -721,6 +752,7 @@ namespace University_Management_System
             this.Load += new System.EventHandler(this.Student_dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -806,5 +838,7 @@ namespace University_Management_System
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.LinkLabel Profile_link;
     }
 }
