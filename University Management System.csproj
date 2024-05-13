@@ -191,5 +191,17 @@
   <ItemGroup>
     <None Include="Contents\icons8-multiply-35.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-google-home-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-student-male-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-student-male-45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Contents\icons8-teacher-30.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

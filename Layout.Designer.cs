@@ -79,7 +79,7 @@
             this.Home_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Home_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.Home_btn.ForeColor = System.Drawing.Color.White;
-            this.Home_btn.Image = global::University_Management_System.Properties.Resources.icons8_notification_30;
+            this.Home_btn.Image = global::University_Management_System.Properties.Resources.icons8_google_home_30;
             this.Home_btn.Location = new System.Drawing.Point(0, 25);
             this.Home_btn.Margin = new System.Windows.Forms.Padding(0, 25, 0, 0);
             this.Home_btn.Name = "Home_btn";
@@ -120,7 +120,7 @@
             this.AddTeacher_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddTeacher_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.AddTeacher_btn.ForeColor = System.Drawing.Color.White;
-            this.AddTeacher_btn.Image = global::University_Management_System.Properties.Resources.icons8_add_user_male_30;
+            this.AddTeacher_btn.Image = global::University_Management_System.Properties.Resources.icons8_teacher_30;
             this.AddTeacher_btn.Location = new System.Drawing.Point(0, 173);
             this.AddTeacher_btn.Margin = new System.Windows.Forms.Padding(0);
             this.AddTeacher_btn.Name = "AddTeacher_btn";
@@ -141,7 +141,7 @@
             this.AddStudent_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddStudent_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.AddStudent_btn.ForeColor = System.Drawing.Color.White;
-            this.AddStudent_btn.Image = global::University_Management_System.Properties.Resources.icons8_add_user_male_30;
+            this.AddStudent_btn.Image = global::University_Management_System.Properties.Resources.icons8_student_male_301;
             this.AddStudent_btn.Location = new System.Drawing.Point(0, 247);
             this.AddStudent_btn.Margin = new System.Windows.Forms.Padding(0);
             this.AddStudent_btn.Name = "AddStudent_btn";
