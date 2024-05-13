@@ -52,6 +52,12 @@
     <Compile Include="Add Student.Designer.cs">
       <DependentUpon>Add Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Teacher.Designer.cs">
+      <DependentUpon>Add_Teacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="Dept_Show.Designer.cs">
       <DependentUpon>Dept_Show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layout.Designer.cs">
+      <DependentUpon>Layout.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -93,6 +105,9 @@
     <EmbeddedResource Include="Add Student.resx">
       <DependentUpon>Add Student.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_Teacher.resx">
+      <DependentUpon>Add_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dept_Show.resx">
       <DependentUpon>Dept_Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Layout.resx">
+      <DependentUpon>Layout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
