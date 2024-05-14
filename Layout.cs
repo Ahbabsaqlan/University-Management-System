@@ -145,5 +145,18 @@ namespace University_Management_System
             teacher.Show();
             this.Parent.Hide();
         }
+
+        private void Profile_btn_Click(object sender, EventArgs e)
+        {
+            Admin_Profile admin_Profile = new Admin_Profile();
+            admin_Profile.Show();
+            this.Parent.Hide();
+        }
+
+        private void Search_btn_Click(object sender, EventArgs e)
+        {
+            Admin_Search admin_Search = new Admin_Search();
+            admin_Search.Show();
+        }
     }
 }

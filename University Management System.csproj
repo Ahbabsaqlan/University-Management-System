@@ -58,6 +58,18 @@
     <Compile Include="Add_Teacher.Designer.cs">
       <DependentUpon>Add_Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin_Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Profile.Designer.cs">
+      <DependentUpon>Admin_Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Search.Designer.cs">
+      <DependentUpon>Admin_Search.cs</DependentUpon>
+    </Compile>
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Teacher.resx">
       <DependentUpon>Add_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Profile.resx">
+      <DependentUpon>Admin_Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Search.resx">
+      <DependentUpon>Admin_Search.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>

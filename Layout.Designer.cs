@@ -169,6 +169,7 @@
             this.Profile_btn.TabIndex = 16;
             this.Profile_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Profile_btn.UseVisualStyleBackColor = true;
+            this.Profile_btn.Click += new System.EventHandler(this.Profile_btn_Click);
             // 
             // Search_btn
             // 
@@ -188,6 +189,7 @@
             this.Search_btn.TabIndex = 15;
             this.Search_btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Search_btn.UseVisualStyleBackColor = true;
+            this.Search_btn.Click += new System.EventHandler(this.Search_btn_Click);
             // 
             // Logout_btn
             // 
