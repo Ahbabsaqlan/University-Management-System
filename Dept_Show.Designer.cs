@@ -52,6 +52,7 @@
             this.Dept_ShowTeacher_btn.TabIndex = 1;
             this.Dept_ShowTeacher_btn.Text = "Show Teacher List";
             this.Dept_ShowTeacher_btn.UseVisualStyleBackColor = false;
+            this.Dept_ShowTeacher_btn.Click += new System.EventHandler(this.Dept_ShowTeacher_btn_Click);
             // 
             // Dept_ShowCourse_btn
             // 

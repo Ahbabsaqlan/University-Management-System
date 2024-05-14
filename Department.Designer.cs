@@ -32,8 +32,8 @@
             this.Pgrm_Title_Panel = new System.Windows.Forms.Panel();
             this.Pgrm_Title_Label = new System.Windows.Forms.Label();
             this.Dept_Panel = new System.Windows.Forms.FlowLayoutPanel();
-            this.Minimize_btn = new System.Windows.Forms.Button();
             this.layout1 = new University_Management_System.Layout();
+            this.Minimize_btn = new System.Windows.Forms.Button();
             this.Pgrm_Title_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +77,14 @@
             this.Dept_Panel.Size = new System.Drawing.Size(1336, 210);
             this.Dept_Panel.TabIndex = 26;
             // 
+            // layout1
+            // 
+            this.layout1.Location = new System.Drawing.Point(0, 0);
+            this.layout1.Margin = new System.Windows.Forms.Padding(0);
+            this.layout1.Name = "layout1";
+            this.layout1.Size = new System.Drawing.Size(2049, 1065);
+            this.layout1.TabIndex = 29;
+            // 
             // Minimize_btn
             // 
             this.Minimize_btn.BackColor = System.Drawing.Color.White;
@@ -94,14 +102,6 @@
             this.Minimize_btn.TabIndex = 15;
             this.Minimize_btn.UseVisualStyleBackColor = false;
             this.Minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
-            // 
-            // layout1
-            // 
-            this.layout1.Location = new System.Drawing.Point(0, 0);
-            this.layout1.Margin = new System.Windows.Forms.Padding(0);
-            this.layout1.Name = "layout1";
-            this.layout1.Size = new System.Drawing.Size(2049, 1065);
-            this.layout1.TabIndex = 29;
             // 
             // Department
             // 

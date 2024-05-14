@@ -19,7 +19,16 @@ namespace University_Management_System
 
         private void Dept_ShowCourse_btn_Click(object sender, EventArgs e)
         {
+            Program_Course program_Course = new Program_Course();
+            program_Course.Show();
+            this.Parent.Hide();
+        }
 
+        private void Dept_ShowTeacher_btn_Click(object sender, EventArgs e)
+        {
+            Student_List student_List = new Student_List();
+            student_List.Show();
+            this.Parent.Hide();
         }
     }
 }

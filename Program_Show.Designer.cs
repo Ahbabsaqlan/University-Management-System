@@ -55,6 +55,7 @@
             this.Pgrm_Crs_btn.TabIndex = 1;
             this.Pgrm_Crs_btn.Text = "Courses";
             this.Pgrm_Crs_btn.UseVisualStyleBackColor = false;
+            this.Pgrm_Crs_btn.Click += new System.EventHandler(this.Pgrm_Crs_btn_Click);
             // 
             // Enrl_Std_btn
             // 
@@ -69,6 +70,7 @@
             this.Enrl_Std_btn.TabIndex = 2;
             this.Enrl_Std_btn.Text = "Enrolled Students";
             this.Enrl_Std_btn.UseVisualStyleBackColor = false;
+            this.Enrl_Std_btn.Click += new System.EventHandler(this.Enrl_Std_btn_Click);
             // 
             // Program_Show
             // 

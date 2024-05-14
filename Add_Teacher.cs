@@ -15,6 +15,7 @@ namespace University_Management_System
         public Add_Teacher()
         {
             InitializeComponent();
+            
         }
 
         // Minimize Button
@@ -23,22 +24,32 @@ namespace University_Management_System
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void test()
+        {
+            
+        }
+
+        private void Mother_Name_Label_Click(object sender, EventArgs e)
+        {
+            test();
+        }
+
+        private void textBox_Admin1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void textBox_Admin7_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void First_Name_Tbx_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

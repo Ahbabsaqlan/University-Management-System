@@ -10,29 +10,32 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Department : Form
+    public partial class Student_List : Form
     {
-        public Department()
+        public Student_List()
         {
             InitializeComponent();
-            showDepartment();
+            show();
         }
-        
-        // Minimize Button
+
         private void Minimize_btn_Click(object sender, EventArgs e)
         {
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+
         }
-        
-        //Data Showing
-        private void showDepartment()
+
+        private void show()
         {
-            Dept_Show[] pg = new Dept_Show[2];
+            Show_Students[] pg = new Show_Students[2];
             for (int i = 0; i < pg.Length; i++)
             {
-                pg[i] = new Dept_Show();
-                Dept_Panel.Controls.Add(pg[i]);
+                pg[i] = new Show_Students();
+                Students_List_Panel.Controls.Add(pg[i]);
             }
+        }
+
+        private void Students_List_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
