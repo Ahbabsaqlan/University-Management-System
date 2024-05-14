@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace University_Management_System
 {
     public partial class DashBoard : Form
     {
-
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_SYSTEM 2;Integrated Security=True;");
         public DashBoard()
         {
             InitializeComponent();
@@ -65,7 +66,7 @@ namespace University_Management_System
         // FST Button Click
         private void FST_btn_dept_Click(object sender, EventArgs e)
         {
-            Department dept = new Department();
+            Department dept = new Department("FST");
             dept.Show();
             this.Hide();
         }
@@ -108,7 +109,7 @@ namespace University_Management_System
         //FE Button Click
         private void FE_btn_dept_Click(object sender, EventArgs e)
         {
-            Department dept = new Department();
+            Department dept = new Department("FE");
             dept.Show();
             this.Hide();
         }
@@ -151,7 +152,7 @@ namespace University_Management_System
         // FBA Button Click
         private void FBA_btn_dept_Click(object sender, EventArgs e)
         {
-            Department dept = new Department();
+            Department dept = new Department("FBA");
             dept.Show();
             this.Hide();
         }
@@ -194,7 +195,7 @@ namespace University_Management_System
         //FASS Button Click
         private void FASS_btn_dept_Click(object sender, EventArgs e)
         {
-            Department dept = new Department();
+            Department dept = new Department("FASS");
             dept.Show();
             this.Hide();
         }

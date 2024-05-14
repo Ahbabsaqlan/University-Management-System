@@ -26,9 +26,9 @@ namespace University_Management_System
 
         private void Enrl_Std_btn_Click(object sender, EventArgs e)
         {
-            Student_List student_List = new Student_List();
-            student_List.Show();
-            this.Parent.Hide();
+            //Student_List student_List = new Student_List();
+            //student_List.Show();
+            //this.Parent.Hide();
         }
 
         //public string ProgramName 

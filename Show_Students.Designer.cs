@@ -28,51 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Name = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Person_First_Name = new System.Windows.Forms.Label();
+            this.Person_Image = new System.Windows.Forms.PictureBox();
+            this.Person_ID = new System.Windows.Forms.Label();
+            this.Person_Last_Name = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Person_Image)).BeginInit();
             this.SuspendLayout();
             // 
-            // Name
+            // Person_First_Name
             // 
-            this.Name.AutoSize = true;
-            this.Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.Name.Location = new System.Drawing.Point(298, 36);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(234, 39);
-            this.Name.TabIndex = 0;
-            this.Name.Text = "Student Name";
+            this.Person_First_Name.AutoSize = true;
+            this.Person_First_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Person_First_Name.Location = new System.Drawing.Point(298, 36);
+            this.Person_First_Name.Name = "Person_First_Name";
+            this.Person_First_Name.Size = new System.Drawing.Size(234, 39);
+            this.Person_First_Name.TabIndex = 0;
+            this.Person_First_Name.Text = "Student Name";
             // 
-            // pictureBox1
+            // Person_Image
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(57, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 115);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.Person_Image.Location = new System.Drawing.Point(57, 17);
+            this.Person_Image.Name = "Person_Image";
+            this.Person_Image.Size = new System.Drawing.Size(157, 115);
+            this.Person_Image.TabIndex = 1;
+            this.Person_Image.TabStop = false;
             // 
-            // label1
+            // Person_ID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(311, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ID: 22-48108-2";
+            this.Person_ID.AutoSize = true;
+            this.Person_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Person_ID.Location = new System.Drawing.Point(353, 85);
+            this.Person_ID.Name = "Person_ID";
+            this.Person_ID.Size = new System.Drawing.Size(141, 29);
+            this.Person_ID.TabIndex = 2;
+            this.Person_ID.Text = "22-48108-2";
+            this.Person_ID.Click += new System.EventHandler(this.Person_ID_Click);
+            // 
+            // Person_Last_Name
+            // 
+            this.Person_Last_Name.AutoSize = true;
+            this.Person_Last_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Person_Last_Name.Location = new System.Drawing.Point(579, 36);
+            this.Person_Last_Name.Name = "Person_Last_Name";
+            this.Person_Last_Name.Size = new System.Drawing.Size(234, 39);
+            this.Person_Last_Name.TabIndex = 3;
+            this.Person_Last_Name.Text = "Student Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label2.Location = new System.Drawing.Point(309, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 29);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "ID:";
             // 
             // Show_Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.Name);
-            //this.Name = "Show_Students";
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Person_Last_Name);
+            this.Controls.Add(this.Person_ID);
+            this.Controls.Add(this.Person_Image);
+            this.Controls.Add(this.Person_First_Name);
+            this.Name = "Show_Students";
             this.Size = new System.Drawing.Size(1002, 150);
             this.Load += new System.EventHandler(this.Show_Students_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Person_Image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,8 +105,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Name;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Person_First_Name;
+        private System.Windows.Forms.PictureBox Person_Image;
+        private System.Windows.Forms.Label Person_ID;
+        private System.Windows.Forms.Label Person_Last_Name;
+        private System.Windows.Forms.Label label2;
     }
 }

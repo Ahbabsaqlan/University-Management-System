@@ -33,8 +33,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bar = new System.Windows.Forms.Panel();
             this.Teacher_Reg_Label = new System.Windows.Forms.Label();
-            this.layout1 = new University_Management_System.Layout();
             this.Minimize_btn = new System.Windows.Forms.Button();
+            this.layout1 = new University_Management_System.Layout();
             this.Adt_Head_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,9 +46,8 @@
             this.Students_List_Panel.Location = new System.Drawing.Point(572, 228);
             this.Students_List_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Students_List_Panel.MaximumSize = new System.Drawing.Size(1002, 831);
-            this.Students_List_Panel.MinimumSize = new System.Drawing.Size(1002, 150);
             this.Students_List_Panel.Name = "Students_List_Panel";
-            this.Students_List_Panel.Size = new System.Drawing.Size(1002, 150);
+            this.Students_List_Panel.Size = new System.Drawing.Size(0, 0);
             this.Students_List_Panel.TabIndex = 38;
             this.Students_List_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Students_List_Panel_Paint);
             // 
@@ -89,14 +88,6 @@
             this.Teacher_Reg_Label.TabIndex = 0;
             this.Teacher_Reg_Label.Text = "Enrolled Students";
             // 
-            // layout1
-            // 
-            this.layout1.Location = new System.Drawing.Point(0, 0);
-            this.layout1.Margin = new System.Windows.Forms.Padding(0);
-            this.layout1.Name = "layout1";
-            this.layout1.Size = new System.Drawing.Size(2049, 1065);
-            this.layout1.TabIndex = 35;
-            // 
             // Minimize_btn
             // 
             this.Minimize_btn.BackColor = System.Drawing.Color.White;
@@ -114,6 +105,14 @@
             this.Minimize_btn.TabIndex = 36;
             this.Minimize_btn.UseVisualStyleBackColor = false;
             this.Minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
+            // 
+            // layout1
+            // 
+            this.layout1.Location = new System.Drawing.Point(0, 0);
+            this.layout1.Margin = new System.Windows.Forms.Padding(0);
+            this.layout1.Name = "layout1";
+            this.layout1.Size = new System.Drawing.Size(2049, 1065);
+            this.layout1.TabIndex = 35;
             // 
             // Student_List
             // 
