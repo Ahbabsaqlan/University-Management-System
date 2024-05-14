@@ -16,21 +16,28 @@ namespace University_Management_System
 
         SqlConnection connection = new SqlConnection("Data Source=DESKTOP-NHRHLTK;Initial Catalog=UNIVERSITY_MANAGEMENT_SYSTEM;Integrated Security=True");
 
+        int User_ID_count = 0;
         private void User_Text_Box_MouseClick(object sender, MouseEventArgs e)
         {
+           
             User_Text_Box.Enabled = true;
-            if (User_Text_Box.Text == "User ID")
+            if (User_Text_Box.Text == "User ID" && User_ID_count==0)
             {
                 User_Text_Box.Text = " ";
                 User_Text_Box.ForeColor = Color.Black;
+                User_ID_count++;
             }
         }
+
+        int Password_count = 0;
         private void Password_TextBox_MouseClick(object sender, MouseEventArgs e)
         {
-            if (Password_TextBox.Text == "Password")
+            
+            if (Password_TextBox.Text == "Password" && Password_count==0)
             {
                 Password_TextBox.Text = " ";
                 Password_TextBox.ForeColor = Color.Black;
+                Password_count++;
             }
         }
 

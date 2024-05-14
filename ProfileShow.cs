@@ -64,8 +64,6 @@ namespace University_Management_System
                     MemoryStream ms = new MemoryStream(img);
                     Person_photo.Image = Image.FromStream(ms);
                 }
-                //label11.Text = Encoding.UTF8.GetString(img);
-               
                 
             }
             
