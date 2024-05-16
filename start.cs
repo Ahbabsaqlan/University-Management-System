@@ -58,7 +58,8 @@ namespace University_Management_System
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Second_pre_req.ID);
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Departments.Facultys.FacultyName);
             }
-            for(int i = 0;i < st1.RegisteredCourses.Length;i++)
+            st1.getRegisteredCourses("22-48108-2");
+            for (int i = 0;i < st1.RegisteredCourses.Length;i++)
             {
                 Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName+ "\n"+st1.RegisteredCourses[i].SectionName);
             }
@@ -74,6 +75,7 @@ namespace University_Management_System
             Console.WriteLine(tea.Position);
             Console.WriteLine(tea.DepartMents.DepartmentName);
             Console.WriteLine(tea.DepartMents.Facultys.FacultyName);
+            tea.getRegisteredCourses("2201-2132-2");
             for (int i = 0; i < tea.RegisteredCourses.Length; i++)
             {
                 Console.WriteLine(tea.RegisteredCourses[i].Courses.CourseName + "\n" + tea.RegisteredCourses[i].SectionName);
@@ -87,6 +89,18 @@ namespace University_Management_System
             Console.WriteLine(adm.Email);
             Console.WriteLine(adm.Mobile);
             Console.WriteLine(adm.Position);
+            
+
+            Section ss = new Section("01");
+            Console.WriteLine(ss.SectionName);
+            Console.WriteLine(ss.Teachers.FirstName+" "+ss.Teachers.LastName);
+            Console.WriteLine(ss.Courses.CourseName);
+            for(int i = 0; i < ss.RegisteredStudents.Students.Length; i++)
+            {
+                Console.WriteLine(ss.RegisteredStudents.Students[i].FirstName+" "+ ss.RegisteredStudents.Students[i].FirstName);
+            }
+            
+
             Console.ReadKey();
         }
     }

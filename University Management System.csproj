@@ -114,7 +114,7 @@
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="RegisteredCourse.cs" />
+    <Compile Include="RegisteredStudent.cs" />
     <Compile Include="Result.cs" />
     <Compile Include="Schedule.cs" />
     <Compile Include="Section.cs" />

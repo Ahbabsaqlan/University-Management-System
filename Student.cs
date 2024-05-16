@@ -40,21 +40,7 @@ namespace University_Management_System
             CreditComplete = dr.Field<int>(8);
             Programs = new Program(dr.Field<string>(9));
 
-            //Fetch Course Data
-            string studentData1 = "select Section_ID from Registered_Students where Student_ID='" + id + "'";
-            SqlDataAdapter adapter3 = new SqlDataAdapter(studentData1, connection);
-            DataTable dt3 = new DataTable();
-            adapter3.Fill(dt3);
-            int index = 0;
-            RegisteredCourses = new Section[dt3.Rows.Count];
-            foreach (DataRow data in dt3.Rows)
-            {
-                foreach (var ids in data.ItemArray)
-                {
-                    RegisteredCourses[index] = new Section(ids.ToString());
-                    index++;
-                }
-            }
+            
         }
 
         private string _id;
@@ -103,6 +89,25 @@ namespace University_Management_System
         {
             get { return _availableCourses; }
             set { _availableCourses = value; }
+        }
+
+        public void getRegisteredCourses(string id)
+        {
+            //Fetch Course Data
+            string studentData1 = "select Section_ID from Registered_Students where Student_ID='" + id + "'";
+            SqlDataAdapter adapter3 = new SqlDataAdapter(studentData1, connection);
+            DataTable dt3 = new DataTable();
+            adapter3.Fill(dt3);
+            int index = 0;
+            RegisteredCourses = new Section[dt3.Rows.Count];
+            foreach (DataRow data in dt3.Rows)
+            {
+                foreach (var ids in data.ItemArray)
+                {
+                    RegisteredCourses[index] = new Section(ids.ToString());
+                    index++;
+                }
+            }
         }
 
 

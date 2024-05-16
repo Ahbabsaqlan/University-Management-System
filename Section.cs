@@ -27,6 +27,7 @@ namespace University_Management_System
             RoomNo= dr.Field<string>(3);
             Courses = new Course(dr.Field<string>(4));
             Teachers=new Teacher(dr.Field<string>(5));
+            RegisteredStudents = new RegisteredStudent(id);
             //Teachers.ID=dr.Field<string>(5);
 
         }
@@ -85,6 +86,14 @@ namespace University_Management_System
         {
             get { return _schedule; }
             set { _schedule = value; }
+        }
+
+        private RegisteredStudent _registeredStudents;
+
+        public RegisteredStudent RegisteredStudents
+        {
+            get { return _registeredStudents; }
+            set { _registeredStudents = value; }
         }
 
     }
