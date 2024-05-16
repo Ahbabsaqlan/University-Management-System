@@ -62,27 +62,31 @@ namespace University_Management_System
             {
                 Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName+ "\n"+st1.RegisteredCourses[i].SectionName);
             }
-            
 
-            //Teacher tea = new Teacher("1705-1788-2");
-            //Console.WriteLine(tea.FirstName);
-            //Console.WriteLine(tea.LastName);
-            //Console.WriteLine(tea.FatherName);
-            //Console.WriteLine(tea.MotherName);
-            //Console.WriteLine(tea.Email);
-            //Console.WriteLine(tea.Mobile);
-            //Console.WriteLine(tea.Position);
-            //Console.WriteLine(tea.DepartMents.DepartmentName);
-            //Console.WriteLine(tea.DepartMents.Facultys.FacultyName);
 
-            //Admin adm = new Admin("ADMIN1");
-            //Console.WriteLine(adm.FirstName);
-            //Console.WriteLine(adm.LastName);
-            //Console.WriteLine(adm.FatherName);
-            //Console.WriteLine(adm.MotherName);
-            //Console.WriteLine(adm.Email);
-            //Console.WriteLine(adm.Mobile);
-            //Console.WriteLine(adm.Position);
+            Teacher tea = new Teacher("2201-2132-2");
+            Console.WriteLine(tea.FirstName);
+            Console.WriteLine(tea.LastName);
+            Console.WriteLine(tea.FatherName);
+            Console.WriteLine(tea.MotherName);
+            Console.WriteLine(tea.Email);
+            Console.WriteLine(tea.Mobile);
+            Console.WriteLine(tea.Position);
+            Console.WriteLine(tea.DepartMents.DepartmentName);
+            Console.WriteLine(tea.DepartMents.Facultys.FacultyName);
+            for (int i = 0; i < tea.RegisteredCourses.Length; i++)
+            {
+                Console.WriteLine(tea.RegisteredCourses[i].Courses.CourseName + "\n" + tea.RegisteredCourses[i].SectionName);
+            }
+
+            Admin adm = new Admin("ADMIN1");
+            Console.WriteLine(adm.FirstName);
+            Console.WriteLine(adm.LastName);
+            Console.WriteLine(adm.FatherName);
+            Console.WriteLine(adm.MotherName);
+            Console.WriteLine(adm.Email);
+            Console.WriteLine(adm.Mobile);
+            Console.WriteLine(adm.Position);
             Console.ReadKey();
         }
     }

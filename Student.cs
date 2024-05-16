@@ -55,7 +55,6 @@ namespace University_Management_System
                     index++;
                 }
             }
-
         }
 
         private string _id;

@@ -35,7 +35,21 @@ namespace University_Management_System
             adapter2.Fill(dt2);
             DataRow dr2 = dt2.Rows[0];
 
-            
+            //Fetch Course Data
+            string studentData1 = "select Section_ID from Registered_Students where Student_ID='" + id + "'";
+            SqlDataAdapter adapter3 = new SqlDataAdapter(studentData1, connection);
+            DataTable dt3 = new DataTable();
+            adapter3.Fill(dt3);
+            int index = 0;
+            RegisteredCourses = new Section[dt3.Rows.Count];
+            foreach (DataRow data in dt3.Rows)
+            {
+                foreach (var ids in data.ItemArray)
+                {
+                    RegisteredCourses[index] = new Section(ids.ToString());
+                    index++;
+                }
+            }
 
             setval(dr.Field<string>(0), dr.Field<string>(1), dr.Field<string>(2), dr.Field<string>(3), dr.Field<string>(4), dr.Field<string>(5), dr.Field<string>(6), dr1.Field<string>(0), dr1.Field<string>(1), dr1.Field<string>(2), dr1.Field<string>(3), dr2.Field<int>(0), dr2.Field<int>(1), dr2.Field<int>(2));
             Position = dr.Field<string>(7);
