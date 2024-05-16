@@ -41,7 +41,7 @@ namespace University_Management_System
             Student st1 = new Student("22-48108-2");
             Console.WriteLine(st1.FirstName);
             Console.WriteLine(st1.LastName);
-            Console.WriteLine(st1.DOB.Day+"/"+st1.DOB.Month+"/"+st1.DOB.Year);
+            Console.WriteLine(st1.DOB.Day + "/" + st1.DOB.Month + "/" + st1.DOB.Year);
             Console.WriteLine(st1.FatherName);
             Console.WriteLine(st1.MotherName);
             Console.WriteLine(st1.Email);
@@ -59,11 +59,12 @@ namespace University_Management_System
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Departments.Facultys.FacultyName);
             }
             st1.getRegisteredCourses("22-48108-2");
-            for (int i = 0;i < st1.RegisteredCourses.Length;i++)
+            for (int i = 0; i < st1.RegisteredCourses.Length; i++)
             {
-                Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName+ "\n"+st1.RegisteredCourses[i].SectionName);
+                Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName + "\n" + st1.RegisteredCourses[i].SectionName);
             }
-
+            st1.RegisteredCourses[0].getResult();
+            Console.WriteLine(st1.RegisteredCourses[0].Results[0].FinalResult); 
 
             Teacher tea = new Teacher("2201-2132-2");
             Console.WriteLine(tea.FirstName);
@@ -89,13 +90,13 @@ namespace University_Management_System
             Console.WriteLine(adm.Email);
             Console.WriteLine(adm.Mobile);
             Console.WriteLine(adm.Position);
-            
+
 
             Section ss = new Section("06");
             Console.WriteLine(ss.SectionName);
-            Console.WriteLine(ss.Teachers.FirstName+" "+ss.Teachers.LastName);
+            Console.WriteLine(ss.Teachers.FirstName + " " + ss.Teachers.LastName);
             Console.WriteLine(ss.Courses.CourseName);
-            if(ss.RegisteredStudents.Students.Length > 0)
+            if (ss.RegisteredStudents.Students.Length > 0)
             {
                 for (int i = 0; i < ss.RegisteredStudents.Students.Length; i++)
                 {
@@ -106,8 +107,8 @@ namespace University_Management_System
             {
                 Console.WriteLine("No Registered Student");
             }
-            
-            
+
+
 
             Console.ReadKey();
         }

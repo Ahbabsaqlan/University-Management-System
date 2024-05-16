@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Runtime.CompilerServices;
 
 namespace University_Management_System
 {
@@ -28,28 +29,7 @@ namespace University_Management_System
             Courses = new Course(dr.Field<string>(4));
             Teachers=new Teacher(dr.Field<string>(5));
             RegisteredStudents = new RegisteredStudent(id);
-
-            //Fetch Data
-            string Data = "select Obtained_Mark,Assessment_Name,Student_ID from Result where Section_ID='" + id + "'";
-            SqlDataAdapter adapter1 = new SqlDataAdapter(Data, connection);
-            DataTable dt1 = new DataTable();
-            adapter.Fill(dt1);
-            int index = 0;
             Results = new Result[RegisteredStudents.Students.Length];
-            foreach (DataRow data in dt.Rows)
-            {
-                foreach (var ids in data.ItemArray)
-                {
-                    Results[index] = new Result();
-                    Results[index].Students=new Student(ids.ToString());
-                    Results[index].AssessmentName=ids.ToString();
-                    index++;
-                }
-            }
-
-            //Grades =new Grade(id);
-            //Teachers.ID=dr.Field<string>(5);
-
         }
 
         private string _id;
@@ -124,9 +104,12 @@ namespace University_Management_System
             set { _results = value; }
         }
 
-        public void getResult(Student student)
+        public void getResult()
         {
-            
+            for (int i = 0; i < Results.Length; i++)
+            {
+                Results[i] = new Result(ID, RegisteredStudents.Students[i].ID);
+            }
         }
     }
 }
