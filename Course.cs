@@ -10,15 +10,19 @@ namespace University_Management_System
 {
     internal class Course
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
 
+        public Course() 
+        {
+
+        }
         public Course(string id) 
         {
             ID = id;
             if (id is null)
             {
                
-                CourseName = "No Pre-requised";
+                CourseName = "Null";
             }
             else
             {
@@ -32,21 +36,28 @@ namespace University_Management_System
                 Credit = dr.Field<int>(1);
                 if (dr[2]==DBNull.Value)
                 {
-                    First_pre_req = new Course(dr.Field<string>(2));
+                    First_pre_req = new Course();
+                    First_pre_req.ID = "null";
                 }
                 else
                 {
-                    First_pre_req = new Course(null);
+                    First_pre_req = new Course();
+                    First_pre_req.ID = dr.Field<string>(2);
+                    
                 }
+                
 
                 if (dr[3] ==DBNull.Value)
                 {
-                    Second_pre_req = new Course(dr.Field<string>(3));
+                    Second_pre_req = new Course();
+                    Second_pre_req.ID = "null";
                 }
                 else
-                {
-                    Second_pre_req = new Course(null);
+                {     
+                    Second_pre_req = new Course();
+                    Second_pre_req.ID = dr.Field<string>(2);
                 }
+
                 Departments = new Departments(dr.Field<string>(4));
             }
         }
@@ -75,7 +86,7 @@ namespace University_Management_System
             set { _credit = value; }
         }
 
-        private Course _first_pre_req;
+        private Course _first_pre_req ;
 
          public Course First_pre_req
          {
@@ -83,7 +94,7 @@ namespace University_Management_System
              set { _first_pre_req = value; }
          }
 
-         private Course _second_pre_req;
+         private Course _second_pre_req ;
 
          public Course Second_pre_req
          {

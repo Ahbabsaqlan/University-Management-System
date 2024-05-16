@@ -11,11 +11,12 @@ namespace University_Management_System
 {
     internal class Teacher : Person
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
+        public Teacher() { }
         public Teacher(string id) 
         {
             ID = id;
-            //Fetch Data
+            //Fetch Personal Data
             string teacherData = "select First_Name,Last_Name,Father_Name,Mother_Name,Email,Mobile,NID,Position,Department_ID from TEACHER where Teacher_ID='" + id + "'";
             SqlDataAdapter adapter = new SqlDataAdapter(teacherData, connection);
             DataTable dt = new DataTable();
@@ -33,6 +34,8 @@ namespace University_Management_System
             DataTable dt2 = new DataTable();
             adapter2.Fill(dt2);
             DataRow dr2 = dt2.Rows[0];
+
+            
 
             setval(dr.Field<string>(0), dr.Field<string>(1), dr.Field<string>(2), dr.Field<string>(3), dr.Field<string>(4), dr.Field<string>(5), dr.Field<string>(6), dr1.Field<string>(0), dr1.Field<string>(1), dr1.Field<string>(2), dr1.Field<string>(3), dr2.Field<int>(0), dr2.Field<int>(1), dr2.Field<int>(2));
             Position = dr.Field<string>(7);
@@ -64,6 +67,14 @@ namespace University_Management_System
         {
             get { return _departments; }
             set { _departments = value; }
+        }
+
+        private Section[] _registeredCourses;
+
+        public Section[] RegisteredCourses
+        {
+            get { return _registeredCourses; }
+            set { _registeredCourses = value; }
         }
     }
 }

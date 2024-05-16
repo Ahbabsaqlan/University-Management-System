@@ -10,7 +10,7 @@ namespace University_Management_System
 {
     internal class Section
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
 
         public Section(string id) 
         {
@@ -25,8 +25,9 @@ namespace University_Management_System
             Semester = dr.Field<string>(1);
             Schedules=new Schedule(dr.Field<string>(2),dr.Field<string>(6));
             RoomNo= dr.Field<string>(3);
-            Courses=new Course(dr.Field<string>(4));
+            Courses = new Course(dr.Field<string>(4));
             Teachers=new Teacher(dr.Field<string>(5));
+            //Teachers.ID=dr.Field<string>(5);
 
         }
 

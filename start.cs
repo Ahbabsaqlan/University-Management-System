@@ -20,27 +20,28 @@ namespace University_Management_System
         //}
         public static void Main(string[] args)
         {
-            Student st = new Student("22-48108-2");
-            Console.WriteLine(st.FirstName);
-            Console.WriteLine(st.LastName);
-            Console.WriteLine(st.FatherName);
-            Console.WriteLine(st.MotherName);
-            Console.WriteLine(st.Email);
-            Console.WriteLine(st.Mobile);
-            Console.WriteLine(st.CGPA);
-            Console.WriteLine(st.CreditComplete);
-            Console.WriteLine(st.Programs.ProgramName);
-            Console.WriteLine(Program.TotalCourse);
-            Console.WriteLine(st.Programs.Facultys.FacultyName);
-            for(int i=0;i< Program.TotalCourse; i++)
-            {
-                Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[i].CourseName);
-            }
-            Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[Program.TotalCourse-1].Departments.DepartmentName);
+            //Student st = new Student("22-48108-2");
+            //Console.WriteLine(st.FirstName);
+            //Console.WriteLine(st.LastName);
+            //Console.WriteLine(st.FatherName);
+            //Console.WriteLine(st.MotherName);
+            //Console.WriteLine(st.Email);
+            //Console.WriteLine(st.Mobile);
+            //Console.WriteLine(st.CGPA);
+            //Console.WriteLine(st.CreditComplete);
+            //Console.WriteLine(st.Programs.ProgramName);
+            //Console.WriteLine(Program.TotalCourse);
+            //Console.WriteLine(st.Programs.Facultys.FacultyName);
+            //for(int i=0;i< Program.TotalCourse; i++)
+            //{
+            //    Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[i].CourseName);
+            //}
+            //Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[Program.TotalCourse-1].Departments.DepartmentName);
 
-            Student st1 = new Student("22-48109-2");
+            Student st1 = new Student("22-48108-2");
             Console.WriteLine(st1.FirstName);
             Console.WriteLine(st1.LastName);
+            Console.WriteLine(st1.DOB.Day+"/"+st1.DOB.Month+"/"+st1.DOB.Year);
             Console.WriteLine(st1.FatherName);
             Console.WriteLine(st1.MotherName);
             Console.WriteLine(st1.Email);
@@ -53,31 +54,35 @@ namespace University_Management_System
             for (int i = 0; i < Program.TotalCourse; i++)
             {
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].CourseName);
-                Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].First_pre_req.CourseName);
-                Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Second_pre_req.CourseName);
+                Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].First_pre_req.ID);
+                Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Second_pre_req.ID);
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Departments.Facultys.FacultyName);
+            }
+            for(int i = 0;i < st1.RegisteredCourses.Length;i++)
+            {
+                Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName+ "\n"+st1.RegisteredCourses[i].SectionName);
             }
             
 
-            Teacher tea = new Teacher("1705-1788-2");
-            Console.WriteLine(tea.FirstName);
-            Console.WriteLine(tea.LastName);
-            Console.WriteLine(tea.FatherName);
-            Console.WriteLine(tea.MotherName);
-            Console.WriteLine(tea.Email);
-            Console.WriteLine(tea.Mobile);
-            Console.WriteLine(tea.Position);
-            Console.WriteLine(tea.DepartMents.DepartmentName);
-            Console.WriteLine(tea.DepartMents.Facultys.FacultyName);
+            //Teacher tea = new Teacher("1705-1788-2");
+            //Console.WriteLine(tea.FirstName);
+            //Console.WriteLine(tea.LastName);
+            //Console.WriteLine(tea.FatherName);
+            //Console.WriteLine(tea.MotherName);
+            //Console.WriteLine(tea.Email);
+            //Console.WriteLine(tea.Mobile);
+            //Console.WriteLine(tea.Position);
+            //Console.WriteLine(tea.DepartMents.DepartmentName);
+            //Console.WriteLine(tea.DepartMents.Facultys.FacultyName);
 
-            Admin adm = new Admin("ADMIN1");
-            Console.WriteLine(adm.FirstName);
-            Console.WriteLine(adm.LastName);
-            Console.WriteLine(adm.FatherName);
-            Console.WriteLine(adm.MotherName);
-            Console.WriteLine(adm.Email);
-            Console.WriteLine(adm.Mobile);
-            Console.WriteLine(adm.Position);
+            //Admin adm = new Admin("ADMIN1");
+            //Console.WriteLine(adm.FirstName);
+            //Console.WriteLine(adm.LastName);
+            //Console.WriteLine(adm.FatherName);
+            //Console.WriteLine(adm.MotherName);
+            //Console.WriteLine(adm.Email);
+            //Console.WriteLine(adm.Mobile);
+            //Console.WriteLine(adm.Position);
             Console.ReadKey();
         }
     }

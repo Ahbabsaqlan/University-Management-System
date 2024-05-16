@@ -10,7 +10,7 @@ namespace University_Management_System
 {
     internal class Curriculum
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
         public Curriculum(string id) 
         {
             string Data = "select Course_ID from CURRICULUM where Program_ID='" + id + "'";
