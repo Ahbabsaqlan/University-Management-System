@@ -12,7 +12,7 @@ namespace University_Management_System
     {
         SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
 
-        public Grade() 
+        public Grade(string id) 
         { 
 
         }

@@ -45,8 +45,6 @@ namespace University_Management_System
                     First_pre_req.ID = dr.Field<string>(2);
                     
                 }
-                
-
                 if (dr[3] ==DBNull.Value)
                 {
                     Second_pre_req = new Course();

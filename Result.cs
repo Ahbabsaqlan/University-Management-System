@@ -15,7 +15,7 @@ namespace University_Management_System
 
         public Result() 
         {
-
+            
         }
 
         private string _result_id;
@@ -40,13 +40,13 @@ namespace University_Management_System
             set { _ObtainedMark = value; }
         }
 
-        private Section _section;
+        //private Section _section;
  
-        public Section Sections
-        {
-            get { return _section; }
-            set { _section = value; }
-        }
+        //public Section Sections
+        //{
+        //    get { return _section; }
+        //    set { _section = value; }
+        //}
         private Student _student;
  
         public Student Students

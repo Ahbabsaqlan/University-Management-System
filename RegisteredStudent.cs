@@ -18,16 +18,20 @@ namespace University_Management_System
             SqlDataAdapter adapter = new SqlDataAdapter(studentData, connection);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
-            int index = 0;
             Students = new Student[dt.Rows.Count];
-            foreach (DataRow data in dt.Rows)
+            if (dt.Rows.Count > 0)
             {
-                foreach (var ids in data.ItemArray)
+                int index = 0;
+                foreach (DataRow data in dt.Rows)
                 {
-                    Students[index] = new Student(ids.ToString());
-                    index++;
+                    foreach (var ids in data.ItemArray)
+                    {
+                        Students[index] = new Student(ids.ToString());
+                        index++;
+                    }
                 }
             }
+            
         }
 
         private Student[] _students;
@@ -37,6 +41,7 @@ namespace University_Management_System
             get { return _students; }
             set { _students = value; }
         }
-          
+
+        
     }
 }

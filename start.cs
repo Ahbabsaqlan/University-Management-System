@@ -91,14 +91,22 @@ namespace University_Management_System
             Console.WriteLine(adm.Position);
             
 
-            Section ss = new Section("01");
+            Section ss = new Section("06");
             Console.WriteLine(ss.SectionName);
             Console.WriteLine(ss.Teachers.FirstName+" "+ss.Teachers.LastName);
             Console.WriteLine(ss.Courses.CourseName);
-            for(int i = 0; i < ss.RegisteredStudents.Students.Length; i++)
+            if(ss.RegisteredStudents.Students.Length > 0)
             {
-                Console.WriteLine(ss.RegisteredStudents.Students[i].FirstName+" "+ ss.RegisteredStudents.Students[i].FirstName);
+                for (int i = 0; i < ss.RegisteredStudents.Students.Length; i++)
+                {
+                    Console.WriteLine(ss.RegisteredStudents.Students[i].FirstName + " " + ss.RegisteredStudents.Students[i].FirstName);
+                }
             }
+            else
+            {
+                Console.WriteLine("No Registered Student");
+            }
+            
             
 
             Console.ReadKey();
