@@ -47,7 +47,7 @@ namespace University_Management_System
                 }
             }
 
-            Grades =new Grade(id);
+            //Grades =new Grade(id);
             //Teachers.ID=dr.Field<string>(5);
 
         }
