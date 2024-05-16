@@ -12,9 +12,12 @@ namespace University_Management_System
 {
     public partial class Show_Course : UserControl
     {
-        public Show_Course()
+        public Show_Course(string name,string code, string fir_pre_req,string sec_pre_req)
         {
             InitializeComponent();
+            Course_Name.Text = name;
+
+
         }
 
         private void Show_Course_Load(object sender, EventArgs e)

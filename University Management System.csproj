@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B1CC489A-3B2E-4632-AA2C-5922227F1E31}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>University_Management_System</RootNamespace>
     <AssemblyName>University Management System</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,12 +56,14 @@
     <Compile Include="Add Student.Designer.cs">
       <DependentUpon>Add Student.cs</DependentUpon>
     </Compile>
+    <Compile Include="Address.cs" />
     <Compile Include="Add_Teacher.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Add_Teacher.Designer.cs">
       <DependentUpon>Add_Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin.cs" />
     <Compile Include="Admin_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,24 +76,30 @@
     <Compile Include="Admin_Search.Designer.cs">
       <DependentUpon>Admin_Search.cs</DependentUpon>
     </Compile>
+    <Compile Include="Course.cs" />
+    <Compile Include="Curriculum.cs" />
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Date.cs" />
     <Compile Include="Department.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Department.Designer.cs">
       <DependentUpon>Department.cs</DependentUpon>
     </Compile>
+    <Compile Include="Departments.cs" />
     <Compile Include="Dept_Show.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dept_Show.Designer.cs">
       <DependentUpon>Dept_Show.cs</DependentUpon>
     </Compile>
+    <Compile Include="Faculty.cs" />
+    <Compile Include="Grade.cs" />
     <Compile Include="Layout.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,7 +112,11 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="Section.cs" />
+    <Compile Include="start.cs" />
     <Compile Include="Programs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,12 +148,14 @@
     <Compile Include="Show_Students.Designer.cs">
       <DependentUpon>Show_Students.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student.cs" />
     <Compile Include="Student_List.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Student_List.Designer.cs">
       <DependentUpon>Student_List.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher.cs" />
     <Compile Include="TextBox_Admin.cs">
       <SubType>UserControl</SubType>
     </Compile>

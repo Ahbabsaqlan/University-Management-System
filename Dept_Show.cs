@@ -13,7 +13,7 @@ namespace University_Management_System
 {
     public partial class Dept_Show : UserControl
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_SYSTEM 2;Integrated Security=True;");
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
         DataRow r = null;
         public Dept_Show(string name)
         {

@@ -19,12 +19,12 @@ namespace University_Management_System
         }
         private void show()
         {
-            Show_Course[] pg = new Show_Course[2];
-            for (int i = 0; i < pg.Length; i++)
-            {
-                pg[i] = new Show_Course();
-                Course_LIst.Controls.Add(pg[i]);
-            }
+            //Show_Course[] pg = new Show_Course[2];
+            //for (int i = 0; i < pg.Length; i++)
+            //{
+            //    pg[i] = new Show_Course();
+            //    Course_LIst.Controls.Add(pg[i]);
+            //}
         }
 
         private void Adt_Head_Panel_Paint(object sender, PaintEventArgs e)

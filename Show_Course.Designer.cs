@@ -32,7 +32,7 @@
             this.Course_Code = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.fir_pre_ = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -77,15 +77,15 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Second Pre-requised";
             // 
-            // label3
+            // fir_pre_
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(591, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Course_Code";
+            this.fir_pre_.AutoSize = true;
+            this.fir_pre_.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.fir_pre_.Location = new System.Drawing.Point(591, 117);
+            this.fir_pre_.Name = "fir_pre_";
+            this.fir_pre_.Size = new System.Drawing.Size(135, 25);
+            this.fir_pre_.TabIndex = 4;
+            this.fir_pre_.Text = "Course_Code";
             // 
             // label4
             // 
@@ -103,7 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.fir_pre_);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Course_Code);
@@ -122,7 +122,7 @@
         private System.Windows.Forms.Label Course_Code;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label fir_pre_;
         private System.Windows.Forms.Label label4;
     }
 }
