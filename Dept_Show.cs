@@ -30,9 +30,9 @@ namespace University_Management_System
 
         private void Dept_ShowCourse_btn_Click(object sender, EventArgs e)
         {
-            Program_Course program_Course = new Program_Course(r.Field<string>(0));
+            //Program_Course program_Course = new Program_Course(r.Field<string>(0));
             Department.ActiveForm.Hide();
-            program_Course.Show();
+            //program_Course.Show();
         }
 
         private void Dept_ShowTeacher_btn_Click(object sender, EventArgs e)

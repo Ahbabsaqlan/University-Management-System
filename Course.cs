@@ -34,10 +34,18 @@ namespace University_Management_System
                 {
                     First_pre_req = new Course(dr.Field<string>(2));
                 }
+                else
+                {
+                    First_pre_req = new Course(null);
+                }
 
                 if (dr[3] ==DBNull.Value)
                 {
                     Second_pre_req = new Course(dr.Field<string>(3));
+                }
+                else
+                {
+                    Second_pre_req = new Course(null);
                 }
                 Departments = new Departments(dr.Field<string>(4));
             }

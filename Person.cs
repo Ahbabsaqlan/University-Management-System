@@ -85,7 +85,7 @@ namespace University_Management_System
 			set { _address = value; }
 		}
 
-        protected void setval(string firstname, string lastname, string fathername, string mothername, string email, string mobile, string nid)
+        protected void setval(string firstname, string lastname, string fathername, string mothername, string email, string mobile, string nid,string house,string road,string area,string city,int day,int month,int year)
         {
             FirstName = firstname;
             LastName = lastname;
@@ -94,6 +94,8 @@ namespace University_Management_System
             Email = email;
             Mobile = mobile;
             NID = nid;
+			Address=new Address(house, road,area,city);
+			DOB = new Date(day,month,year);
         }
 
 

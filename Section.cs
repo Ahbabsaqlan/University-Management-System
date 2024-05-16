@@ -12,8 +12,21 @@ namespace University_Management_System
     {
         SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
 
-        public Section() 
+        public Section(string id) 
         {
+            ID = id;
+            //Fetch Data
+            string query = "select Section_Name,Semester,Schedule,Room_No,Course_ID,Teacher_ID,Day from SECTION where Section_ID='" + id + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            DataRow dr = dt.Rows[0];
+            SectionName = dr.Field<string>(0);
+            Semester = dr.Field<string>(1);
+            Schedules=new Schedule(dr.Field<string>(2),dr.Field<string>(6));
+            RoomNo= dr.Field<string>(3);
+            Courses=new Course(dr.Field<string>(4));
+            Teachers=new Teacher(dr.Field<string>(5));
 
         }
 
@@ -65,13 +78,13 @@ namespace University_Management_System
             set { _course = value; }
         }
 
-       /* private Schedule _schedule;
+        private Schedule _schedule;
 
-        public Schedule schedule
+        public Schedule Schedules
         {
             get { return _schedule; }
             set { _schedule = value; }
-        }*/
+        }
 
     }
 }

@@ -21,7 +21,20 @@ namespace University_Management_System
             DataTable dt = new DataTable();
             adapter.Fill(dt);
 			DataRow dr = dt.Rows[0];
-			setval(dr.Field<string>(0), dr.Field<string>(1), dr.Field<string>(2), dr.Field<string>(3), dr.Field<string>(4), dr.Field<string>(5), dr.Field<string>(6));
+
+            string query1 = "select House,Road,Area,City from ADDRESS where Person_ID='" + id + "'";
+            SqlDataAdapter adapter1 = new SqlDataAdapter(query1, connection);
+            DataTable dt1 = new DataTable();
+            adapter1.Fill(dt1);
+            DataRow dr1 = dt1.Rows[0];
+
+            string query2 = "select Day,Month,Year from Date_of_Birth where Person_ID='" + id + "'";
+            SqlDataAdapter adapter2 = new SqlDataAdapter(query2, connection);
+            DataTable dt2 = new DataTable();
+            adapter2.Fill(dt2);
+            DataRow dr2 = dt2.Rows[0];
+
+            setval(dr.Field<string>(0), dr.Field<string>(1), dr.Field<string>(2), dr.Field<string>(3), dr.Field<string>(4), dr.Field<string>(5), dr.Field<string>(6), dr1.Field<string>(0), dr1.Field<string>(1), dr1.Field<string>(2), dr1.Field<string>(3),dr2.Field<int>(0), dr2.Field<int>(1), dr2.Field<int>(2));
 			Position=dr.Field<string>(7);
 		}
 

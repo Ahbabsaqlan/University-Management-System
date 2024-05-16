@@ -12,7 +12,7 @@ namespace University_Management_System
 {
     public partial class Program_Course : Form
     {
-        public Program_Course(string dept)
+        public Program_Course()
         {
             InitializeComponent();
             show();

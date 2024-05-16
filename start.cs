@@ -53,8 +53,11 @@ namespace University_Management_System
             for (int i = 0; i < Program.TotalCourse; i++)
             {
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].CourseName);
+                Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].First_pre_req.CourseName);
+                Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Second_pre_req.CourseName);
+                Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Departments.Facultys.FacultyName);
             }
-            Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[Program.TotalCourse-1].Departments.DepartmentName);
+            
 
             Teacher tea = new Teacher("1705-1788-2");
             Console.WriteLine(tea.FirstName);
