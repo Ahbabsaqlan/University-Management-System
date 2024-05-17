@@ -58,13 +58,17 @@ namespace University_Management_System
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Second_pre_req.ID);
                 Console.WriteLine(st1.Programs.Curriculums.CurricullumCourses[i].Departments.Facultys.FacultyName);
             }
-            st1.getRegisteredCourses("22-48108-2");
+            st1.getCoursesInfo();
             for (int i = 0; i < st1.RegisteredCourses.Length; i++)
             {
                 Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName + "\n" + st1.RegisteredCourses[i].SectionName);
             }
             st1.RegisteredCourses[0].getResult();
-            Console.WriteLine(st1.RegisteredCourses[0].Results[0].FinalResult); 
+            Console.WriteLine(st1.RegisteredCourses[0].Results[0].FinalResult);
+            for (int i = 0; i < st1.AvailableCourses.Length; i++)
+            {
+                Console.WriteLine(st1.AvailableCourses[i].CourseName);
+            }
 
             Teacher tea = new Teacher("2201-2132-2");
             Console.WriteLine(tea.FirstName);

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using University_Management_System;
+using System.Security.Policy;
 
 namespace University_Management_System
 {
@@ -91,10 +92,18 @@ namespace University_Management_System
             set { _availableCourses = value; }
         }
 
-        public void getRegisteredCourses(string id)
+        private Course[] _completedCourses;
+
+        public Course[] CompletedCourses
+        {
+            get { return _completedCourses; }
+            set { _completedCourses = value; }
+        }
+
+        public void getCoursesInfo()
         {
             //Fetch Course Data
-            string studentData1 = "select Section_ID from Registered_Students where Student_ID='" + id + "'";
+            string studentData1 = "select Section_ID from Registered_Students where Student_ID='" + ID + "'";
             SqlDataAdapter adapter3 = new SqlDataAdapter(studentData1, connection);
             DataTable dt3 = new DataTable();
             adapter3.Fill(dt3);
@@ -108,10 +117,58 @@ namespace University_Management_System
                     index++;
                 }
             }
+
+            int complete = 0;
+            for (int i = 0; RegisteredCourses.Length > i; i++)
+            {
+                this.RegisteredCourses[i].getResult();
+                for (int j = 0; j < RegisteredCourses[i].Results.Length; j++)
+                {
+                    if (this.RegisteredCourses[i].Results[j].StudentID == this.ID && this.RegisteredCourses[i].Results[j].Grade >= 50)
+                    {
+                        complete++;
+                    }
+                }
+
+            }
+            CompletedCourses = new Course[complete];
+            for (int i = 0; RegisteredCourses.Length > i; i++)
+            {
+                this.RegisteredCourses[i].getResult();
+                for (int j = 0; j < RegisteredCourses[i].Results.Length; j++)
+                {
+                    if (this.RegisteredCourses[i].Results[j].StudentID == this.ID && this.RegisteredCourses[i].Results[j].Grade >= 50)
+                    {
+                        CompletedCourses[--complete] = new Course(this.RegisteredCourses[i].Courses.ID);
+                    }
+                }
+            }
+
+            int available = 0;
+            for (int i = 0; i < Programs.Curriculums.CurricullumCourses.Length; i++)
+            {
+                for (int j = 0; j < CompletedCourses.Length; j++)
+                {
+                    if (Programs.Curriculums.CurricullumCourses[i].ID != CompletedCourses[j].ID)
+                    {
+                        available++;
+                    }
+                }
+            }
+            AvailableCourses = new Course[available];
+            for (int i = 0; i < Programs.Curriculums.CurricullumCourses.Length; i++)
+            {
+                for (int j = 0; j < CompletedCourses.Length; j++)
+                {
+                    if (Programs.Curriculums.CurricullumCourses[i].ID != CompletedCourses[j].ID)
+                    {
+                        AvailableCourses[--available] = new Course(Programs.Curriculums.CurricullumCourses[i].ID);
+                    }
+                }
+            }
+
         }
-
-
-
+        
     }
 
 }

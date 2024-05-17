@@ -20,19 +20,42 @@ namespace University_Management_System
             SqlDataAdapter adapter2 = new SqlDataAdapter(Data1, connection);
             DataTable dt2 = new DataTable();
             adapter2.Fill(dt2);
-            DataRow dr = dt2.Rows[0];
-            Result_ID = dr.Field<string>(0);
-            AttendanceMid= dr.Field<double>(1);
-            AttendanceFinal= dr.Field<double>(2);
-            Quiz1= dr.Field<double>(3);
-            Quiz2 = dr.Field<double>(4);
-            Quiz3 = dr.Field<double>(5);
-            Quiz4 = dr.Field<double>(6);
-            MidExam= dr.Field<double>(7);
-            FinalExam= dr.Field<double>(8);
-            MidResult= dr.Field<double>(9);
-            FinalResult= dr.Field<double>(10);
-            Grade= dr.Field<double>(11);
+            if(dt2.Rows.Count > 0)
+            {
+                DataRow dr = dt2.Rows[0];
+                Result_ID = dr.Field<string>(0);
+                AttendanceMid = dr.Field<double>(1);
+                AttendanceFinal = dr.Field<double>(2);
+                Quiz1 = dr.Field<double>(3);
+                Quiz2 = dr.Field<double>(4);
+                Quiz3 = dr.Field<double>(5);
+                Quiz4 = dr.Field<double>(6);
+                MidExam = dr.Field<double>(7);
+                FinalExam = dr.Field<double>(8);
+                MidResult = dr.Field<double>(9);
+                FinalResult = dr.Field<double>(10);
+                Grade = dr.Field<double>(11);
+                StudentID = studentID;
+                SectionID = sectionID;
+            }
+            else
+            {
+                Result_ID = null;
+                AttendanceMid = 0;
+                AttendanceFinal = 0;
+                Quiz1 = 0;
+                Quiz2 = 0;
+                Quiz3 = 0;
+                Quiz4 = 0;
+                MidExam = 0;
+                FinalExam = 0;
+                MidResult = 0;
+                FinalResult = 0;
+                Grade = 0;
+                StudentID = studentID;
+                SectionID = sectionID;
+            }
+            
         }
 
         private string _result_id;
@@ -126,19 +149,20 @@ namespace University_Management_System
             set { _grade = value; }
         }
 
-        private Section _section;
+        private string _sectionID;
 
-        public Section Sections
+        public string SectionID
         {
-            get { return _section; }
-            set { _section = value; }
+            get { return _sectionID; }
+            set { _sectionID = value; }
         }
-        private Student _student;
- 
-        public Student Students
+
+        private string _studentID;
+
+        public string StudentID
         {
-            get { return _student; }
-            set { _student = value; }
+            get { return _studentID; }
+            set { _studentID = value; }
         }
     }
 }
