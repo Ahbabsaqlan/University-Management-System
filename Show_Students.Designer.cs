@@ -96,7 +96,7 @@
             this.Controls.Add(this.Person_First_Name);
             this.Name = "Show_Students";
             this.Size = new System.Drawing.Size(1002, 150);
-            this.Load += new System.EventHandler(this.Show_Students_Load);
+            this.Click += new System.EventHandler(this.Show_Students_Click);
             ((System.ComponentModel.ISupportInitialize)(this.Person_Image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

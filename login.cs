@@ -44,7 +44,7 @@ namespace University_Management_System
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             DataRow dr = dt.Rows[0];
-            if(dr.Field<string>(0)==id && dr.Field<string>(1)=="Admin")
+            if(dr.Field<string>(0)== login_Pass_TB.Text && dr.Field<string>(1)=="Admin")
             {
                 Admins = new Admin(id);
                 DashBoard dashBoard = new DashBoard(Admins);

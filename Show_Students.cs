@@ -36,12 +36,12 @@ namespace University_Management_System
             //}
         }
 
-        private void Show_Students_Load(object sender, EventArgs e)
+        private void Person_ID_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Person_ID_Click(object sender, EventArgs e)
+        private void Show_Students_Click(object sender, EventArgs e)
         {
 
         }

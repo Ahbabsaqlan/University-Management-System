@@ -10,19 +10,22 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Layout : UserControl
+    internal partial class Layout : UserControl
     {
-        Student student { get; set; }
-        Teacher teacher { get; set; }
-        Admin admin { get; set; }
-        public Layout(Admin admins)
+        //Admin admin { get; set; }
+        public Layout()
         {
             InitializeComponent();
             AddTeacher_btn.Hide();
             AddStudent_btn.Hide();
-            admin= admins;
-        }
 
+            
+        }
+        //public void adminholder(Admin admins)
+        //{
+        //    admin = admins;
+        //    InitializeComponent();
+        //}
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -132,9 +135,9 @@ namespace University_Management_System
 
         private void Home_btn_Click(object sender, EventArgs e)
         {
-            //DashBoard dashBoard = new DashBoard();
-            //dashBoard.Show();
-            //this.Parent.Hide();
+            DashBoard dashBoard = new DashBoard(DashBoard.admin);
+            dashBoard.Show();
+            this.Parent.Hide();
         }
 
         private void Logout_btn_Click(object sender, EventArgs e)

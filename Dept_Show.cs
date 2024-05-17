@@ -13,7 +13,7 @@ namespace University_Management_System
 {
     public partial class Dept_Show : UserControl
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
         DataRow r = null;
         public Dept_Show(string name)
         {
@@ -30,14 +30,14 @@ namespace University_Management_System
 
         private void Dept_ShowCourse_btn_Click(object sender, EventArgs e)
         {
-            //Program_Course program_Course = new Program_Course(r.Field<string>(0));
+            Program_Course program_Course = new Program_Course(r.Field<string>(0));
             Department.ActiveForm.Hide();
-            //program_Course.Show();
+            program_Course.Show();
         }
 
         private void Dept_ShowTeacher_btn_Click(object sender, EventArgs e)
         {
-            Student_List student_List = new Student_List(r.Field<string>(0));
+            Teacher_List student_List = new Teacher_List(r.Field<string>(0));
             Department.ActiveForm.Hide();
             student_List.Show();
         }

@@ -18,21 +18,23 @@ namespace University_Management_System
         public DashBoard(Admin admins)
         {
             InitializeComponent();
+            admin = admins;
             FST_Panel_up.BringToFront();
             FE_Panel_up.BringToFront();
             FBA_Panel_up.BringToFront();
             FASS_Panel_up.BringToFront();
-            admin = admins;
+            
             label1.Text = admin.FirstName;
-            Layout1 = new Layout(admin);
+            
         }
-        Admin admin;
+        public static Admin admin;
         
 
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            
         }
         // Minimize Button
         private void Minimize_btn_Click(object sender, EventArgs e)

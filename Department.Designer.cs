@@ -72,9 +72,8 @@
             this.Dept_Panel.Location = new System.Drawing.Point(356, 204);
             this.Dept_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Dept_Panel.MaximumSize = new System.Drawing.Size(1336, 860);
-            this.Dept_Panel.MinimumSize = new System.Drawing.Size(1336, 210);
             this.Dept_Panel.Name = "Dept_Panel";
-            this.Dept_Panel.Size = new System.Drawing.Size(1336, 210);
+            this.Dept_Panel.Size = new System.Drawing.Size(0, 0);
             this.Dept_Panel.TabIndex = 26;
             // 
             // layout1

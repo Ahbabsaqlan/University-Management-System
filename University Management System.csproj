@@ -151,11 +151,11 @@
       <DependentUpon>Show_Students.cs</DependentUpon>
     </Compile>
     <Compile Include="Student.cs" />
-    <Compile Include="Student_List.cs">
+    <Compile Include="Teacher_List.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student_List.Designer.cs">
-      <DependentUpon>Student_List.cs</DependentUpon>
+    <Compile Include="Teacher_List.Designer.cs">
+      <DependentUpon>Teacher_List.cs</DependentUpon>
     </Compile>
     <Compile Include="Teacher.cs" />
     <Compile Include="TextBox_Admin.cs">
@@ -216,8 +216,8 @@
     <EmbeddedResource Include="Show_Students.resx">
       <DependentUpon>Show_Students.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student_List.resx">
-      <DependentUpon>Student_List.cs</DependentUpon>
+    <EmbeddedResource Include="Teacher_List.resx">
+      <DependentUpon>Teacher_List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TextBox_Admin.resx">
       <DependentUpon>TextBox_Admin.cs</DependentUpon>

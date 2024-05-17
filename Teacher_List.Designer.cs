@@ -1,6 +1,6 @@
 ﻿namespace University_Management_System
 {
-    partial class Student_List
+    partial class Teacher_List
     {
         /// <summary>
         /// Required designer variable.
@@ -84,9 +84,9 @@
             this.Teacher_Reg_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.Teacher_Reg_Label.Location = new System.Drawing.Point(134, 12);
             this.Teacher_Reg_Label.Name = "Teacher_Reg_Label";
-            this.Teacher_Reg_Label.Size = new System.Drawing.Size(286, 39);
+            this.Teacher_Reg_Label.Size = new System.Drawing.Size(345, 39);
             this.Teacher_Reg_Label.TabIndex = 0;
-            this.Teacher_Reg_Label.Text = "Enrolled Students";
+            this.Teacher_Reg_Label.Text = "Departments Teacher";
             // 
             // Minimize_btn
             // 
@@ -114,7 +114,7 @@
             this.layout1.Size = new System.Drawing.Size(2049, 1065);
             this.layout1.TabIndex = 35;
             // 
-            // Student_List
+            // Teacher_List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -124,7 +124,7 @@
             this.Controls.Add(this.Minimize_btn);
             this.Controls.Add(this.layout1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Student_List";
+            this.Name = "Teacher_List";
             this.Text = "Student_List";
             this.Adt_Head_Panel.ResumeLayout(false);
             this.Adt_Head_Panel.PerformLayout();

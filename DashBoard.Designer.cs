@@ -48,6 +48,7 @@
             this.Minimize_btn = new System.Windows.Forms.Button();
             this.layout1 = new University_Management_System.Layout();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.FASS_panel.SuspendLayout();
             this.FBA_panel.SuspendLayout();
             this.Fe_Panel.SuspendLayout();
@@ -351,11 +352,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label1.Location = new System.Drawing.Point(222, 133);
+            this.label1.Location = new System.Drawing.Point(1610, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 36);
             this.label1.TabIndex = 10;
             this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label2.Location = new System.Drawing.Point(1512, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 36);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Hello";
             // 
             // DashBoard
             // 
@@ -363,6 +374,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(2049, 1065);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.FASS_Panel_up);
             this.Controls.Add(this.FST_Panel_up);
@@ -407,7 +419,8 @@
         private System.Windows.Forms.Panel FE_Panel_up;
         private System.Windows.Forms.Panel FBA_Panel_up;
         private System.Windows.Forms.Panel FASS_Panel_up;
-        private Layout layout1=new Layout(admin);
+        private Layout layout1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

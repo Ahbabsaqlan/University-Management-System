@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Student_List : Form
+    public partial class Teacher_List : Form
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANGEMENT_SYSTEM;Integrated Security=True;");
-        public Student_List(string dept)
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
+        public Teacher_List(string dept)
         {
             InitializeComponent();
             //Data Fetch

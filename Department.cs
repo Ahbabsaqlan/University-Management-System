@@ -12,15 +12,16 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Department : Form
+    internal partial class Department : Form
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_SYSTEM 2;Integrated Security=True;");
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
 
         public Department(string faculty)
         {
+            
             InitializeComponent();
             //Fetch Data
-            string query = "select Department_Name from DEPARTMENT where Faculty_ID='"+faculty+"'";
+            string query = "select Department_Name,Department_ID from DEPARTMENT where Faculty_ID='" + faculty+"'";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
