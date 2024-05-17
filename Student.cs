@@ -41,7 +41,6 @@ namespace University_Management_System
             CreditComplete = dr.Field<int>(8);
             Programs = new Program(dr.Field<string>(9));
 
-            
         }
 
         private string _id;
@@ -121,7 +120,6 @@ namespace University_Management_System
             int complete = 0;
             for (int i = 0; RegisteredCourses.Length > i; i++)
             {
-                this.RegisteredCourses[i].getResult();
                 for (int j = 0; j < RegisteredCourses[i].Results.Length; j++)
                 {
                     if (this.RegisteredCourses[i].Results[j].StudentID == this.ID && this.RegisteredCourses[i].Results[j].Grade >= 50)
@@ -134,7 +132,6 @@ namespace University_Management_System
             CompletedCourses = new Course[complete];
             for (int i = 0; RegisteredCourses.Length > i; i++)
             {
-                this.RegisteredCourses[i].getResult();
                 for (int j = 0; j < RegisteredCourses[i].Results.Length; j++)
                 {
                     if (this.RegisteredCourses[i].Results[j].StudentID == this.ID && this.RegisteredCourses[i].Results[j].Grade >= 50)

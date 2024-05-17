@@ -99,7 +99,7 @@
       <DependentUpon>Dept_Show.cs</DependentUpon>
     </Compile>
     <Compile Include="Faculty.cs" />
-    <Compile Include="Grade.cs" />
+    <Compile Include="Notice.cs" />
     <Compile Include="Layout.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -47,6 +47,7 @@
             this.FST_btn_dept = new System.Windows.Forms.Button();
             this.Minimize_btn = new System.Windows.Forms.Button();
             this.layout1 = new University_Management_System.Layout();
+            this.label1 = new System.Windows.Forms.Label();
             this.FASS_panel.SuspendLayout();
             this.FBA_panel.SuspendLayout();
             this.Fe_Panel.SuspendLayout();
@@ -346,12 +347,23 @@
             this.layout1.Size = new System.Drawing.Size(2049, 1065);
             this.layout1.TabIndex = 9;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label1.Location = new System.Drawing.Point(222, 133);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 36);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(2049, 1065);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.FASS_Panel_up);
             this.Controls.Add(this.FST_Panel_up);
             this.Controls.Add(this.FBA_Panel_up);
@@ -372,6 +384,7 @@
             this.Fe_Panel.ResumeLayout(false);
             this.FST_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -395,5 +408,6 @@
         private System.Windows.Forms.Panel FBA_Panel_up;
         private System.Windows.Forms.Panel FASS_Panel_up;
         private Layout layout1;
+        private System.Windows.Forms.Label label1;
     }
 }

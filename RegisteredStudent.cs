@@ -17,10 +17,10 @@ namespace University_Management_System
             string studentData = "select Student_ID from Registered_Students where Section_ID='" + id + "'";
             SqlDataAdapter adapter = new SqlDataAdapter(studentData, connection);
             DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            Students = new Student[dt.Rows.Count];
+            adapter.Fill(dt);   
             if (dt.Rows.Count > 0)
             {
+                Students = new Student[dt.Rows.Count];
                 int index = 0;
                 foreach (DataRow data in dt.Rows)
                 {
@@ -30,6 +30,10 @@ namespace University_Management_System
                         index++;
                     }
                 }
+            }
+            else
+            {
+                Students = new Student[dt.Rows.Count];
             }
             
         }

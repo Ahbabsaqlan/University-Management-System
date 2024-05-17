@@ -127,9 +127,9 @@ namespace University_Management_System
 
         private void Home_btn_Click(object sender, EventArgs e)
         {
-            DashBoard dashBoard = new DashBoard();
-            dashBoard.Show();
-            this.Parent.Hide();
+            //DashBoard dashBoard = new DashBoard();
+            //dashBoard.Show();
+            //this.Parent.Hide();
         }
 
         private void Logout_btn_Click(object sender, EventArgs e)

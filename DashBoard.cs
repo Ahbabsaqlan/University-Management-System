@@ -12,17 +12,22 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class DashBoard : Form
+    internal partial class DashBoard : Form
     {
         SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_SYSTEM 2;Integrated Security=True;");
-        public DashBoard()
+        public DashBoard(Student students)
         {
             InitializeComponent();
             FST_Panel_up.BringToFront();
             FE_Panel_up.BringToFront();
             FBA_Panel_up.BringToFront();
             FASS_Panel_up.BringToFront();
+            st = students;
+            label1.Text = st.FirstName;
         }
+        Student st;
+        
+
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -205,6 +210,5 @@ namespace University_Management_System
             pgrm.Show();
             this.Hide();
         }
-
     }
 }

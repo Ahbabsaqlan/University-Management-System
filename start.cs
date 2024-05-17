@@ -63,8 +63,9 @@ namespace University_Management_System
             {
                 Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName + "\n" + st1.RegisteredCourses[i].SectionName);
             }
-            st1.RegisteredCourses[0].getResult();
+            
             Console.WriteLine(st1.RegisteredCourses[0].Results[0].FinalResult);
+            Console.WriteLine(st1.RegisteredCourses[0].Notices.NoticesContent[0].Title);
             for (int i = 0; i < st1.AvailableCourses.Length; i++)
             {
                 Console.WriteLine(st1.AvailableCourses[i].CourseName);

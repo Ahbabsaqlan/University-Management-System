@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ namespace University_Management_System
 {
     public partial class login : Form
     {
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
+
+        Student Students { get; set; }
         public login()
         {
             InitializeComponent();
@@ -31,9 +35,24 @@ namespace University_Management_System
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-            DashBoard dashBoard = new DashBoard();
-            dashBoard.Show();
-            this.Hide();
+            string id=login_ID_TB.Text;
+            //Fetch Data
+            string query = "select password,role from LOGIN where user_id='" + id + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            DataRow dr = dt.Rows[0];
+            if(dr.Field<string>(0)==login_Pass_TB.Text)
+            {
+                Students = new Student(id);
+                DashBoard dashBoard = new DashBoard(Students);
+                dashBoard.Show();
+                this.Hide();
+            }
+
+            
+
+            
         }
     }
 }

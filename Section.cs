@@ -30,6 +30,11 @@ namespace University_Management_System
             Teachers=new Teacher(dr.Field<string>(5));
             RegisteredStudents = new RegisteredStudent(id);
             Results = new Result[RegisteredStudents.Students.Length];
+            for (int i = 0; i < Results.Length; i++)
+            {
+                Results[i] = new Result(ID, RegisteredStudents.Students[i].ID);
+            }
+            Notices=new Notice(ID);
         }
 
         private string _id;
@@ -104,12 +109,13 @@ namespace University_Management_System
             set { _results = value; }
         }
 
-        public void getResult()
+        private Notice _notices;
+
+        public Notice Notices
         {
-            for (int i = 0; i < Results.Length; i++)
-            {
-                Results[i] = new Result(ID, RegisteredStudents.Students[i].ID);
-            }
+            get { return _notices; }
+            set { _notices = value; }
         }
+
     }
 }
