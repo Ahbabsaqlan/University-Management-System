@@ -12,12 +12,17 @@ namespace University_Management_System
 {
     public partial class Layout : UserControl
     {
-        public Layout()
+        Student student { get; set; }
+        Teacher teacher { get; set; }
+        Admin admin { get; set; }
+        public Layout(Admin admins)
         {
             InitializeComponent();
             AddTeacher_btn.Hide();
             AddStudent_btn.Hide();
+            admin= admins;
         }
+
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {

@@ -14,18 +14,19 @@ namespace University_Management_System
 {
     internal partial class DashBoard : Form
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_SYSTEM 2;Integrated Security=True;");
-        public DashBoard(Student students)
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
+        public DashBoard(Admin admins)
         {
             InitializeComponent();
             FST_Panel_up.BringToFront();
             FE_Panel_up.BringToFront();
             FBA_Panel_up.BringToFront();
             FASS_Panel_up.BringToFront();
-            st = students;
-            label1.Text = st.FirstName;
+            admin = admins;
+            label1.Text = admin.FirstName;
+            Layout1 = new Layout(admin);
         }
-        Student st;
+        Admin admin;
         
 
         // Exit Button

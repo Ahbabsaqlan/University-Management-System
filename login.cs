@@ -16,6 +16,8 @@ namespace University_Management_System
         SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
 
         Student Students { get; set; }
+        Teacher Teachers { get; set; }
+        Admin Admins { get; set; }
         public login()
         {
             InitializeComponent();
@@ -42,10 +44,10 @@ namespace University_Management_System
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             DataRow dr = dt.Rows[0];
-            if(dr.Field<string>(0)==login_Pass_TB.Text)
+            if(dr.Field<string>(0)==id && dr.Field<string>(1)=="Admin")
             {
-                Students = new Student(id);
-                DashBoard dashBoard = new DashBoard(Students);
+                Admins = new Admin(id);
+                DashBoard dashBoard = new DashBoard(Admins);
                 dashBoard.Show();
                 this.Hide();
             }

@@ -407,7 +407,7 @@
         private System.Windows.Forms.Panel FE_Panel_up;
         private System.Windows.Forms.Panel FBA_Panel_up;
         private System.Windows.Forms.Panel FASS_Panel_up;
-        private Layout layout1;
+        private Layout layout1=new Layout(admin);
         private System.Windows.Forms.Label label1;
     }
 }
