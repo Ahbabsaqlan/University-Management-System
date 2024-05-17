@@ -13,8 +13,11 @@ namespace University_Management_System
 {
     public partial class Programs : Form
     {
-        public Programs()
+        Faculty faculty;
+        public Programs(string facultyID)
         {
+            faculty=new Faculty(facultyID);
+            faculty.getPrograms();
             InitializeComponent();
             showProgram();
         }
@@ -27,10 +30,12 @@ namespace University_Management_System
         // Data Showcasing
         private void showProgram()
         {
-            Program_Show[] pg = new Program_Show[10];
+            Program_Show[] pg = new Program_Show[faculty.Programs.Length];
             for (int i = 0; i < pg.Length; i++)
             {
                 pg[i] = new Program_Show();
+                pg[i].Programss = faculty.Programs[i];
+                pg[i].showProgramCourses();
                 Pgrm_Panel.Controls.Add(pg[i]);
             }
         }

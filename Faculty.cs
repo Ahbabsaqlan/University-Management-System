@@ -38,6 +38,27 @@ namespace University_Management_System
 			get { return _facultyName; }
 			set { _facultyName = value; }
 		}
-		
+
+		private Program[] _programs;
+
+		public Program[] Programs
+        {
+			get { return _programs; }
+			set { _programs = value; }
+		}
+
+		public void getPrograms()
+		{
+            string Data = "select Program_ID  from PROGRAM where Faculty_ID='" + ID + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(Data, connection);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+			Programs=new Program[dt.Rows.Count];
+			int index = 0;
+            foreach(DataRow dataRow in dt.Rows)
+			{
+				Programs[index++]=new Program(dataRow.Field<string>(0));
+			}
+        }
 	}
 }

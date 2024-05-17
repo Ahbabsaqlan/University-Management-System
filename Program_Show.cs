@@ -10,18 +10,31 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Program_Show : UserControl
+    internal partial class Program_Show : UserControl
     {
         public Program_Show()
         {
             InitializeComponent();
         }
 
+        private Program _programss;
+
+        public Program Programss
+        {
+            get { return _programss; }
+            set { _programss = value; }
+        }
+
+        public void showProgramCourses()
+        {
+            Pgrm_Label.Text = Programss.ProgramName;
+        }
+
         private void Pgrm_Crs_btn_Click(object sender, EventArgs e)
         {
-            Program_Course program_Course = new Program_Course();
-            program_Course.Show();
-            this.Parent.Hide();
+            //Program_Course program_Course = new Program_Course();
+            //program_Course.Show();
+            //this.Parent.Hide();
         }
 
         private void Enrl_Std_btn_Click(object sender, EventArgs e)

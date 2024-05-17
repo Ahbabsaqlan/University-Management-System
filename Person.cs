@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Security.Cryptography;
@@ -11,7 +14,31 @@ namespace University_Management_System
 {
     internal class Person
     {
-		protected Person() { }
+        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
+        protected Person() 
+		{
+            string query = "select Photo from STUDENT where Student_ID='" + ID + "'";
+            SqlCommand cmd = new SqlCommand(query, connection); //query executed
+            connection.Open();
+
+            var reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                Images = (byte[])reader["Photo"];
+            }
+            
+        }
+
+		private byte[] _images;
+
+		public byte[] Images
+		{
+			get { return _images; }
+			set { _images = value; }
+		}
+
+
+		private string ID;
 
 		private string _firstName;
 
@@ -85,8 +112,9 @@ namespace University_Management_System
 			set { _address = value; }
 		}
 
-        protected void setval(string firstname, string lastname, string fathername, string mothername, string email, string mobile, string nid,string house,string road,string area,string city,int day,int month,int year)
+        protected void setval(string id,string firstname, string lastname, string fathername, string mothername, string email, string mobile, string nid,string house,string road,string area,string city,int day,int month,int year)
         {
+			ID=id;
             FirstName = firstname;
             LastName = lastname;
             FatherName = fathername;

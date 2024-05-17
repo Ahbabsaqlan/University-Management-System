@@ -34,7 +34,7 @@ namespace University_Management_System
             adapter2.Fill(dt2);
             DataRow dr2 = dt2.Rows[0];
 
-            setval(dr.Field<string>(0), dr.Field<string>(1), dr.Field<string>(2), dr.Field<string>(3), dr.Field<string>(4), dr.Field<string>(5), dr.Field<string>(6), dr1.Field<string>(0), dr1.Field<string>(1), dr1.Field<string>(2), dr1.Field<string>(3),dr2.Field<int>(0), dr2.Field<int>(1), dr2.Field<int>(2));
+            setval(id,dr.Field<string>(0), dr.Field<string>(1), dr.Field<string>(2), dr.Field<string>(3), dr.Field<string>(4), dr.Field<string>(5), dr.Field<string>(6), dr1.Field<string>(0), dr1.Field<string>(1), dr1.Field<string>(2), dr1.Field<string>(3),dr2.Field<int>(0), dr2.Field<int>(1), dr2.Field<int>(2));
 			Position=dr.Field<string>(7);
 		}
 

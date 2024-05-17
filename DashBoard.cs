@@ -80,7 +80,7 @@ namespace University_Management_System
         }
         private void FST_btn_pgrm_Click(object sender, EventArgs e)
         {
-            Programs pgrm = new Programs();
+            Programs pgrm = new Programs("FST");
             pgrm.Show();
             this.Hide();
         }
@@ -123,7 +123,7 @@ namespace University_Management_System
         }
         private void FE_btn_pgrm_Click(object sender, EventArgs e)
         {
-            Programs pgrm = new Programs();
+            Programs pgrm = new Programs("FE");
             pgrm.Show();
             this.Hide();
         }
@@ -166,7 +166,7 @@ namespace University_Management_System
         }
         private void FBA_btn_pgrm_Click(object sender, EventArgs e)
         {
-            Programs pgrm = new Programs();
+            Programs pgrm = new Programs("FBA");
             pgrm.Show();
             this.Hide();
         }
@@ -209,7 +209,7 @@ namespace University_Management_System
         }
         private void FASS_btn_pgrm_Click(object sender, EventArgs e)
         {
-            Programs pgrm = new Programs();
+            Programs pgrm = new Programs("FASS");
             pgrm.Show();
             this.Hide();
         }

@@ -4,30 +4,34 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Show_Course : UserControl
+    internal partial class Show_Course : UserControl
     {
-        public Show_Course(string name,string code, string fir_pre_req,string sec_pre_req)
+        public Show_Course()
         {
             InitializeComponent();
-            Course_Name.Text = name;
-
-
+            
         }
 
-        private void Show_Course_Load(object sender, EventArgs e)
-        {
+        private Course _courses;
 
+        public Course Courses
+        {
+            get { return _courses; }
+            set { _courses = value; }
         }
-
-        private void label2_Click(object sender, EventArgs e)
+        public void showCourseInfo()
         {
-
+            Course_Name.Text = Courses.CourseName;
+            Course_Code.Text = Courses.ID;
+            fir_pre.Text = Courses.First_pre_req.ID;
+            Sec_pre.Text = Courses.Second_pre_req.ID;
         }
     }
 }

@@ -45,9 +45,8 @@
             this.Pgrm_Panel.Location = new System.Drawing.Point(367, 200);
             this.Pgrm_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Pgrm_Panel.MaximumSize = new System.Drawing.Size(1336, 860);
-            this.Pgrm_Panel.MinimumSize = new System.Drawing.Size(1336, 210);
             this.Pgrm_Panel.Name = "Pgrm_Panel";
-            this.Pgrm_Panel.Size = new System.Drawing.Size(1336, 210);
+            this.Pgrm_Panel.Size = new System.Drawing.Size(0, 0);
             this.Pgrm_Panel.TabIndex = 23;
             // 
             // Pgrm_Title_Panel

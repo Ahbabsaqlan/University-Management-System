@@ -110,9 +110,8 @@
             this.Course_LIst.Location = new System.Drawing.Point(357, 207);
             this.Course_LIst.Margin = new System.Windows.Forms.Padding(0);
             this.Course_LIst.MaximumSize = new System.Drawing.Size(1477, 831);
-            this.Course_LIst.MinimumSize = new System.Drawing.Size(1477, 159);
             this.Course_LIst.Name = "Course_LIst";
-            this.Course_LIst.Size = new System.Drawing.Size(1477, 159);
+            this.Course_LIst.Size = new System.Drawing.Size(0, 0);
             this.Course_LIst.TabIndex = 34;
             // 
             // Program_Course

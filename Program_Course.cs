@@ -12,20 +12,24 @@ namespace University_Management_System
 {
     public partial class Program_Course : Form
     {
+        Departments department;
         public Program_Course(string deptID)
         {
-
+            department = new Departments(deptID);
+            department.getDepartmentalCourses();
             InitializeComponent();
             show();
         }
         private void show()
         {
-            //Show_Course[] pg = new Show_Course[2];
-            //for (int i = 0; i < pg.Length; i++)
-            //{
-            //    pg[i] = new Show_Course();
-            //    Course_LIst.Controls.Add(pg[i]);
-            //}
+            Show_Course[] pg = new Show_Course[department.Courses.Length];
+            for (int i = 0; i < pg.Length; i++)
+            {
+                pg[i] = new Show_Course();
+                pg[i].Courses = department.Courses[i];
+                pg[i].showCourseInfo();
+                Course_LIst.Controls.Add(pg[i]);
+            }
         }
 
         private void Adt_Head_Panel_Paint(object sender, PaintEventArgs e)
