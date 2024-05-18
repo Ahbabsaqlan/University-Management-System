@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Minimize_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Profile_picture = new System.Windows.Forms.PictureBox();
@@ -46,9 +47,36 @@
             this.Change_btn = new System.Windows.Forms.Button();
             this.Change_pass = new System.Windows.Forms.Label();
             this.Pass_Change_tb = new System.Windows.Forms.TextBox();
+            this.Update_btn = new System.Windows.Forms.Button();
+            this.Update_lb = new System.Windows.Forms.Label();
+            this.Update_Form_Container = new System.Windows.Forms.Panel();
+            this.Email_tb = new University_Management_System.TextBox_Admin();
+            this.Road_tb = new University_Management_System.TextBox_Admin();
+            this.City_tb = new University_Management_System.TextBox_Admin();
+            this.Area_tb = new University_Management_System.TextBox_Admin();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Position_cmbx = new System.Windows.Forms.ComboBox();
+            this.NID_tb = new University_Management_System.TextBox_Admin();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.House_tb = new University_Management_System.TextBox_Admin();
+            this.Mobile_tb = new University_Management_System.TextBox_Admin();
+            this.MotherName_tb = new University_Management_System.TextBox_Admin();
+            this.FatherName_tb = new University_Management_System.TextBox_Admin();
+            this.LastName_tb = new University_Management_System.TextBox_Admin();
+            this.FirstName_tb = new University_Management_System.TextBox_Admin();
+            this.DOB_Label = new System.Windows.Forms.Label();
+            this.DOB_pkr = new System.Windows.Forms.DateTimePicker();
+            this.uNIVERSITY_MANAGEMENT_CITYDataSet = new University_Management_System.UNIVERSITY_MANAGEMENT_CITYDataSet();
+            this.lOGINBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lOGINTableAdapter = new University_Management_System.UNIVERSITY_MANAGEMENT_CITYDataSetTableAdapters.LOGINTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_picture)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.Update_Form_Container.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uNIVERSITY_MANAGEMENT_CITYDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOGINBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Minimize_btn
@@ -72,6 +100,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.Update_Form_Container);
+            this.panel1.Controls.Add(this.Update_lb);
             this.panel1.Controls.Add(this.Pass_Change_tb);
             this.panel1.Controls.Add(this.Change_pass);
             this.panel1.Controls.Add(this.Change_btn);
@@ -269,6 +299,240 @@
             this.Pass_Change_tb.Size = new System.Drawing.Size(237, 30);
             this.Pass_Change_tb.TabIndex = 26;
             // 
+            // Update_btn
+            // 
+            this.Update_btn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Update_btn.Location = new System.Drawing.Point(1075, 292);
+            this.Update_btn.Name = "Update_btn";
+            this.Update_btn.Size = new System.Drawing.Size(375, 62);
+            this.Update_btn.TabIndex = 27;
+            this.Update_btn.Text = "Update";
+            this.Update_btn.UseVisualStyleBackColor = false;
+            this.Update_btn.Click += new System.EventHandler(this.Update_btn_Click);
+            // 
+            // Update_lb
+            // 
+            this.Update_lb.AutoSize = true;
+            this.Update_lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.Update_lb.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Update_lb.Location = new System.Drawing.Point(1197, 462);
+            this.Update_lb.Name = "Update_lb";
+            this.Update_lb.Size = new System.Drawing.Size(173, 29);
+            this.Update_lb.TabIndex = 28;
+            this.Update_lb.Text = "Update Profile";
+            this.Update_lb.Click += new System.EventHandler(this.Update_lb_Click);
+            // 
+            // Update_Form_Container
+            // 
+            this.Update_Form_Container.BackColor = System.Drawing.Color.White;
+            this.Update_Form_Container.Controls.Add(this.Update_btn);
+            this.Update_Form_Container.Controls.Add(this.Email_tb);
+            this.Update_Form_Container.Controls.Add(this.Road_tb);
+            this.Update_Form_Container.Controls.Add(this.City_tb);
+            this.Update_Form_Container.Controls.Add(this.Area_tb);
+            this.Update_Form_Container.Controls.Add(this.label11);
+            this.Update_Form_Container.Controls.Add(this.Position_cmbx);
+            this.Update_Form_Container.Controls.Add(this.NID_tb);
+            this.Update_Form_Container.Controls.Add(this.button2);
+            this.Update_Form_Container.Controls.Add(this.pictureBox1);
+            this.Update_Form_Container.Controls.Add(this.House_tb);
+            this.Update_Form_Container.Controls.Add(this.Mobile_tb);
+            this.Update_Form_Container.Controls.Add(this.MotherName_tb);
+            this.Update_Form_Container.Controls.Add(this.FatherName_tb);
+            this.Update_Form_Container.Controls.Add(this.LastName_tb);
+            this.Update_Form_Container.Controls.Add(this.FirstName_tb);
+            this.Update_Form_Container.Controls.Add(this.DOB_Label);
+            this.Update_Form_Container.Controls.Add(this.DOB_pkr);
+            this.Update_Form_Container.Location = new System.Drawing.Point(0, 145);
+            this.Update_Form_Container.Margin = new System.Windows.Forms.Padding(0);
+            this.Update_Form_Container.Name = "Update_Form_Container";
+            this.Update_Form_Container.Size = new System.Drawing.Size(1504, 704);
+            this.Update_Form_Container.TabIndex = 25;
+            // 
+            // Email_tb
+            // 
+            this.Email_tb.Location = new System.Drawing.Point(716, 199);
+            this.Email_tb.Name = "Email_tb";
+            this.Email_tb.NAme = "E-mail";
+            this.Email_tb.Placeholder = "";
+            this.Email_tb.Size = new System.Drawing.Size(279, 139);
+            this.Email_tb.TabIndex = 49;
+            this.Email_tb.TExt = "";
+            // 
+            // Road_tb
+            // 
+            this.Road_tb.Location = new System.Drawing.Point(716, 344);
+            this.Road_tb.Name = "Road_tb";
+            this.Road_tb.NAme = "Road";
+            this.Road_tb.Placeholder = "";
+            this.Road_tb.Size = new System.Drawing.Size(279, 139);
+            this.Road_tb.TabIndex = 48;
+            this.Road_tb.TExt = "";
+            // 
+            // City_tb
+            // 
+            this.City_tb.Location = new System.Drawing.Point(410, 494);
+            this.City_tb.Name = "City_tb";
+            this.City_tb.NAme = "City";
+            this.City_tb.Placeholder = "";
+            this.City_tb.Size = new System.Drawing.Size(279, 139);
+            this.City_tb.TabIndex = 47;
+            this.City_tb.TExt = "";
+            // 
+            // Area_tb
+            // 
+            this.Area_tb.Location = new System.Drawing.Point(100, 494);
+            this.Area_tb.Name = "Area_tb";
+            this.Area_tb.NAme = "Area";
+            this.Area_tb.Placeholder = "";
+            this.Area_tb.Size = new System.Drawing.Size(279, 139);
+            this.Area_tb.TabIndex = 46;
+            this.Area_tb.TExt = "";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label11.Location = new System.Drawing.Point(747, 514);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(123, 36);
+            this.label11.TabIndex = 45;
+            this.label11.Text = "Position";
+            // 
+            // Position_cmbx
+            // 
+            this.Position_cmbx.FormattingEnabled = true;
+            this.Position_cmbx.Items.AddRange(new object[] {
+            "Proctor",
+            "Additional Proctor",
+            "Register",
+            "Additional Register",
+            "Vice Chancellor",
+            "Pro Vice Chancellor"});
+            this.Position_cmbx.Location = new System.Drawing.Point(729, 574);
+            this.Position_cmbx.Name = "Position_cmbx";
+            this.Position_cmbx.Size = new System.Drawing.Size(236, 24);
+            this.Position_cmbx.TabIndex = 42;
+            // 
+            // NID_tb
+            // 
+            this.NID_tb.Location = new System.Drawing.Point(716, 62);
+            this.NID_tb.Name = "NID_tb";
+            this.NID_tb.NAme = "NID";
+            this.NID_tb.Placeholder = "";
+            this.NID_tb.Size = new System.Drawing.Size(279, 139);
+            this.NID_tb.TabIndex = 41;
+            this.NID_tb.TExt = "";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1283, 188);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 48);
+            this.button2.TabIndex = 39;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(1166, 62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(303, 96);
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // House_tb
+            // 
+            this.House_tb.Location = new System.Drawing.Point(410, 349);
+            this.House_tb.Name = "House_tb";
+            this.House_tb.NAme = "House";
+            this.House_tb.Placeholder = "";
+            this.House_tb.Size = new System.Drawing.Size(279, 139);
+            this.House_tb.TabIndex = 37;
+            this.House_tb.TExt = "";
+            // 
+            // Mobile_tb
+            // 
+            this.Mobile_tb.Location = new System.Drawing.Point(100, 349);
+            this.Mobile_tb.Name = "Mobile_tb";
+            this.Mobile_tb.NAme = "Mobile";
+            this.Mobile_tb.Placeholder = "";
+            this.Mobile_tb.Size = new System.Drawing.Size(279, 139);
+            this.Mobile_tb.TabIndex = 36;
+            this.Mobile_tb.TExt = "";
+            // 
+            // MotherName_tb
+            // 
+            this.MotherName_tb.Location = new System.Drawing.Point(410, 199);
+            this.MotherName_tb.Name = "MotherName_tb";
+            this.MotherName_tb.NAme = "Mother Name";
+            this.MotherName_tb.Placeholder = "";
+            this.MotherName_tb.Size = new System.Drawing.Size(279, 139);
+            this.MotherName_tb.TabIndex = 35;
+            this.MotherName_tb.TExt = "";
+            // 
+            // FatherName_tb
+            // 
+            this.FatherName_tb.Location = new System.Drawing.Point(100, 199);
+            this.FatherName_tb.Name = "FatherName_tb";
+            this.FatherName_tb.NAme = "Father Name";
+            this.FatherName_tb.Placeholder = "";
+            this.FatherName_tb.Size = new System.Drawing.Size(279, 139);
+            this.FatherName_tb.TabIndex = 34;
+            this.FatherName_tb.TExt = "";
+            // 
+            // LastName_tb
+            // 
+            this.LastName_tb.Location = new System.Drawing.Point(410, 62);
+            this.LastName_tb.Name = "LastName_tb";
+            this.LastName_tb.NAme = "Last Name";
+            this.LastName_tb.Placeholder = "";
+            this.LastName_tb.Size = new System.Drawing.Size(279, 139);
+            this.LastName_tb.TabIndex = 33;
+            this.LastName_tb.TExt = "";
+            // 
+            // FirstName_tb
+            // 
+            this.FirstName_tb.Location = new System.Drawing.Point(100, 62);
+            this.FirstName_tb.Name = "FirstName_tb";
+            this.FirstName_tb.NAme = "First Name";
+            this.FirstName_tb.Placeholder = "";
+            this.FirstName_tb.Size = new System.Drawing.Size(279, 131);
+            this.FirstName_tb.TabIndex = 32;
+            this.FirstName_tb.TExt = "";
+            // 
+            // DOB_Label
+            // 
+            this.DOB_Label.AutoSize = true;
+            this.DOB_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.DOB_Label.Location = new System.Drawing.Point(1087, 416);
+            this.DOB_Label.Name = "DOB_Label";
+            this.DOB_Label.Size = new System.Drawing.Size(179, 36);
+            this.DOB_Label.TabIndex = 28;
+            this.DOB_Label.Text = "Date of Birth";
+            // 
+            // DOB_pkr
+            // 
+            this.DOB_pkr.Location = new System.Drawing.Point(1055, 478);
+            this.DOB_pkr.Name = "DOB_pkr";
+            this.DOB_pkr.Size = new System.Drawing.Size(245, 22);
+            this.DOB_pkr.TabIndex = 23;
+            // 
+            // uNIVERSITY_MANAGEMENT_CITYDataSet
+            // 
+            this.uNIVERSITY_MANAGEMENT_CITYDataSet.DataSetName = "UNIVERSITY_MANAGEMENT_CITYDataSet";
+            this.uNIVERSITY_MANAGEMENT_CITYDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lOGINBindingSource
+            // 
+            this.lOGINBindingSource.DataMember = "LOGIN";
+            this.lOGINBindingSource.DataSource = this.uNIVERSITY_MANAGEMENT_CITYDataSet;
+            // 
+            // lOGINTableAdapter
+            // 
+            this.lOGINTableAdapter.ClearBeforeFill = true;
+            // 
             // Admin_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -280,11 +544,17 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_Profile";
             this.Text = "Admin_Profile";
+            this.Load += new System.EventHandler(this.Admin_Profile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_picture)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.Update_Form_Container.ResumeLayout(false);
+            this.Update_Form_Container.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uNIVERSITY_MANAGEMENT_CITYDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lOGINBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,5 +578,28 @@
         private System.Windows.Forms.TextBox Pass_Change_tb;
         private System.Windows.Forms.Label Change_pass;
         private System.Windows.Forms.Button Change_btn;
+        private System.Windows.Forms.Label Update_lb;
+        private System.Windows.Forms.Button Update_btn;
+        private System.Windows.Forms.Panel Update_Form_Container;
+        private TextBox_Admin Email_tb;
+        private TextBox_Admin Road_tb;
+        private TextBox_Admin City_tb;
+        private TextBox_Admin Area_tb;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox Position_cmbx;
+        private TextBox_Admin NID_tb;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private TextBox_Admin House_tb;
+        private TextBox_Admin Mobile_tb;
+        private TextBox_Admin MotherName_tb;
+        private TextBox_Admin FatherName_tb;
+        private TextBox_Admin LastName_tb;
+        private TextBox_Admin FirstName_tb;
+        private System.Windows.Forms.Label DOB_Label;
+        private System.Windows.Forms.DateTimePicker DOB_pkr;
+        private UNIVERSITY_MANAGEMENT_CITYDataSet uNIVERSITY_MANAGEMENT_CITYDataSet;
+        private System.Windows.Forms.BindingSource lOGINBindingSource;
+        private UNIVERSITY_MANAGEMENT_CITYDataSetTableAdapters.LOGINTableAdapter lOGINTableAdapter;
     }
 }

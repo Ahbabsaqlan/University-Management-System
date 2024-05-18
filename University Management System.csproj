@@ -164,6 +164,11 @@
     <Compile Include="TextBox_Admin.Designer.cs">
       <DependentUpon>TextBox_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="UNIVERSITY_MANAGEMENT_CITYDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UNIVERSITY_MANAGEMENT_CITYDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add Student.resx">
       <DependentUpon>Add Student.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +236,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UNIVERSITY_MANAGEMENT_CITYDataSet.xsc">
+      <DependentUpon>UNIVERSITY_MANAGEMENT_CITYDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UNIVERSITY_MANAGEMENT_CITYDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UNIVERSITY_MANAGEMENT_CITYDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UNIVERSITY_MANAGEMENT_CITYDataSet.xss">
+      <DependentUpon>UNIVERSITY_MANAGEMENT_CITYDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
