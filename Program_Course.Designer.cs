@@ -45,7 +45,6 @@
             this.layout1.Name = "layout1";
             this.layout1.Size = new System.Drawing.Size(2049, 1065);
             this.layout1.TabIndex = 30;
-            this.layout1.Load += new System.EventHandler(this.layout1_Load);
             // 
             // Adt_Head_Panel
             // 

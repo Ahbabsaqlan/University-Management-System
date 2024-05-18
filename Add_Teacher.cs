@@ -17,41 +17,22 @@ namespace University_Management_System
             InitializeComponent();
             
         }
-
+        Teacher teacher;
         // Minimize Button
         private void Minimize_btn_Click(object sender, EventArgs e)
         {
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
         }
 
-        private void test()
-        {
-            
-        }
-
-        private void Mother_Name_Label_Click(object sender, EventArgs e)
-        {
-            test();
-        }
-
-        private void textBox_Admin1_Load(object sender, EventArgs e)
+        private void Email_tb_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox_Admin7_Load(object sender, EventArgs e)
+        private void Create_btn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            Random randomNum = new Random();
+            int num = randomNum.Next(1, 100);
         }
     }
 }

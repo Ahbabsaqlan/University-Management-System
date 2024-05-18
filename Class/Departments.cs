@@ -23,9 +23,6 @@ namespace University_Management_System
 
             DepartmentName=dr.Field<string>(0);
             Facultys = new Faculty(dr.Field<string>(1));
-
-            
-
         }
 
         private string _Id;
@@ -61,6 +58,15 @@ namespace University_Management_System
             set { _facultys = value; }
         }
 
+        private Teacher[] _teachers;
+
+        public Teacher[] Teachers
+        {
+            get { return _teachers; }
+            set { _teachers = value; }
+        }
+
+
         public void getDepartmentalCourses()
         {
             string departmentData1 = "select Course_ID from COURSE where Department_ID='" + ID + "'";
@@ -72,6 +78,21 @@ namespace University_Management_System
             foreach (DataRow dr1 in dt1.Rows)
             {
                 Courses[index++] = new Course(dr1.Field<string>(0));
+            }
+        }
+
+        public void getTeachers()
+        {
+            //Data Fetch
+            string query1 = "select Teacher_ID  from TEACHER  where Department_ID='" + ID + "'";
+            SqlDataAdapter adapter1 = new SqlDataAdapter(query1, connection);
+            DataTable dt1 = new DataTable();
+            adapter1.Fill(dt1);
+            Teachers = new Teacher[dt1.Rows.Count];
+            int index = 0;
+            foreach (DataRow dr1 in dt1.Rows)
+            {
+                Teachers[index++] = new Teacher(dr1.Field<string>(0));
             }
         }
     }

@@ -37,20 +37,20 @@ namespace University_Management_System
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
-            string id=login_ID_TB.Text;
-            //Fetch Data
-            string query = "select password,role from LOGIN where user_id='" + id + "'";
-            SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            DataRow dr = dt.Rows[0];
-            if(dr.Field<string>(0)== login_Pass_TB.Text && dr.Field<string>(1)=="Admin")
-            {
-                Admins = new Admin(id);
+            //string id=login_ID_TB.Text;
+            ////Fetch Data
+            //string query = "select password,role from LOGIN where user_id='" + id + "'";
+            //SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+            //DataTable dt = new DataTable();
+            //adapter.Fill(dt);
+            //DataRow dr = dt.Rows[0];
+            //if(dr.Field<string>(0)== login_Pass_TB.Text && dr.Field<string>(1)=="Admin")
+            //{
+                Admins = new Admin("ADMIN1");
                 DashBoard dashBoard = new DashBoard(Admins);
                 dashBoard.Show();
                 this.Hide();
-            }
+            //}
 
             
 

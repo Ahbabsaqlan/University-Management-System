@@ -32,16 +32,16 @@ namespace University_Management_System
 
         private void Pgrm_Crs_btn_Click(object sender, EventArgs e)
         {
-            //Program_Course program_Course = new Program_Course();
-            //program_Course.Show();
-            //this.Parent.Hide();
+            Program_Course program_Course = new Program_Course(Programss);
+            program_Course.Show();
+            this.Parent.Hide();
         }
 
         private void Enrl_Std_btn_Click(object sender, EventArgs e)
         {
-            //Student_List student_List = new Student_List();
-            //student_List.Show();
-            //this.Parent.Hide();
+            Teacher_List student_List = new Teacher_List(Programss);
+            student_List.Show();
+            this.Parent.Hide();
         }
 
         //public string ProgramName 

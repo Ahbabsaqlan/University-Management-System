@@ -22,7 +22,6 @@ namespace University_Management_System
 
             ProgramName = dr.Field<string>(0);
             TotalCreadit = dr.Field<int>(1);
-            //TotalCourse = dr.Field<int>(2);
             Facultys = new Faculty(dr.Field<string>(3));
             Curriculums= new Curriculum(id);
         }
@@ -70,7 +69,27 @@ namespace University_Management_System
             get { return _curricullum; }
             set { _curricullum = value; }
         }
-        
 
+        private Student[] _students;
+
+        public Student[] Students
+        {
+            get { return _students; }
+            set { _students = value; }
+        }
+
+        public void getStudents()
+        {
+            string programData = "select Student_ID from STUDENT where Program_ID='" + ID + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(programData, connection);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            Students=new Student[dt.Rows.Count];
+            int index = 0;
+            foreach(DataRow dr in dt.Rows)
+            {
+                Students[index++] = new Student(dr.Field<string>(0));
+            }
+        }
     }
 }

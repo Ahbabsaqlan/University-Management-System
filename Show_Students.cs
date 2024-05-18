@@ -11,30 +11,26 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Show_Students : UserControl
+    internal partial class Show_Students : UserControl
     {
-        public Show_Students(string firstName, string lastName, string id)
+        public Show_Students(Person person)
         {
+            Persons = person;
             InitializeComponent();
-            Person_First_Name.Text = firstName;
-            Person_Last_Name.Text = lastName;
-            Person_ID.Text = id;
-            //var reader = cmd.ExecuteReader();
-            //while (reader.Read() == true)
-            //{
-            //    byte[] img = (byte[])reader["Photo"];
-            //    if (img == null)
-            //    {
-            //        Person_.Image = null;
-            //    }
-            //    else
-            //    {
-            //        MemoryStream ms = new MemoryStream(img);
-            //        Person_photo.Image = Image.FromStream(ms);
-            //    }
+            Person_First_Name.Text = Persons.FirstName+" "+ Persons.LastName;
+            Person_ID.Text = Persons.ID;
+            Person_Image.Image = Image.FromStream(Persons.Images);
 
-            //}
         }
+
+        private Person _persons;
+
+        public Person Persons
+        {
+            get { return _persons; }
+            set { _persons = value; }
+        }
+
 
         private void Person_ID_Click(object sender, EventArgs e)
         {

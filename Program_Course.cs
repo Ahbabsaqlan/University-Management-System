@@ -10,18 +10,15 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Program_Course : Form
+    internal partial class Program_Course : Form
     {
         Departments department;
+        Program programs;
         public Program_Course(string deptID)
         {
             department = new Departments(deptID);
             department.getDepartmentalCourses();
             InitializeComponent();
-            show();
-        }
-        private void show()
-        {
             Show_Course[] pg = new Show_Course[department.Courses.Length];
             for (int i = 0; i < pg.Length; i++)
             {
@@ -31,13 +28,22 @@ namespace University_Management_System
                 Course_LIst.Controls.Add(pg[i]);
             }
         }
-
-        private void Adt_Head_Panel_Paint(object sender, PaintEventArgs e)
+        public Program_Course(Program program)
         {
+            programs = program;
 
+            InitializeComponent();
+            Show_Course[] pg = new Show_Course[programs.Curriculums.CurricullumCourses.Length];
+            for (int i=0;i< programs.Curriculums.CurricullumCourses.Length;i++)
+            {
+                pg[i] = new Show_Course();
+                pg[i].Courses = programs.Curriculums.CurricullumCourses[i];
+                pg[i].showCourseInfo();
+                Course_LIst.Controls.Add(pg[i]);
+            }
         }
 
-        private void layout1_Load(object sender, EventArgs e)
+        private void Adt_Head_Panel_Paint(object sender, PaintEventArgs e)
         {
 
         }

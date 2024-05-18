@@ -56,14 +56,14 @@
     <Compile Include="Add Student.Designer.cs">
       <DependentUpon>Add Student.cs</DependentUpon>
     </Compile>
-    <Compile Include="Address.cs" />
+    <Compile Include="Class\Address.cs" />
     <Compile Include="Add_Teacher.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Add_Teacher.Designer.cs">
       <DependentUpon>Add_Teacher.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin.cs" />
+    <Compile Include="Class\Admin.cs" />
     <Compile Include="Admin_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,30 +76,30 @@
     <Compile Include="Admin_Search.Designer.cs">
       <DependentUpon>Admin_Search.cs</DependentUpon>
     </Compile>
-    <Compile Include="Course.cs" />
-    <Compile Include="Curriculum.cs" />
+    <Compile Include="Class\Course.cs" />
+    <Compile Include="Class\Curriculum.cs" />
     <Compile Include="DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Date.cs" />
+    <Compile Include="Class\Date.cs" />
     <Compile Include="Department.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Department.Designer.cs">
       <DependentUpon>Department.cs</DependentUpon>
     </Compile>
-    <Compile Include="Departments.cs" />
+    <Compile Include="Class\Departments.cs" />
     <Compile Include="Dept_Show.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dept_Show.Designer.cs">
       <DependentUpon>Dept_Show.cs</DependentUpon>
     </Compile>
-    <Compile Include="Faculty.cs" />
-    <Compile Include="Notice.cs" />
+    <Compile Include="Class\Faculty.cs" />
+    <Compile Include="Class\Notice.cs" />
     <Compile Include="Layout.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,13 +112,13 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Person.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="RegisteredStudent.cs" />
-    <Compile Include="Result.cs" />
-    <Compile Include="Schedule.cs" />
-    <Compile Include="Section.cs" />
-    <Compile Include="start.cs" />
+    <Compile Include="Class\Person.cs" />
+    <Compile Include="Class\Program.cs" />
+    <Compile Include="Class\RegisteredStudent.cs" />
+    <Compile Include="Class\Result.cs" />
+    <Compile Include="Class\Schedule.cs" />
+    <Compile Include="Class\Section.cs" />
+    <Compile Include="Class\start.cs" />
     <Compile Include="Programs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,14 +150,14 @@
     <Compile Include="Show_Students.Designer.cs">
       <DependentUpon>Show_Students.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student.cs" />
+    <Compile Include="Class\Student.cs" />
     <Compile Include="Teacher_List.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Teacher_List.Designer.cs">
       <DependentUpon>Teacher_List.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teacher.cs" />
+    <Compile Include="Class\Teacher.cs" />
     <Compile Include="TextBox_Admin.cs">
       <SubType>UserControl</SubType>
     </Compile>

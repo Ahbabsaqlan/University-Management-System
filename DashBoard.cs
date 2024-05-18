@@ -29,13 +29,6 @@ namespace University_Management_System
         }
         public static Admin admin;
         
-
-        // Exit Button
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-            
-        }
         // Minimize Button
         private void Minimize_btn_Click(object sender, EventArgs e)
         {

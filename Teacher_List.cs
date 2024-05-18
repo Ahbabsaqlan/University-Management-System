@@ -11,39 +11,42 @@ using System.Windows.Forms;
 
 namespace University_Management_System
 {
-    public partial class Teacher_List : Form
+    internal partial class Teacher_List : Form
     {
-        SqlConnection connection = new SqlConnection("Data Source=SAQLAN-XAMI;Initial Catalog=UNIVERSITY_MANAGEMENT_CITY;Integrated Security=True;");
         public Teacher_List(string dept)
         {
             InitializeComponent();
-            //Data Fetch
-            string query1 = "select First_Name,Last_Name,Teacher_ID  from TEACHER  where Department_ID='" + dept + "'";
-            SqlDataAdapter adapter1 = new SqlDataAdapter(query1, connection);
-            DataTable dt1 = new DataTable();
-            adapter1.Fill(dt1);
-
-            Show_Students[] pg = new Show_Students[dt1.Rows.Count];
-            int i = 0;
-            foreach (DataRow r in dt1.Rows)
+            Teacher_Reg_Label.Text = "Departments Teachers";
+            department = new Departments(dept);
+            department.getTeachers();
+            Show_Students[] pg = new Show_Students[department.Teachers.Length];
+            for(int i = 0;i< pg.Length; i++)
             {
-                pg[i] = new Show_Students(r.Field<string>(0), r.Field<string>(1), r.Field<string>(2));
+                pg[i] = new Show_Students(department.Teachers[i]);
                 Students_List_Panel.Controls.Add(pg[i]);
-                i++;
             }
-            
+        }
+        public Teacher_List(Program programs)
+        {
+            InitializeComponent();
+            Teacher_Reg_Label.Text = "Enrolled Students";
+            program = programs;
+            program.getStudents();
+            Show_Students[] pg = new Show_Students[program.Students.Length];
+            for (int i = 0; i < pg.Length; i++)
+            {
+                pg[i] = new Show_Students(program.Students[i]);
+                Students_List_Panel.Controls.Add(pg[i]);
+            }
         }
 
+        // Minimize Button
         private void Minimize_btn_Click(object sender, EventArgs e)
         {
-
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
         }
 
-        
-
-        private void Students_List_Panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        Departments department;
+        Program program;
     }
 }

@@ -44,12 +44,10 @@
             this.Students_List_Panel.AutoSize = true;
             this.Students_List_Panel.BackColor = System.Drawing.Color.Honeydew;
             this.Students_List_Panel.Location = new System.Drawing.Point(572, 228);
-            this.Students_List_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.Students_List_Panel.MaximumSize = new System.Drawing.Size(1002, 831);
+            this.Students_List_Panel.MaximumSize = new System.Drawing.Size(1008, 831);
             this.Students_List_Panel.Name = "Students_List_Panel";
             this.Students_List_Panel.Size = new System.Drawing.Size(0, 0);
             this.Students_List_Panel.TabIndex = 38;
-            this.Students_List_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.Students_List_Panel_Paint);
             // 
             // Adt_Head_Panel
             // 

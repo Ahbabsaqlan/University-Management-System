@@ -35,22 +35,27 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Adt_Form_Container = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox_Admin7 = new University_Management_System.TextBox_Admin();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox_Admin6 = new University_Management_System.TextBox_Admin();
-            this.textBox_Admin5 = new University_Management_System.TextBox_Admin();
+            this.DOB_Label = new System.Windows.Forms.Label();
+            this.Minimize_btn = new System.Windows.Forms.Button();
+            this.Create_btn = new System.Windows.Forms.Button();
             this.textBox_Admin4 = new University_Management_System.TextBox_Admin();
             this.textBox_Admin3 = new University_Management_System.TextBox_Admin();
             this.textBox_Admin2 = new University_Management_System.TextBox_Admin();
             this.textBox_Admin1 = new University_Management_System.TextBox_Admin();
-            this.DOB_Label = new System.Windows.Forms.Label();
-            this.Minimize_btn = new System.Windows.Forms.Button();
+            this.NID_tb = new University_Management_System.TextBox_Admin();
+            this.Mobile_tb = new University_Management_System.TextBox_Admin();
+            this.Email_tb = new University_Management_System.TextBox_Admin();
+            this.MotherName_tb = new University_Management_System.TextBox_Admin();
+            this.FatherName_tb = new University_Management_System.TextBox_Admin();
+            this.LastName_tb = new University_Management_System.TextBox_Admin();
+            this.FirstName_tb = new University_Management_System.TextBox_Admin();
             this.layout1 = new University_Management_System.Layout();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Adt_Head_Panel.SuspendLayout();
             this.Adt_Form_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,7 +108,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(1070, 547);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1032, 364);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(245, 22);
             this.dateTimePicker1.TabIndex = 23;
@@ -111,19 +116,24 @@
             // Adt_Form_Container
             // 
             this.Adt_Form_Container.BackColor = System.Drawing.Color.White;
-            this.Adt_Form_Container.Controls.Add(this.label2);
-            this.Adt_Form_Container.Controls.Add(this.comboBox1);
-            this.Adt_Form_Container.Controls.Add(this.label1);
-            this.Adt_Form_Container.Controls.Add(this.comboBox2);
-            this.Adt_Form_Container.Controls.Add(this.textBox_Admin7);
-            this.Adt_Form_Container.Controls.Add(this.button1);
-            this.Adt_Form_Container.Controls.Add(this.pictureBox1);
-            this.Adt_Form_Container.Controls.Add(this.textBox_Admin6);
-            this.Adt_Form_Container.Controls.Add(this.textBox_Admin5);
+            this.Adt_Form_Container.Controls.Add(this.Create_btn);
             this.Adt_Form_Container.Controls.Add(this.textBox_Admin4);
             this.Adt_Form_Container.Controls.Add(this.textBox_Admin3);
             this.Adt_Form_Container.Controls.Add(this.textBox_Admin2);
             this.Adt_Form_Container.Controls.Add(this.textBox_Admin1);
+            this.Adt_Form_Container.Controls.Add(this.label2);
+            this.Adt_Form_Container.Controls.Add(this.comboBox1);
+            this.Adt_Form_Container.Controls.Add(this.label1);
+            this.Adt_Form_Container.Controls.Add(this.comboBox2);
+            this.Adt_Form_Container.Controls.Add(this.NID_tb);
+            this.Adt_Form_Container.Controls.Add(this.button1);
+            this.Adt_Form_Container.Controls.Add(this.pictureBox1);
+            this.Adt_Form_Container.Controls.Add(this.Mobile_tb);
+            this.Adt_Form_Container.Controls.Add(this.Email_tb);
+            this.Adt_Form_Container.Controls.Add(this.MotherName_tb);
+            this.Adt_Form_Container.Controls.Add(this.FatherName_tb);
+            this.Adt_Form_Container.Controls.Add(this.LastName_tb);
+            this.Adt_Form_Container.Controls.Add(this.FirstName_tb);
             this.Adt_Form_Container.Controls.Add(this.DOB_Label);
             this.Adt_Form_Container.Controls.Add(this.dateTimePicker1);
             this.Adt_Form_Container.Location = new System.Drawing.Point(280, 182);
@@ -132,11 +142,29 @@
             this.Adt_Form_Container.Size = new System.Drawing.Size(1564, 791);
             this.Adt_Form_Container.TabIndex = 24;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label2.Location = new System.Drawing.Point(1374, 302);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(123, 36);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Position";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(1309, 364);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(236, 24);
+            this.comboBox1.TabIndex = 44;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label1.Location = new System.Drawing.Point(746, 284);
+            this.label1.Location = new System.Drawing.Point(732, 494);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 36);
             this.label1.TabIndex = 43;
@@ -145,106 +173,33 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(747, 349);
+            this.comboBox2.Location = new System.Drawing.Point(729, 574);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(236, 24);
             this.comboBox2.TabIndex = 42;
             // 
-            // textBox_Admin7
-            // 
-            this.textBox_Admin7.Location = new System.Drawing.Point(721, 99);
-            this.textBox_Admin7.Name = "textBox_Admin7";
-            this.textBox_Admin7.NAme = "NID";
-            this.textBox_Admin7.Placeholder = "";
-            this.textBox_Admin7.Size = new System.Drawing.Size(279, 139);
-            this.textBox_Admin7.TabIndex = 41;
-            this.textBox_Admin7.TExt = "";
-            this.textBox_Admin7.Load += new System.EventHandler(this.textBox_Admin7_Load);
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1288, 386);
+            this.button1.Location = new System.Drawing.Point(1283, 188);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 48);
             this.button1.TabIndex = 39;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(1166, 62);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(303, 287);
+            this.pictureBox1.Size = new System.Drawing.Size(303, 96);
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
-            // 
-            // textBox_Admin6
-            // 
-            this.textBox_Admin6.Location = new System.Drawing.Point(410, 462);
-            this.textBox_Admin6.Name = "textBox_Admin6";
-            this.textBox_Admin6.NAme = "Mobile";
-            this.textBox_Admin6.Placeholder = "";
-            this.textBox_Admin6.Size = new System.Drawing.Size(279, 139);
-            this.textBox_Admin6.TabIndex = 37;
-            this.textBox_Admin6.TExt = "";
-            // 
-            // textBox_Admin5
-            // 
-            this.textBox_Admin5.Location = new System.Drawing.Point(100, 462);
-            this.textBox_Admin5.Name = "textBox_Admin5";
-            this.textBox_Admin5.NAme = "E-mail";
-            this.textBox_Admin5.Placeholder = "";
-            this.textBox_Admin5.Size = new System.Drawing.Size(279, 139);
-            this.textBox_Admin5.TabIndex = 36;
-            this.textBox_Admin5.TExt = "";
-            // 
-            // textBox_Admin4
-            // 
-            this.textBox_Admin4.Location = new System.Drawing.Point(410, 264);
-            this.textBox_Admin4.Name = "textBox_Admin4";
-            this.textBox_Admin4.NAme = "Mother Name";
-            this.textBox_Admin4.Placeholder = "";
-            this.textBox_Admin4.Size = new System.Drawing.Size(279, 139);
-            this.textBox_Admin4.TabIndex = 35;
-            this.textBox_Admin4.TExt = "";
-            // 
-            // textBox_Admin3
-            // 
-            this.textBox_Admin3.Location = new System.Drawing.Point(99, 264);
-            this.textBox_Admin3.Name = "textBox_Admin3";
-            this.textBox_Admin3.NAme = "Father Name";
-            this.textBox_Admin3.Placeholder = "";
-            this.textBox_Admin3.Size = new System.Drawing.Size(279, 139);
-            this.textBox_Admin3.TabIndex = 34;
-            this.textBox_Admin3.TExt = "";
-            // 
-            // textBox_Admin2
-            // 
-            this.textBox_Admin2.Location = new System.Drawing.Point(410, 99);
-            this.textBox_Admin2.Name = "textBox_Admin2";
-            this.textBox_Admin2.NAme = "Last Name";
-            this.textBox_Admin2.Placeholder = "";
-            this.textBox_Admin2.Size = new System.Drawing.Size(279, 139);
-            this.textBox_Admin2.TabIndex = 33;
-            this.textBox_Admin2.TExt = "";
-            // 
-            // textBox_Admin1
-            // 
-            this.textBox_Admin1.Location = new System.Drawing.Point(100, 99);
-            this.textBox_Admin1.Name = "textBox_Admin1";
-            this.textBox_Admin1.NAme = "First Name";
-            this.textBox_Admin1.Placeholder = "";
-            this.textBox_Admin1.Size = new System.Drawing.Size(279, 139);
-            this.textBox_Admin1.TabIndex = 32;
-            this.textBox_Admin1.TExt = "";
-            this.textBox_Admin1.Load += new System.EventHandler(this.textBox_Admin1_Load);
             // 
             // DOB_Label
             // 
             this.DOB_Label.AutoSize = true;
             this.DOB_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.DOB_Label.Location = new System.Drawing.Point(1077, 489);
+            this.DOB_Label.Location = new System.Drawing.Point(1064, 302);
             this.DOB_Label.Name = "DOB_Label";
             this.DOB_Label.Size = new System.Drawing.Size(179, 36);
             this.DOB_Label.TabIndex = 28;
@@ -268,6 +223,127 @@
             this.Minimize_btn.UseVisualStyleBackColor = false;
             this.Minimize_btn.Click += new System.EventHandler(this.Minimize_btn_Click);
             // 
+            // Create_btn
+            // 
+            this.Create_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Create_btn.Location = new System.Drawing.Point(1116, 574);
+            this.Create_btn.Name = "Create_btn";
+            this.Create_btn.Size = new System.Drawing.Size(381, 48);
+            this.Create_btn.TabIndex = 50;
+            this.Create_btn.Text = "Create";
+            this.Create_btn.UseVisualStyleBackColor = true;
+            this.Create_btn.Click += new System.EventHandler(this.Create_btn_Click);
+            // 
+            // textBox_Admin4
+            // 
+            this.textBox_Admin4.Location = new System.Drawing.Point(716, 199);
+            this.textBox_Admin4.Name = "textBox_Admin4";
+            this.textBox_Admin4.NAme = "E-mail";
+            this.textBox_Admin4.Placeholder = "";
+            this.textBox_Admin4.Size = new System.Drawing.Size(279, 139);
+            this.textBox_Admin4.TabIndex = 49;
+            this.textBox_Admin4.TExt = "";
+            // 
+            // textBox_Admin3
+            // 
+            this.textBox_Admin3.Location = new System.Drawing.Point(716, 344);
+            this.textBox_Admin3.Name = "textBox_Admin3";
+            this.textBox_Admin3.NAme = "Road";
+            this.textBox_Admin3.Placeholder = "";
+            this.textBox_Admin3.Size = new System.Drawing.Size(279, 139);
+            this.textBox_Admin3.TabIndex = 48;
+            this.textBox_Admin3.TExt = "";
+            // 
+            // textBox_Admin2
+            // 
+            this.textBox_Admin2.Location = new System.Drawing.Point(410, 494);
+            this.textBox_Admin2.Name = "textBox_Admin2";
+            this.textBox_Admin2.NAme = "City";
+            this.textBox_Admin2.Placeholder = "";
+            this.textBox_Admin2.Size = new System.Drawing.Size(279, 139);
+            this.textBox_Admin2.TabIndex = 47;
+            this.textBox_Admin2.TExt = "";
+            // 
+            // textBox_Admin1
+            // 
+            this.textBox_Admin1.Location = new System.Drawing.Point(100, 494);
+            this.textBox_Admin1.Name = "textBox_Admin1";
+            this.textBox_Admin1.NAme = "Area";
+            this.textBox_Admin1.Placeholder = "";
+            this.textBox_Admin1.Size = new System.Drawing.Size(279, 139);
+            this.textBox_Admin1.TabIndex = 46;
+            this.textBox_Admin1.TExt = "";
+            // 
+            // NID_tb
+            // 
+            this.NID_tb.Location = new System.Drawing.Point(716, 62);
+            this.NID_tb.Name = "NID_tb";
+            this.NID_tb.NAme = "NID";
+            this.NID_tb.Placeholder = "";
+            this.NID_tb.Size = new System.Drawing.Size(279, 139);
+            this.NID_tb.TabIndex = 41;
+            this.NID_tb.TExt = "";
+            // 
+            // Mobile_tb
+            // 
+            this.Mobile_tb.Location = new System.Drawing.Point(410, 349);
+            this.Mobile_tb.Name = "Mobile_tb";
+            this.Mobile_tb.NAme = "House";
+            this.Mobile_tb.Placeholder = "";
+            this.Mobile_tb.Size = new System.Drawing.Size(279, 139);
+            this.Mobile_tb.TabIndex = 37;
+            this.Mobile_tb.TExt = "";
+            // 
+            // Email_tb
+            // 
+            this.Email_tb.Location = new System.Drawing.Point(100, 349);
+            this.Email_tb.Name = "Email_tb";
+            this.Email_tb.NAme = "Mobile";
+            this.Email_tb.Placeholder = "";
+            this.Email_tb.Size = new System.Drawing.Size(279, 139);
+            this.Email_tb.TabIndex = 36;
+            this.Email_tb.TExt = "";
+            // 
+            // MotherName_tb
+            // 
+            this.MotherName_tb.Location = new System.Drawing.Point(410, 199);
+            this.MotherName_tb.Name = "MotherName_tb";
+            this.MotherName_tb.NAme = "Mother Name";
+            this.MotherName_tb.Placeholder = "";
+            this.MotherName_tb.Size = new System.Drawing.Size(279, 139);
+            this.MotherName_tb.TabIndex = 35;
+            this.MotherName_tb.TExt = "";
+            // 
+            // FatherName_tb
+            // 
+            this.FatherName_tb.Location = new System.Drawing.Point(100, 199);
+            this.FatherName_tb.Name = "FatherName_tb";
+            this.FatherName_tb.NAme = "Father Name";
+            this.FatherName_tb.Placeholder = "";
+            this.FatherName_tb.Size = new System.Drawing.Size(279, 139);
+            this.FatherName_tb.TabIndex = 34;
+            this.FatherName_tb.TExt = "";
+            // 
+            // LastName_tb
+            // 
+            this.LastName_tb.Location = new System.Drawing.Point(410, 62);
+            this.LastName_tb.Name = "LastName_tb";
+            this.LastName_tb.NAme = "Last Name";
+            this.LastName_tb.Placeholder = "";
+            this.LastName_tb.Size = new System.Drawing.Size(279, 139);
+            this.LastName_tb.TabIndex = 33;
+            this.LastName_tb.TExt = "";
+            // 
+            // FirstName_tb
+            // 
+            this.FirstName_tb.Location = new System.Drawing.Point(100, 62);
+            this.FirstName_tb.Name = "FirstName_tb";
+            this.FirstName_tb.NAme = "First Name";
+            this.FirstName_tb.Placeholder = "";
+            this.FirstName_tb.Size = new System.Drawing.Size(279, 131);
+            this.FirstName_tb.TabIndex = 32;
+            this.FirstName_tb.TExt = "";
+            // 
             // layout1
             // 
             this.layout1.Location = new System.Drawing.Point(0, 0);
@@ -275,24 +351,6 @@
             this.layout1.Name = "layout1";
             this.layout1.Size = new System.Drawing.Size(2049, 1065);
             this.layout1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.label2.Location = new System.Drawing.Point(746, 479);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 36);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "Position";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(747, 544);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(236, 24);
-            this.comboBox1.TabIndex = 44;
             // 
             // Add_Teacher
             // 
@@ -326,19 +384,24 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel Adt_Form_Container;
-        private TextBox_Admin textBox_Admin1;
-        private TextBox_Admin textBox_Admin6;
-        private TextBox_Admin textBox_Admin5;
-        private TextBox_Admin textBox_Admin4;
-        private TextBox_Admin textBox_Admin3;
-        private TextBox_Admin textBox_Admin2;
+        private TextBox_Admin FirstName_tb;
+        private TextBox_Admin Mobile_tb;
+        private TextBox_Admin Email_tb;
+        private TextBox_Admin MotherName_tb;
+        private TextBox_Admin FatherName_tb;
+        private TextBox_Admin LastName_tb;
         private System.Windows.Forms.Label DOB_Label;
-        private TextBox_Admin textBox_Admin7;
+        private TextBox_Admin NID_tb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private TextBox_Admin textBox_Admin4;
+        private TextBox_Admin textBox_Admin3;
+        private TextBox_Admin textBox_Admin2;
+        private TextBox_Admin textBox_Admin1;
+        private System.Windows.Forms.Button Create_btn;
     }
 }
