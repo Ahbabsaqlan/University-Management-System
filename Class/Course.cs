@@ -107,5 +107,30 @@ namespace University_Management_System
             get { return _department; }
             set { _department = value; }
         }
+
+        private Section[] _sections;
+
+        public Section[] Sections
+        {
+            get { return _sections; }
+            set { _sections = value; }
+        }
+
+        public void getSections()
+        {
+            //Fetch Data
+            string studentData = "select Section_ID from SECTION where Course_ID='" + ID + "'";
+            SqlDataAdapter adapter = new SqlDataAdapter(studentData, connection);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            Sections = new Section[dt.Rows.Count];
+            int index = 0;
+            foreach(DataRow row in dt.Rows)
+            {
+                Sections[index++] = new Section(row.Field<string>(0));
+            }
+        }
+
+
     }
 }

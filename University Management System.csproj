@@ -114,6 +114,18 @@
     <Compile Include="Class\Person.cs" />
     <Compile Include="Class\Program.cs" />
     <Compile Include="Class\RegisteredStudent.cs" />
+    <Compile Include="Class\Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Reg_Course.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\Reg_Course.Designer.cs">
+      <DependentUpon>Reg_Course.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\Result.cs" />
     <Compile Include="Class\Schedule.cs" />
     <Compile Include="Class\Section.cs" />
@@ -209,6 +221,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADMIN\Program_Show.resx">
       <DependentUpon>Program_Show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\Reg_Course.resx">
+      <DependentUpon>Reg_Course.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

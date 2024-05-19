@@ -103,7 +103,7 @@ namespace University_Management_System
 
         public void getCoursesInfo()
         {
-            //Fetch Course Data
+            //Fetch Registered Course Data
             string studentData1 = "select Section_ID from Registered_Students where Student_ID='" + ID + "'";
             SqlDataAdapter adapter3 = new SqlDataAdapter(studentData1, connection);
             DataTable dt3 = new DataTable();
@@ -118,7 +118,7 @@ namespace University_Management_System
                     index++;
                 }
             }
-
+            // Completed Courses
             int complete = 0;
             for (int i = 0; RegisteredCourses.Length > i; i++)
             {
@@ -142,7 +142,7 @@ namespace University_Management_System
                     }
                 }
             }
-
+            // Available courses
             int available = 0;
             for (int i = 0; i < Programs.Curriculums.CurricullumCourses.Length; i++)
             {
@@ -150,10 +150,30 @@ namespace University_Management_System
                 {
                     if (Programs.Curriculums.CurricullumCourses[i].ID != CompletedCourses[j].ID)
                     {
-                        available++;
+                        if(Programs.Curriculums.CurricullumCourses[i].First_pre_req.ID is null)
+                        {
+                            available++;
+                        }
+                        else
+                        {
+                            for (int k = 0; k < CompletedCourses.Length; k++)
+                            {
+                                if (Programs.Curriculums.CurricullumCourses[i].First_pre_req.ID == CompletedCourses[k].ID)
+                                {
+                                    for (int l = 0; l < CompletedCourses.Length; l++)
+                                    {
+                                        if (Programs.Curriculums.CurricullumCourses[i].Second_pre_req.ID == CompletedCourses[l].ID)
+                                        {
+                                            available++;
+                                        }
+                                    }
+                                }
+                            }
+                        }   
                     }
                 }
             }
+            
             AvailableCourses = new Course[available];
             for (int i = 0; i < Programs.Curriculums.CurricullumCourses.Length; i++)
             {
@@ -161,11 +181,30 @@ namespace University_Management_System
                 {
                     if (Programs.Curriculums.CurricullumCourses[i].ID != CompletedCourses[j].ID)
                     {
-                        AvailableCourses[--available] = new Course(Programs.Curriculums.CurricullumCourses[i].ID);
+                        if (Programs.Curriculums.CurricullumCourses[i].First_pre_req.ID is null)
+                        {
+                            AvailableCourses[--available] = new Course(Programs.Curriculums.CurricullumCourses[i].ID);
+                        }
+                        else
+                        {
+                            for (int k = 0; k < CompletedCourses.Length; k++)
+                            {
+                                if (Programs.Curriculums.CurricullumCourses[i].First_pre_req.ID == CompletedCourses[k].ID)
+                                {
+                                    for (int l = 0; l < CompletedCourses.Length; l++)
+                                    {
+                                        if (Programs.Curriculums.CurricullumCourses[i].Second_pre_req.ID == CompletedCourses[l].ID)
+                                        {
+                                            AvailableCourses[--available] = new Course(Programs.Curriculums.CurricullumCourses[i].ID);
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
-
+            // Completd Credit
             if (CompletedCourses.Length > 0)
             {
                 for (int i = 0; i < CompletedCourses.Length; i++)
