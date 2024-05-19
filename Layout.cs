@@ -12,7 +12,7 @@ namespace University_Management_System
 {
     internal partial class Layout : UserControl
     {
-        //Admin admin { get; set; }
+        
         public Layout()
         {
             InitializeComponent();
@@ -21,11 +21,7 @@ namespace University_Management_System
 
             
         }
-        //public void adminholder(Admin admins)
-        //{
-        //    admin = admins;
-        //    InitializeComponent();
-        //}
+        
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {

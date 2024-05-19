@@ -69,13 +69,13 @@ namespace University_Management_System
         {
             Department dept = new Department("FST");
             dept.Show();
-            this.Hide();
+            this.Close();
         }
         private void FST_btn_pgrm_Click(object sender, EventArgs e)
         {
             Programs pgrm = new Programs("FST");
             pgrm.Show();
-            this.Hide();
+            this.Close();
         }
         
         //FE Panel Button Control
@@ -112,13 +112,13 @@ namespace University_Management_System
         {
             Department dept = new Department("FE");
             dept.Show();
-            this.Hide();
+            this.Close();
         }
         private void FE_btn_pgrm_Click(object sender, EventArgs e)
         {
             Programs pgrm = new Programs("FE");
             pgrm.Show();
-            this.Hide();
+            this.Close();
         }
 
         //FBA Panel Button Control
@@ -155,13 +155,13 @@ namespace University_Management_System
         {
             Department dept = new Department("FBA");
             dept.Show();
-            this.Hide();
+            this.Close();
         }
         private void FBA_btn_pgrm_Click(object sender, EventArgs e)
         {
             Programs pgrm = new Programs("FBA");
             pgrm.Show();
-            this.Hide();
+            this.Close();
         }
 
         // FASS Panel Button Control
@@ -198,13 +198,13 @@ namespace University_Management_System
         {
             Department dept = new Department("FASS");
             dept.Show();
-            this.Hide();
+            this.Close();
         }
         private void FASS_btn_pgrm_Click(object sender, EventArgs e)
         {
             Programs pgrm = new Programs("FASS");
             pgrm.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

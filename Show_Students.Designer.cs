@@ -64,7 +64,6 @@
             this.Person_ID.Size = new System.Drawing.Size(141, 29);
             this.Person_ID.TabIndex = 2;
             this.Person_ID.Text = "22-48108-2";
-            this.Person_ID.Click += new System.EventHandler(this.Person_ID_Click);
             // 
             // label2
             // 

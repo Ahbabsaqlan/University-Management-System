@@ -19,12 +19,17 @@ namespace University_Management_System
         // Exit Button
         private void Exit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         // Minimize Button
         private void Minimize_btn_Click(object sender, EventArgs e)
         {
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

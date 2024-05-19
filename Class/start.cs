@@ -20,23 +20,23 @@ namespace University_Management_System
         }
         //public static void Main(string[] args)
         //{
-        //Student st = new Student("22-48108-2");
-        //Console.WriteLine(st.FirstName);
-        //Console.WriteLine(st.LastName);
-        //Console.WriteLine(st.FatherName);
-        //Console.WriteLine(st.MotherName);
-        //Console.WriteLine(st.Email);
-        //Console.WriteLine(st.Mobile);
-        //Console.WriteLine(st.CGPA);
-        //Console.WriteLine(st.CreditComplete);
-        //Console.WriteLine(st.Programs.ProgramName);
-        //Console.WriteLine(Program.TotalCourse);
-        //Console.WriteLine(st.Programs.Facultys.FacultyName);
-        //for(int i=0;i< Program.TotalCourse; i++)
-        //{
-        //    Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[i].CourseName);
-        //}
-        //Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[Program.TotalCourse-1].Departments.DepartmentName);
+        //    Student st = new Student("22-48108-2");
+        //    Console.WriteLine(st.FirstName);
+        //    Console.WriteLine(st.LastName);
+        //    Console.WriteLine(st.FatherName);
+        //    Console.WriteLine(st.MotherName);
+        //    Console.WriteLine(st.Email);
+        //    Console.WriteLine(st.Mobile);
+        //    Console.WriteLine(st.CGPA);
+        //    Console.WriteLine(st.CreditComplete);
+        //    Console.WriteLine(st.Programs.ProgramName);
+        //    Console.WriteLine(Program.TotalCourse);
+        //    Console.WriteLine(st.Programs.Facultys.FacultyName);
+        //    for (int i = 0; i < Program.TotalCourse; i++)
+        //    {
+        //        Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[i].CourseName);
+        //    }
+        //    Console.WriteLine(st.Programs.Curriculums.CurricullumCourses[Program.TotalCourse - 1].Departments.DepartmentName);
 
         //    Student st1 = new Student("22-48108-2");
         //    Console.WriteLine(st1.FirstName);
@@ -62,9 +62,16 @@ namespace University_Management_System
         //    for (int i = 0; i < st1.RegisteredCourses.Length; i++)
         //    {
         //        Console.WriteLine(st1.RegisteredCourses[i].Courses.CourseName + "\n" + st1.RegisteredCourses[i].SectionName);
+        //        for(int j = 0; j < st1.RegisteredCourses[i].RegisteredStudents.Students.Length; j++)
+        //        {
+        //            if (st1.RegisteredCourses[i].RegisteredStudents.Students[j].ID==st1.ID)
+        //            {
+        //                Console.WriteLine(st1.RegisteredCourses[i].Results[j].FinalResult);
+        //            }
+        //        }
         //    }
 
-        //    Console.WriteLine(st1.RegisteredCourses[0].Results[0].FinalResult);
+
         //    Console.WriteLine(st1.RegisteredCourses[0].Notices.NoticesContent[0].Title);
         //    for (int i = 0; i < st1.AvailableCourses.Length; i++)
         //    {
@@ -113,8 +120,11 @@ namespace University_Management_System
         //        Console.WriteLine("No Registered Student");
         //    }
 
-
-
+        //.ToString("N"));
+        //Random rand = new Random(100);
+        //    int ccc = rand.Next(000000000, 999999999);
+        //    Console.WriteLine(ccc);
+            
         //    Console.ReadKey();
         //}
     }

@@ -32,14 +32,23 @@ namespace University_Management_System
         }
 
 
-        private void Person_ID_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Show_Students_Click(object sender, EventArgs e)
         {
-
+            if(Persons.ID.Substring(2,1) == "-")
+            {
+                Student student = new Student(Persons.ID);
+                Admin_Profile admin_Profile = new Admin_Profile(student);
+                admin_Profile.Show();
+                this.Hide();
+            }
+            else
+            {
+                Teacher teacher= new Teacher(Persons.ID);
+                Admin_Profile admin_Profile = new Admin_Profile(teacher);
+                admin_Profile.Show();
+                this.Hide();
+            }
+            
         }
     }
 }
