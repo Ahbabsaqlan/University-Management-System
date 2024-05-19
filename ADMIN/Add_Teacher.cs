@@ -130,7 +130,7 @@ namespace University_Management_System
                 SqlCommand cmd1 = new SqlCommand(query, connection); //query executed
                 cmd1.Parameters.AddWithValue("@User", person.ID);
                 cmd1.Parameters.AddWithValue("@pass", num);
-                cmd1.Parameters.AddWithValue("@role", "Lecturer");
+                cmd1.Parameters.AddWithValue("@role", person.Position);
                 if (connection.State == ConnectionState.Open)
                 {
                     result = cmd1.ExecuteNonQuery();

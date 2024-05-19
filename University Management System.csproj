@@ -49,66 +49,66 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Student.cs">
+    <Compile Include="ADMIN\Add Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add Student.Designer.cs">
+    <Compile Include="ADMIN\Add Student.Designer.cs">
       <DependentUpon>Add Student.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Address.cs" />
-    <Compile Include="Add_Teacher.cs">
+    <Compile Include="ADMIN\Add_Teacher.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add_Teacher.Designer.cs">
+    <Compile Include="ADMIN\Add_Teacher.Designer.cs">
       <DependentUpon>Add_Teacher.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Admin.cs" />
-    <Compile Include="Admin_Profile.cs">
+    <Compile Include="ADMIN\Admin_Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Profile.Designer.cs">
+    <Compile Include="ADMIN\Admin_Profile.Designer.cs">
       <DependentUpon>Admin_Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Search.cs">
+    <Compile Include="ADMIN\Admin_Search.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Search.Designer.cs">
+    <Compile Include="ADMIN\Admin_Search.Designer.cs">
       <DependentUpon>Admin_Search.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Course.cs" />
     <Compile Include="Class\Curriculum.cs" />
-    <Compile Include="DashBoard.cs">
+    <Compile Include="ADMIN\DashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DashBoard.Designer.cs">
+    <Compile Include="ADMIN\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Date.cs" />
-    <Compile Include="Department.cs">
+    <Compile Include="ADMIN\Department.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Department.Designer.cs">
+    <Compile Include="ADMIN\Department.Designer.cs">
       <DependentUpon>Department.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Departments.cs" />
-    <Compile Include="Dept_Show.cs">
+    <Compile Include="ADMIN\Dept_Show.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Dept_Show.Designer.cs">
+    <Compile Include="ADMIN\Dept_Show.Designer.cs">
       <DependentUpon>Dept_Show.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Faculty.cs" />
     <Compile Include="Class\Notice.cs" />
-    <Compile Include="Layout.cs">
+    <Compile Include="ADMIN\Layout.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Layout.Designer.cs">
+    <Compile Include="ADMIN\Layout.Designer.cs">
       <DependentUpon>Layout.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="ADMIN\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="ADMIN\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Person.cs" />
@@ -118,55 +118,55 @@
     <Compile Include="Class\Schedule.cs" />
     <Compile Include="Class\Section.cs" />
     <Compile Include="Class\start.cs" />
-    <Compile Include="Programs.cs">
+    <Compile Include="ADMIN\Programs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Programs.Designer.cs">
+    <Compile Include="ADMIN\Programs.Designer.cs">
       <DependentUpon>Programs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program_Course.cs">
+    <Compile Include="ADMIN\Program_Course.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Program_Course.Designer.cs">
+    <Compile Include="ADMIN\Program_Course.Designer.cs">
       <DependentUpon>Program_Course.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program_Show.cs">
+    <Compile Include="ADMIN\Program_Show.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Program_Show.Designer.cs">
+    <Compile Include="ADMIN\Program_Show.Designer.cs">
       <DependentUpon>Program_Show.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Search_tab.cs">
+    <Compile Include="ADMIN\Search_tab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Search_tab.Designer.cs">
+    <Compile Include="ADMIN\Search_tab.Designer.cs">
       <DependentUpon>Search_tab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Show_Course.cs">
+    <Compile Include="ADMIN\Show_Course.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Show_Course.Designer.cs">
+    <Compile Include="ADMIN\Show_Course.Designer.cs">
       <DependentUpon>Show_Course.cs</DependentUpon>
     </Compile>
-    <Compile Include="Show_Students.cs">
+    <Compile Include="ADMIN\Show_Students.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Show_Students.Designer.cs">
+    <Compile Include="ADMIN\Show_Students.Designer.cs">
       <DependentUpon>Show_Students.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Student.cs" />
-    <Compile Include="Teacher_List.cs">
+    <Compile Include="ADMIN\Teacher_List.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teacher_List.Designer.cs">
+    <Compile Include="ADMIN\Teacher_List.Designer.cs">
       <DependentUpon>Teacher_List.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Teacher.cs" />
-    <Compile Include="TextBox_Admin.cs">
+    <Compile Include="ADMIN\TextBox_Admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TextBox_Admin.Designer.cs">
+    <Compile Include="ADMIN\TextBox_Admin.Designer.cs">
       <DependentUpon>TextBox_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="UNIVERSITY_MANAGEMENT_CITYDataSet.Designer.cs">
@@ -174,40 +174,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UNIVERSITY_MANAGEMENT_CITYDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Add Student.resx">
+    <EmbeddedResource Include="ADMIN\Add Student.resx">
       <DependentUpon>Add Student.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_Teacher.resx">
+    <EmbeddedResource Include="ADMIN\Add_Teacher.resx">
       <DependentUpon>Add_Teacher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Profile.resx">
+    <EmbeddedResource Include="ADMIN\Admin_Profile.resx">
       <DependentUpon>Admin_Profile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_Search.resx">
+    <EmbeddedResource Include="ADMIN\Admin_Search.resx">
       <DependentUpon>Admin_Search.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashBoard.resx">
+    <EmbeddedResource Include="ADMIN\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Department.resx">
+    <EmbeddedResource Include="ADMIN\Department.resx">
       <DependentUpon>Department.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dept_Show.resx">
+    <EmbeddedResource Include="ADMIN\Dept_Show.resx">
       <DependentUpon>Dept_Show.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Layout.resx">
+    <EmbeddedResource Include="ADMIN\Layout.resx">
       <DependentUpon>Layout.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="ADMIN\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Programs.resx">
+    <EmbeddedResource Include="ADMIN\Programs.resx">
       <DependentUpon>Programs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Program_Course.resx">
+    <EmbeddedResource Include="ADMIN\Program_Course.resx">
       <DependentUpon>Program_Course.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Program_Show.resx">
+    <EmbeddedResource Include="ADMIN\Program_Show.resx">
       <DependentUpon>Program_Show.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -220,19 +220,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Search_tab.resx">
+    <EmbeddedResource Include="ADMIN\Search_tab.resx">
       <DependentUpon>Search_tab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Show_Course.resx">
+    <EmbeddedResource Include="ADMIN\Show_Course.resx">
       <DependentUpon>Show_Course.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Show_Students.resx">
+    <EmbeddedResource Include="ADMIN\Show_Students.resx">
       <DependentUpon>Show_Students.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teacher_List.resx">
+    <EmbeddedResource Include="ADMIN\Teacher_List.resx">
       <DependentUpon>Teacher_List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TextBox_Admin.resx">
+    <EmbeddedResource Include="ADMIN\TextBox_Admin.resx">
       <DependentUpon>TextBox_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -310,5 +310,6 @@
   <ItemGroup>
     <None Include="Contents\icons8-teacher-30.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

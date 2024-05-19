@@ -272,6 +272,7 @@ namespace University_Management_System
             connection.Open();
             result = cmd14.ExecuteNonQuery();
             connection.Close();
+
         }
 
         public void updateInfo(Teacher person)
@@ -371,6 +372,8 @@ namespace University_Management_System
             connection.Open();
             result = cmd14.ExecuteNonQuery();
             connection.Close();
+
+            
         }
         public void updateInfo(Admin person)
         {

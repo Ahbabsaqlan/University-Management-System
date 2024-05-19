@@ -32,6 +32,12 @@
             this.Minimize_btn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Update_Form_Container = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Year_tb = new System.Windows.Forms.TextBox();
+            this.Month_tb = new System.Windows.Forms.TextBox();
+            this.Day_tb = new System.Windows.Forms.TextBox();
             this.Update_btn = new System.Windows.Forms.Button();
             this.Email_tb = new University_Management_System.TextBox_Admin();
             this.Road_tb = new University_Management_System.TextBox_Admin();
@@ -40,8 +46,6 @@
             this.Positon_lb = new System.Windows.Forms.Label();
             this.Position_cmbx = new System.Windows.Forms.ComboBox();
             this.NID_tb = new University_Management_System.TextBox_Admin();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.House_tb = new University_Management_System.TextBox_Admin();
             this.Mobile_tb = new University_Management_System.TextBox_Admin();
             this.MotherName_tb = new University_Management_System.TextBox_Admin();
@@ -49,7 +53,6 @@
             this.LastName_tb = new University_Management_System.TextBox_Admin();
             this.FirstName_tb = new University_Management_System.TextBox_Admin();
             this.DOB_Label = new System.Windows.Forms.Label();
-            this.DOB_pkr = new System.Windows.Forms.DateTimePicker();
             this.Update_lb = new System.Windows.Forms.Label();
             this.Pass_Change_tb = new System.Windows.Forms.TextBox();
             this.Change_pass = new System.Windows.Forms.Label();
@@ -70,9 +73,9 @@
             this.uNIVERSITY_MANAGEMENT_CITYDataSet = new University_Management_System.UNIVERSITY_MANAGEMENT_CITYDataSet();
             this.lOGINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lOGINTableAdapter = new University_Management_System.UNIVERSITY_MANAGEMENT_CITYDataSetTableAdapters.LOGINTableAdapter();
+            this.path = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.Update_Form_Container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_picture)).BeginInit();
             this.Info_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uNIVERSITY_MANAGEMENT_CITYDataSet)).BeginInit();
@@ -100,6 +103,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.Update_Form_Container);
             this.panel1.Controls.Add(this.Update_lb);
             this.panel1.Controls.Add(this.Pass_Change_tb);
             this.panel1.Controls.Add(this.Change_pass);
@@ -107,7 +111,6 @@
             this.panel1.Controls.Add(this.Profile_picture);
             this.panel1.Controls.Add(this.Profile_Name_lb);
             this.panel1.Controls.Add(this.Info_Container);
-            this.panel1.Controls.Add(this.Update_Form_Container);
             this.panel1.Location = new System.Drawing.Point(325, 133);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1504, 881);
@@ -116,6 +119,12 @@
             // Update_Form_Container
             // 
             this.Update_Form_Container.BackColor = System.Drawing.Color.White;
+            this.Update_Form_Container.Controls.Add(this.label17);
+            this.Update_Form_Container.Controls.Add(this.label16);
+            this.Update_Form_Container.Controls.Add(this.label15);
+            this.Update_Form_Container.Controls.Add(this.Year_tb);
+            this.Update_Form_Container.Controls.Add(this.Month_tb);
+            this.Update_Form_Container.Controls.Add(this.Day_tb);
             this.Update_Form_Container.Controls.Add(this.Update_btn);
             this.Update_Form_Container.Controls.Add(this.Email_tb);
             this.Update_Form_Container.Controls.Add(this.Road_tb);
@@ -124,8 +133,6 @@
             this.Update_Form_Container.Controls.Add(this.Positon_lb);
             this.Update_Form_Container.Controls.Add(this.Position_cmbx);
             this.Update_Form_Container.Controls.Add(this.NID_tb);
-            this.Update_Form_Container.Controls.Add(this.button2);
-            this.Update_Form_Container.Controls.Add(this.pictureBox1);
             this.Update_Form_Container.Controls.Add(this.House_tb);
             this.Update_Form_Container.Controls.Add(this.Mobile_tb);
             this.Update_Form_Container.Controls.Add(this.MotherName_tb);
@@ -133,18 +140,68 @@
             this.Update_Form_Container.Controls.Add(this.LastName_tb);
             this.Update_Form_Container.Controls.Add(this.FirstName_tb);
             this.Update_Form_Container.Controls.Add(this.DOB_Label);
-            this.Update_Form_Container.Controls.Add(this.DOB_pkr);
             this.Update_Form_Container.Location = new System.Drawing.Point(0, 145);
             this.Update_Form_Container.Margin = new System.Windows.Forms.Padding(0);
             this.Update_Form_Container.Name = "Update_Form_Container";
             this.Update_Form_Container.Size = new System.Drawing.Size(1504, 704);
             this.Update_Form_Container.TabIndex = 25;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label17.Location = new System.Drawing.Point(1302, 138);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(32, 15);
+            this.label17.TabIndex = 87;
+            this.label17.Text = "Year";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label16.Location = new System.Drawing.Point(1180, 137);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(42, 15);
+            this.label16.TabIndex = 86;
+            this.label16.Text = "Month";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F);
+            this.label15.Location = new System.Drawing.Point(1078, 138);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(28, 15);
+            this.label15.TabIndex = 85;
+            this.label15.Text = "Day";
+            // 
+            // Year_tb
+            // 
+            this.Year_tb.Location = new System.Drawing.Point(1274, 160);
+            this.Year_tb.Name = "Year_tb";
+            this.Year_tb.Size = new System.Drawing.Size(96, 22);
+            this.Year_tb.TabIndex = 54;
+            // 
+            // Month_tb
+            // 
+            this.Month_tb.Location = new System.Drawing.Point(1165, 160);
+            this.Month_tb.Name = "Month_tb";
+            this.Month_tb.Size = new System.Drawing.Size(66, 22);
+            this.Month_tb.TabIndex = 53;
+            // 
+            // Day_tb
+            // 
+            this.Day_tb.Location = new System.Drawing.Point(1058, 160);
+            this.Day_tb.Name = "Day_tb";
+            this.Day_tb.Size = new System.Drawing.Size(66, 22);
+            this.Day_tb.TabIndex = 50;
+            // 
             // Update_btn
             // 
             this.Update_btn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Update_btn.Location = new System.Drawing.Point(1075, 292);
+            this.Update_btn.Location = new System.Drawing.Point(1060, 370);
             this.Update_btn.Name = "Update_btn";
             this.Update_btn.Size = new System.Drawing.Size(375, 62);
             this.Update_btn.TabIndex = 27;
@@ -235,23 +292,6 @@
             this.NID_tb.TabIndex = 41;
             this.NID_tb.TExt = "";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1283, 188);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 48);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(1166, -110);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(303, 268);
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            // 
             // House_tb
             // 
             this.House_tb.Location = new System.Drawing.Point(410, 349);
@@ -316,18 +356,11 @@
             // 
             this.DOB_Label.AutoSize = true;
             this.DOB_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.DOB_Label.Location = new System.Drawing.Point(1087, 416);
+            this.DOB_Label.Location = new System.Drawing.Point(1066, 88);
             this.DOB_Label.Name = "DOB_Label";
             this.DOB_Label.Size = new System.Drawing.Size(179, 36);
             this.DOB_Label.TabIndex = 28;
             this.DOB_Label.Text = "Date of Birth";
-            // 
-            // DOB_pkr
-            // 
-            this.DOB_pkr.Location = new System.Drawing.Point(1055, 478);
-            this.DOB_pkr.Name = "DOB_pkr";
-            this.DOB_pkr.Size = new System.Drawing.Size(245, 22);
-            this.DOB_pkr.TabIndex = 23;
             // 
             // Update_lb
             // 
@@ -541,6 +574,10 @@
             // 
             this.lOGINTableAdapter.ClearBeforeFill = true;
             // 
+            // path
+            // 
+            this.path.FileName = "Photo path";
+            // 
             // Admin_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -557,7 +594,6 @@
             this.panel1.PerformLayout();
             this.Update_Form_Container.ResumeLayout(false);
             this.Update_Form_Container.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profile_picture)).EndInit();
             this.Info_Container.ResumeLayout(false);
             this.Info_Container.PerformLayout();
@@ -596,8 +632,6 @@
         private System.Windows.Forms.Label Positon_lb;
         private System.Windows.Forms.ComboBox Position_cmbx;
         private TextBox_Admin NID_tb;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private TextBox_Admin House_tb;
         private TextBox_Admin Mobile_tb;
         private TextBox_Admin MotherName_tb;
@@ -605,9 +639,15 @@
         private TextBox_Admin LastName_tb;
         private TextBox_Admin FirstName_tb;
         private System.Windows.Forms.Label DOB_Label;
-        private System.Windows.Forms.DateTimePicker DOB_pkr;
         private UNIVERSITY_MANAGEMENT_CITYDataSet uNIVERSITY_MANAGEMENT_CITYDataSet;
         private System.Windows.Forms.BindingSource lOGINBindingSource;
         private UNIVERSITY_MANAGEMENT_CITYDataSetTableAdapters.LOGINTableAdapter lOGINTableAdapter;
+        private System.Windows.Forms.TextBox Year_tb;
+        private System.Windows.Forms.TextBox Month_tb;
+        private System.Windows.Forms.TextBox Day_tb;
+        private System.Windows.Forms.OpenFileDialog path;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
     }
 }

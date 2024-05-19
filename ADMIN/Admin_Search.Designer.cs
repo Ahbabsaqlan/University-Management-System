@@ -30,7 +30,7 @@
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.container = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Exit = new System.Windows.Forms.Button();
             this.Minimize_btn = new System.Windows.Forms.Button();
@@ -56,13 +56,16 @@
             this.panel1.Size = new System.Drawing.Size(267, 69);
             this.panel1.TabIndex = 24;
             // 
-            // flowLayoutPanel1
+            // container
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(73, 246);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(376, 109);
-            this.flowLayoutPanel1.TabIndex = 25;
+            this.container.AutoScroll = true;
+            this.container.AutoSize = true;
+            this.container.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.container.Location = new System.Drawing.Point(73, 246);
+            this.container.MaximumSize = new System.Drawing.Size(376, 403);
+            this.container.Name = "container";
+            this.container.Size = new System.Drawing.Size(0, 0);
+            this.container.TabIndex = 25;
             // 
             // panel2
             // 
@@ -118,7 +121,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(526, 750);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.container);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Minimize_btn);
@@ -129,6 +132,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -138,7 +142,7 @@
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel container;
         private System.Windows.Forms.Panel panel2;
     }
 }
